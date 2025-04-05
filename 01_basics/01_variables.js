@@ -2,7 +2,7 @@ const accounId = 1383753
 let accountEmail = "astrak@google.com"
 var accountPassword = "12345"
 accountCity = "Delhi"       //! not allowed
-let accountState            //Yes we don't to asign value while creating the variable.
+let accountState            //Yes we don't need to asign value while creating the variable.
 // Yes it is not necessary to use semi-colon at the end of the very line of code.
 
 /*
