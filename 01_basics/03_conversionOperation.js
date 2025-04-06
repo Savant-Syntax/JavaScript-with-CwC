@@ -27,5 +27,35 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 let somenumber = 33
 
 let stringNumber = String(somenumber)
-console.log(typeof stringNumber)
-console.log(stringNumber)
+// console.log(typeof stringNumber)
+// console.log(stringNumber)
+
+
+// ************************* Operators ************************
+
+let value = 3
+let negValue = -value
+// console.log(negValue);
+
+// console.log(2+2);   // add  => 4
+// console.log(2-2);   // substract    => 0
+//console.log(2*2);   // multiple    => 4
+//console.log(2/2);   // divide   => 1
+//console.log(2**3);  // power    => 8
+//console.log(2%3);   // modulus => remainder => ans = 2 => 3 cannot divide 2 without going into decimal and here we don't use the decimal conversion.
+
+let str1 = "hello"
+let str2 = " Astrak"
+
+let str3 = str1 + str2
+console.log(str3);
+
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + 2 + 2);   // expected => 14; real => 122
+console.log(1 + 2 + "2");   // expected => 122; real => 32
+// Reason => If the first datatype is string it will treate all of these as string
+// Reason => If the string is at the last then the first operation will be performed normally after that it will treated as string
+
+
+
