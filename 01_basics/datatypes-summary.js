@@ -14,16 +14,35 @@
 const age = 20; //here age acan be number, string etc
 //* That's why Javascript is a dyanimcally typed language
 
+const isLoggedIn = false
+const outsideTemp = null
+let userEmail
 
-//object
+const id = Symbol('123')    //Symbol use to make things unique
+const anotherId = Symbol('123')
+
+console.log(id === anotherId);
+
+const bigNumber = 3876127463784673836708936n    //bigInt
+console.log(typeof bigNumber);
+
+
+//array
 const heros = ["shaktiman", "naagraj", "doga"];
+//object
 let myObj = {
     name: "astrak",
     age: 20,
 }
 
+//function
+const myFunction = function() {
+    console.log("Hello world");
+    
+}
 
-const isLoggedIn = false
-const outsideTemp = null
-let userEmail
+myFunction()
+
+console.log(typeof myFunction);
+
 
