@@ -46,3 +46,5 @@ myFunction()
 console.log(typeof myFunction);
 
 
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Stack (Primitive), Heap (Non-Primitive)
