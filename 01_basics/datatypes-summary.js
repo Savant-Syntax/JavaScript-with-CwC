@@ -48,3 +48,4 @@ console.log(typeof myFunction);
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Stack (Primitive), Heap (Non-Primitive)
+let myName = "Astrak"
