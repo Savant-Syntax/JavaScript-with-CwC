@@ -23,3 +23,7 @@ let myObj = {
 }
 
 
+const isLoggedIn = false
+const outsideTemp = null
+let userEmail
+
