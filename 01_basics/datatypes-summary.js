@@ -21,10 +21,10 @@ let userEmail
 const id = Symbol('123')    //Symbol use to make things unique
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 const bigNumber = 3876127463784673836708936n    //bigInt
-console.log(typeof bigNumber);
+// console.log(typeof bigNumber);
 
 
 //array
@@ -41,12 +41,36 @@ const myFunction = function() {
     
 }
 
-myFunction()
+// myFunction()
 
-console.log(typeof myFunction);
+// console.log(typeof myFunction);
 
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// Stack (Primitive), Heap (Non-Primitive)
+
+// Stack (Primitive) => Do not chage in original.
+// Heap (Non-Primitive) => Changes occured in real one.
+
+
 let myName = "Astrak"
-age = 20
+// age = 20
+
+let nameOne = "Rohan"
+let nameTwo = nameOne
+nameTwo = "Ankit"
+
+//console.log(nameTwo);
+//console.log(nameOne); //No change: Reason => It provides a copy to nameTwo so that changes in nameTwo will not reflect in nameOne
+
+//Advanced
+let userOne = {
+    email: "unknownuserOne@google.com",
+    upi: "user@upi"
+}
+
+let userTwo = userOne
+userTwo.email = "someone@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+//Changes occured in the real one.
