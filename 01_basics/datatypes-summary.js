@@ -71,6 +71,13 @@ let userOne = {
 let userTwo = userOne
 userTwo.email = "someone@google.com"
 
-console.log(userOne.email);
-console.log(userTwo.email);
+//console.log(userOne.email);
+//console.log(userTwo.email);
 //Changes occured in the real one.
+ 
+
+
+let x = Symbol("Person1")
+let y = Symbol("Person1")
+
+console.log(x===y);
