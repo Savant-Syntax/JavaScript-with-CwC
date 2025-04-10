@@ -20,8 +20,11 @@ console.log(gameName.length);   //6
 console.log(gameName.toUpperCase());    //ASTRAK
 
 //Position checking by key value/index value
-console.log(gameName.charAt(2));
+console.log(gameName.charAt(2));        //t
 
 //Position checking by character
-console.log(gameName.indexOf('r'));
+console.log(gameName.indexOf('r'));     //3
 
+//Substring 
+const newString = gameName.substring(0, 4);
+console.log(newString);     //Astr
