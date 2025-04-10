@@ -28,3 +28,5 @@ console.log(gameName.indexOf('r'));     //3
 //Substring 
 const newString = gameName.substring(0, 4);
 console.log(newString);     //Astr
+//last value is not included
+//-ve value doesn't work here. If you put here it will use as 0
