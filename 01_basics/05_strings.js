@@ -23,5 +23,5 @@ console.log(gameName.toUpperCase());    //ASTRAK
 console.log(gameName.charAt(2));
 
 //Position checking by character
-console.log(gameName.indexOf('t'));
+console.log(gameName.indexOf('r'));
 
