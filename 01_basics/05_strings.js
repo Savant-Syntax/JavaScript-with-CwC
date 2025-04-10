@@ -19,3 +19,9 @@ console.log(gameName.length);   //6
 //upperCase
 console.log(gameName.toUpperCase());    //ASTRAK
 
+//Position checking by key value/index value
+console.log(gameName.charAt(2));
+
+//Position checking by character
+console.log(gameName.indexOf('t'));
+
