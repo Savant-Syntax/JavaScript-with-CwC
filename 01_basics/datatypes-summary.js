@@ -77,7 +77,4 @@ userTwo.email = "someone@google.com"
  
 
 
-let x = Symbol("Person1")
-let y = Symbol("Person1")
 
-console.log(x===y);
