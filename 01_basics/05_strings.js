@@ -42,4 +42,9 @@ const newStringOne = "   astrak   "
 console.log(newStringOne);      //   astrak
 console.log(newStringOne.trim());   //astrak
 
+//replace
+const url = "https://astrak.com/savant%20syntax"
+console.log(url.replace('%20', '-'));   //https://astrak.com/savant-syntax
+
+
 
