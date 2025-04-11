@@ -34,4 +34,12 @@ console.log(newString);     //Astr
 //slice
 const gameName2 = "My friend is a good person"
 const anotherString = gameName2.slice(3, 9);
-console.log(anotherString);
+console.log(anotherString);     //friend
+//-ve values are also acceptable
+
+//trim
+const newStringOne = "   astrak   "
+console.log(newStringOne);      //   astrak
+console.log(newStringOne.trim());   //astrak
+
+
