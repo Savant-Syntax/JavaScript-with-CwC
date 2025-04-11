@@ -30,3 +30,8 @@ const newString = gameName.substring(0, 4);
 console.log(newString);     //Astr
 //last value is not included
 //-ve value doesn't work here. If you put here it will use as 0
+
+//slice
+const gameName2 = "My friend is a good person"
+const anotherString = gameName2.slice(3, 9);
+console.log(anotherString);
