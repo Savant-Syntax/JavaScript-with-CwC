@@ -9,3 +9,5 @@ console.log(typeof (balance));      //datatype is object
 console.log(balance.toFixed(2));    //100.00 => to avoid unneccessary output
 console.log(balance.toString().length);     //3
 
+const otherNumber = 123.567
+console.log(otherNumber.toPrecision(3));
