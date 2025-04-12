@@ -11,7 +11,7 @@ console.log(name + repoCount + "Value"); //you can add existing things and also 
 console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
 
 //Declaration method 2
-const gameName = new String('Astrak-As-com')    //check the output in console of browser
+const gameName = new String('Astrak-As-com-website-new')    //check the output in console of browser
 
 //length
 console.log(gameName.length);   //6
