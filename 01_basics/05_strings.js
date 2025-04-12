@@ -46,5 +46,9 @@ console.log(newStringOne.trim());   //astrak
 const url = "https://astrak.com/savant%20syntax"
 console.log(url.replace('%20', '-'));   //https://astrak.com/savant-syntax
 
+//includes
+console.log(url.includes('astrak'));
+console.log(url.includes('someone'));
+
 
 
