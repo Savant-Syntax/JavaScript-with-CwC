@@ -27,6 +27,10 @@ console.log(Math.floor(4.9));   //Floor value => Lower value: 4.9, 4.8 => 4
 console.log(Math.min(4, 6, 8, 10, 2, 3));   //Min value => 2
 console.log(Math.max(4, 6, 8, 10, 2, 3));   //Min value => 10
 
+console.log(Math.random()); //value always lie between 0 and 1
+console.log(Math.random()*10);  //for getting value above decimal
+console.log((Math.random()*10)+1);  //correct way
+
 
 
  
