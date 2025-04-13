@@ -17,4 +17,9 @@ console.log(hundreds.toLocaleString());     //Expected => American stqndard: but
 console.log(hundreds.toLocaleString('en-AM'));     //Now it will follow the American standard
 
 
+//+++++++++++++++++++++++++++ Maths ++++++++++++++++++++++++++++
+
+console.log(Math);
+console.log(Math.abs(-69)); //Absolute value => Change -ve value to +ve value, +ve remains +ve
+ 
 
