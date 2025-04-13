@@ -11,3 +11,10 @@ console.log(balance.toString().length);     //3
 
 const otherNumber = 123.567
 console.log(otherNumber.toPrecision(3));
+
+const hundreds = 1000000000000
+console.log(hundreds.toLocaleString());     //Expected => American stqndard: but they changed so it is now in Indian standard
+console.log(hundreds.toLocaleString('en-AM'));     //Now it will follow the American standard
+
+
+
