@@ -31,7 +31,10 @@ console.log(Math.random()); //value always lie between 0 and 1
 console.log(Math.random()*10);  //for getting value above decimal
 console.log((Math.random()*10)+1);  //correct way
 
-
+const min = 10
+const max = 20
+console.log(Math.floor(Math.random() * (max - min + 1)) + min)  //We want value which has min value is 10 
+//floor and ceil method we can use with random method
 
  
 
