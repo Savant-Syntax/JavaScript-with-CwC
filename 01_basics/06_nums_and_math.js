@@ -22,5 +22,8 @@ console.log(hundreds.toLocaleString('en-AM'));     //Now it will follow the Amer
 console.log(Math);
 console.log(Math.abs(-69)); //Absolute value => Change -ve value to +ve value, +ve remains
 console.log(Math.round(68.79345868));   //Round off 
+console.log(Math.ceil(4.2));    //Ceiling value => Upper value: 4.1, 4.2 => 5
+
+
  
 
