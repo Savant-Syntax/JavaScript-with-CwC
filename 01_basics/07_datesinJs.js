@@ -27,3 +27,11 @@ console.log(myCreatedDate_3.toLocaleString());  //invalid date
 //In double digit month starts from 01
 let myCreatedDate_4 = new Date("2023-01-14")
 console.log(myCreatedDate_4.toLocaleString());
+
+//TimeStamp
+let myTimeStamp = Date.now()
+console.log(myTimeStamp);   //output in milisecond
+console.log(myCreatedDate_4.getTime());
+
+
+
