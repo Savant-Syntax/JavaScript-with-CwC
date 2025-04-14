@@ -9,3 +9,11 @@ console.log(myDate.toISOString());      //2025-04-14T14:56:04.688z
 console.log(myDate.toJSON());       //2025-04-14T14:56:04.688z
 console.log(myDate.toLocaleDateString());   //14/4/2025
 console.log(myDate.toLocaleString());       //14/4/2025, 8:26:04 pm
+
+console.log(typeof myDate);     //object
+
+
+//Date Declaration
+let myCreatedDate = new Date(2023, 0, 23)
+console.log(myCreatedDate.toLocaleString());
+//In Js month starts from 0 (in single digit only)
