@@ -20,3 +20,10 @@ console.log(myCreatedDate.toLocaleString());
 
 let myCreatedDate_2 = new Date(2023, 0, 23, 5, 3)   //Now we can add time also
 console.log(myCreatedDate_2.toLocaleString());  // 23/1/2023 5:03:00 am
+
+let myCreatedDate_3 = new Date("2023-00-14")
+console.log(myCreatedDate_3.toLocaleString());  //invalid date
+
+//In double digit month starts from 01
+let myCreatedDate_4 = new Date("2023-01-14")
+console.log(myCreatedDate_4.toLocaleString());
