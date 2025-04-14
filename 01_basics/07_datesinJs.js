@@ -37,5 +37,11 @@ console.log(myCreatedDate_4.getTime());
 console.log(Date.now() / 1000);   //output with some extra decimal values
 console.log(Math.floor(Date.now()/1000));
 
+//for sepcific data     like---> only month, day, year etc
+let newwDate = new Date()
+console.log(newwDate.getMonth());   //Here month starts from 0
+console.log(newwDate.getMonth() + 1);   //correction
+
+
 
 
