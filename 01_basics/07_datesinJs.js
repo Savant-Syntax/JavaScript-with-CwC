@@ -17,3 +17,6 @@ console.log(typeof myDate);     //object
 let myCreatedDate = new Date(2023, 0, 23)
 console.log(myCreatedDate.toLocaleString());
 //In Js month starts from 0 (in single digit only)
+
+let myCreatedDate_2 = new Date(2023, 0, 23, 5, 3)   //Now we can add time also
+console.log(myCreatedDate_2.toLocaleString());  // 23/1/2023 5:03:00 am
