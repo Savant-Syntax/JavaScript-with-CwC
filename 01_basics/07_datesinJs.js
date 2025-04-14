@@ -33,5 +33,9 @@ let myTimeStamp = Date.now()
 console.log(myTimeStamp);   //output in milisecond
 console.log(myCreatedDate_4.getTime());
 
+//To convert the output in seconds value
+console.log(Date.now() / 1000);   //output with some extra decimal values
+console.log(Math.floor(Date.now()/1000));
+
 
 
