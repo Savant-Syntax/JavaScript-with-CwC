@@ -26,7 +26,7 @@ console.log(myArr);
 
 //pop => Deleted value from the end of the array
 console.log(myArr);
-myArr.pop();    //one item deletion at a time
+myArr.pop();        //one item deletion at a time
 myArr.pop();
 console.log(myArr);
 
@@ -50,7 +50,22 @@ console.log(myArr.indexOf(4));      //4 => index value
 //join
 const newArr = myArr.join();
 console.log(myArr);
-console.log(newArr);    //converts array into string
-console.log(typeof newArr);    //string 
+console.log(newArr);                //converts array into string
+console.log(typeof newArr);         //string
+
+//splice, slice
+
+console.log("A ", myArr);
+
+const myn1 = myArr.slice(1, 3);     //slice used
+console.log(myn1);                  //end value is not included
+console.log("B ", myArr);           //original array is not changed
+
+const myn2 = myArr.splice(1, 3);    //splice used
+console.log(myn2);                  //end value is included
+console.log("C ", myArr);           //original array is changed
+
+
+
 
 
