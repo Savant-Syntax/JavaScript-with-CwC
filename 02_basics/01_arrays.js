@@ -30,4 +30,8 @@ myArr.pop();    //one item deletion at a time
 myArr.pop();
 console.log(myArr);
 
+//unshift => Insert value at the starting of the array
+//This increase the workload on system ot shift the other elements according to the new one
+myArr.unshift(4);
+console.log(myArr);
 
