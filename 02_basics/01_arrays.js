@@ -39,3 +39,9 @@ console.log(myArr);
 //This increase the workload on system ot shift the other elements according to the new one
 myArr.shift(4);
 console.log(myArr);
+
+//includes => check the value: answer in boolean datatype
+console.log(myArr.includes(8));     //fasle
+console.log(myArr.includes(3));     //true
+
+
