@@ -47,4 +47,10 @@ console.log(myArr.includes(3));     //true
 console.log(myArr.indexOf(9));      //-1 => It means it doesn't exist
 console.log(myArr.indexOf(4));      //4 => index value
 
+//join
+const newArr = myArr.join();
+console.log(myArr);
+console.log(newArr);    //converts array into string
+console.log(typeof newArr);    //string 
+
 
