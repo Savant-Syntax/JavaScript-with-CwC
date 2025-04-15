@@ -35,3 +35,7 @@ console.log(myArr);
 myArr.unshift(4);
 console.log(myArr);
 
+//shift => Remove value from the starting of the array
+//This increase the workload on system ot shift the other elements according to the new one
+myArr.shift(4);
+console.log(myArr);
