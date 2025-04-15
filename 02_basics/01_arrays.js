@@ -12,3 +12,7 @@ console.log(Box1);
 //Resizeable (in Js)
 //Accessable by index
 //0 base indexing ---> 0,1,2,3,4,5,6...
+
+//Other Declaration method
+const myArr2 = new Array(1, 2, 3, 4)
+console.log(myArr2);
