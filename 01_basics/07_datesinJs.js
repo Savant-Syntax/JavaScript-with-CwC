@@ -44,12 +44,14 @@ console.log(newwDate.getMonth() + 1);   //correction
 
 //for day
 // 1-M, 2-T, 3-W, 4-Th, 5-F, 6-S, 7-Su
-console.log(newwDate.getDay());
+console.log(newwDate.getDay());k
 
 //For more specific and customized data
 console.log(newwDate.toLocaleString('default', {
     weekday: 'long'
 })
 );
+//Monday
+
 
 
