@@ -44,4 +44,7 @@ console.log(myArr);
 console.log(myArr.includes(8));     //fasle
 console.log(myArr.includes(3));     //true
 
+console.log(myArr.indexOf(9));      //-1 => It means it doesn't exist
+console.log(myArr.indexOf(4));      //4 => index value
+
 
