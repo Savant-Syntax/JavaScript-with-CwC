@@ -6,3 +6,9 @@ const myHeros = ["Iron-man", "Spider-man", "Hulk"]  //Anytypes of element can be
 const Box1 = ["Falcon", 3, 6.88, 40]
 console.log(myHeros);
 console.log(Box1);
+
+//Elements can be any type
+//Collection of mutiple items in a single element
+//Resizeable (in Js)
+//Accessable by index
+//0 base indexing ---> 0,1,2,3,4,5,6...
