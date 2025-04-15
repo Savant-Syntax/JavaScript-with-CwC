@@ -17,5 +17,10 @@ console.log(Box1);
 const myArr2 = new Array(1, 2, 3, 4)
 console.log(myArr2);
 
+//Array Methods
 
+//push => Add value at the end of the array
+console.log(myArr);
+myArr.push(1, 6);   //can insert mutiple item at once
+console.log(myArr);
 
