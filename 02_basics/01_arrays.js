@@ -21,6 +21,12 @@ console.log(myArr2);
 
 //push => Add value at the end of the array
 console.log(myArr);
-myArr.push(1, 6);
+myArr.push(1, 6);   //can insert mutiple item at once
+console.log(myArr);
+
+//pull => Deleted value from the end of the array
+console.log(myArr);
+myArr.pop();    //one item deletion at a time
+myArr.pop();
 console.log(myArr);
 
