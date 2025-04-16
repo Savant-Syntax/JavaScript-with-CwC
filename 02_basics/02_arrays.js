@@ -21,3 +21,8 @@ const all_new_heros = [...marvel_heros, ...dc_heros];
 console.log(all_new_heros);
 //concat ---> adds two things
 //spread ---> adds multiple things ---> more useable
+
+//*flat
+const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
+const real_another_array = another_array.flat(Infinity);    //open every array inside inside the main array
+console.log(real_another_array);
