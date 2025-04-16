@@ -26,3 +26,14 @@ console.log(all_new_heros);
 const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
 const real_another_array = another_array.flat(Infinity);    //open every array inside inside the main array
 console.log(real_another_array);
+
+//some other method
+
+console.log(Array.isArray("Astrak"));           //false
+console.log(Array.from("Astrak"));              //['A', 'S', 'T', 'R', 'A', 'K']
+console.log(Array.from({name: "Astrak"}));      //[] => empty array
+
+let score1 = 100
+let score2 = 200
+let score3 = 300
+console.log(Array.of(score1, score2, score3));  //[100, 200, 300]
