@@ -16,3 +16,8 @@ console.log(allHeros);
 //push work on existing array
 //concat combine 2-array and return a new array
 
+//*spread
+const all_new_heros = [...marvel_heros, ...dc_heros];
+console.log(all_new_heros);
+//concat ---> adds two things
+//spread ---> adds multiple things ---> more useable
