@@ -35,6 +35,8 @@ console.log(JsUser["full name"]);   //for these string value we have to use the 
 
 console.log(JsUser[mySym]); //correct way to use symbol as key-value pair in on abject
 
+JsUser.email = "astrak@chatgpt.com"     //we can change value
+console.log(JsUser.email);
 
 
 
