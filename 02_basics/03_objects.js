@@ -38,9 +38,17 @@ console.log(JsUser[mySym]); //correct way to use symbol as key-value pair in on 
 JsUser.email = "astrak@chatgpt.com"     //we can change value
 console.log(JsUser.email);
 
-Object.freeze(JsUser)   //We freeze our object
+//Object.freeze(JsUser)   //We freeze our object
 JsUser.email = "astrak@microsoft.com"
 console.log(JsUser.email);  //data is not changed
+
+console.log(JsUser);
+
+JsUser.greeting = function () {
+    console.log("Hello Js user");  
+}
+console.log(JsUser.greeting());
+
 
 
 
