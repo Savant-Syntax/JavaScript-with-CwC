@@ -12,6 +12,7 @@
 
 const JsUser = {
     name: "Astrak",
+    "full name": "Savant Syntax",
     age: 18,
     location: "Jaipur",
     email: "astrak@google.com",
@@ -21,4 +22,9 @@ const JsUser = {
 
 console.log(JsUser.email);
 console.log(JsUser["email"]);   //square bracket method
+
+//console.log(JsUser.full name);    //not valid
+console.log(JsUser["full name"]);   //for these string value we have to use the square bracket method
+
+
 
