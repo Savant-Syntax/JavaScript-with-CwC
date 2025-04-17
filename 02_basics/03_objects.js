@@ -6,3 +6,15 @@
 //---constructor---> It forms singleton
 //---literals---> It doesn't form singleton
 
+//Object Literals
+
+//const JsUser = {}   //method to create
+
+const JsUser = {
+    name: "Astrak",
+    age: 18,
+    location: "Jaipur",
+    email: "astrak@google.com",
+    isLoggedIn: false,
+    LastLoginDays: ["Monday", "Saturday"]
+}
