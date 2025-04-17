@@ -49,11 +49,13 @@ JsUser.greeting = function () {
 }
 
 JsUser.greetingtwo = function () {
-    console.log(`Hello Js user, ${this.name}`);  
+    console.log(`Hello Js user, ${this.name}`);     //"this." used to access those value which are present in that object
 }
 
 console.log(JsUser.greeting());
 console.log(JsUser.greetingtwo());
+
+
 
 
 
