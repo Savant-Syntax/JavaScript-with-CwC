@@ -18,3 +18,7 @@ const JsUser = {
     isLoggedIn: false,
     LastLoginDays: ["Monday", "Saturday"]
 }
+
+console.log(JsUser.email);
+console.log(JsUser["email"]);   //square bracket method
+
