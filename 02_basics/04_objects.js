@@ -52,3 +52,9 @@ console.log(tinderUser);
 console.log(Object.keys(tinderUser));       //all keys comes in an array
 console.log(Object.values(tinderUser));     //all value comes in an array
 console.log(Object.entries(tinderUser));    //all key-value comes in a big array with some separated arrays
+
+//what if the value does exist or not?
+console.log(tinderUser.hasOwnProperty('isLoggedIn'))    //true
+console.log(tinderUser.hasOwnProperty('name'))          //true
+console.log(tinderUser.hasOwnProperty('age'))           //false
+
