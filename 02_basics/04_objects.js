@@ -58,3 +58,5 @@ console.log(tinderUser.hasOwnProperty('isLoggedIn'))    //true
 console.log(tinderUser.hasOwnProperty('name'))          //true
 console.log(tinderUser.hasOwnProperty('age'))           //false
 
+//object part2 is completed now
+
