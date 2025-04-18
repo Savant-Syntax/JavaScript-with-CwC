@@ -6,3 +6,10 @@ console.log(tinderUser1);    //empty obj => singleton
 
 const tinderUser2 = {}
 console.log(tinderUser2);   //empty obj => non-singleton
+
+const tinderUser = {}
+tinderUser.id = "123abc"
+tinderUser.name = "Sammy"
+tinderUser.isLoggedIn = false
+
+console.log(tinderUser);
