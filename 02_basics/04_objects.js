@@ -13,3 +13,16 @@ tinderUser.name = "Sammy"
 tinderUser.isLoggedIn = false
 
 console.log(tinderUser);
+
+//object nesting
+const regularUser = {
+    email: "some@gmail.com",
+    fullname: {
+        userfullname: {
+            firstname: "hitesh",
+            lastname: "choudhary"
+        }
+    }
+}
+
+console.log(regularUser.fullname.userfullname.firstname);
