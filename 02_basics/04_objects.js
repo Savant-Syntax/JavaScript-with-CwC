@@ -42,3 +42,6 @@ console.log(obj3);      //one large object has the whole other data like an arra
 const obj_3 = Object.assign({}, obj1, obj2, obj4)     //proper way => target, sourceS
 console.log(obj_3)      //{} => act as target, others => act as source
 //If you are not writing {} then the whole value is getting stored in obj1
+
+//spread method
+const obj5 = { ...obj1, ...obj2 };      //easy and latest way
