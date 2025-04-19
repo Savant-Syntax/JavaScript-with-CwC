@@ -60,3 +60,17 @@ console.log(tinderUser.hasOwnProperty('age'))           //false
 
 //object part2 is completed now
 
+const course = {
+    coursename: "js in hindi",
+    price: 999,
+    courseInstructor: "Astrak"
+}
+
+
+//Destructure of Object
+course.courseInstructor     //basic way to access
+const { courseInstructor } = course     //value is extracted
+console.log(courseInstructor);          //no need to write whole thing like: course.codeinstructor
+
+const { courseInstructor: crInst } = course     //we can give short names also
+console.log(crInst)
