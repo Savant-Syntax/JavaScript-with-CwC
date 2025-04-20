@@ -47,9 +47,37 @@ const output = add_2_Numberss(4, 8)
 console.log(output);
 
 function loginUserMessage(username) {
+    if (username === undefined) {            //to check the value is filled or not
+        console.log("Please enter an username");
+        return
+        
+    }
     return`${username} just logged in`
 }
 
 loginUserMessage("Astrak")                   //execution done but not output: reason => we never give a command to print
 console.log(loginUserMessage("Astrak"));     //Astrak just logged in
 console.log(loginUserMessage());
+
+function loginUserMessages(usernames) {
+    if (!usernames) {                        //Alternative method to check the value is filled or not
+        console.log("Please enter an username");
+        return
+        
+    }
+    return`${usernames} just logged in`
+}
+
+console.log(loginUserMessages());
+
+
+function loginUserMessagess(usernamess = "sam") {       //"sam" as default value is added
+    if (!usernamess) {                      
+        console.log("Please enter an username");
+        return
+        
+    }
+    return`${usernamess} just logged in`
+}
+
+console.log(loginUserMessagess("Astrak"));              //If user enter the value, the value overwrite the default value
