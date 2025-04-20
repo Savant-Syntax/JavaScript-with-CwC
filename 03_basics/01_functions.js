@@ -28,8 +28,12 @@ const result = addTwoNumbers(3, 5)      //we can store the output in a variable
 console.log(result);                    //? undefined?  The function is not returing anything
 
 function add_2_Numbers(number1, number2) {
+    console.log("Astrak");              //Astrak
+    
     let resultt = number1 + number2
     return resultt
+    console.log("Astrak");              //After return no line of code will be executed => unreachable code
+    
 }
 
 const resultt = add_2_Numbers(3, 7)     //Now the function is returning the value, that's why it is possible to store in the variable "resultt".
