@@ -67,7 +67,7 @@ const course = {
 }
 
 
-//Destructure of Object
+//Destructuring of Object
 course.courseInstructor     //basic way to access
 const { courseInstructor } = course     //value is extracted
 console.log(courseInstructor);          //no need to write whole thing like: course.codeinstructor
