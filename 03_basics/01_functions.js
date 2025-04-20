@@ -23,3 +23,7 @@ addTwoNumbers(3, 7)  //10
 addTwoNumbers(4, "6")
 addTwoNumbers(5, "A")
 addTwoNumbers(7, "Astrak")
+
+const result = addTwoNumbers(3, 5)      //we can store the output in a variable
+console.log(result);                    //? undefined?  The function is not returing anything
+
