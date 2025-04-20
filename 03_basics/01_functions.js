@@ -16,5 +16,10 @@ function addTwoNumbers(number1, number2) {
     console.log(number1 + number2)
 }
 
-addTwoNumbers()     //no output => we have no parameters
-addTwoNumbers(3,7)  //10
+addTwoNumbers()     //NaN output => we have no parameters
+addTwoNumbers(3, 7)  //10
+
+//some other possiblities
+addTwoNumbers(4, "6")
+addTwoNumbers(5, "A")
+addTwoNumbers(7, "Astrak")
