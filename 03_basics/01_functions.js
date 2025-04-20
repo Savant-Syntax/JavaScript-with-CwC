@@ -45,3 +45,10 @@ function add_2_Numberss(number1, number2) {
 
 const output = add_2_Numberss(4, 8)
 console.log(output);
+
+function loginUserMessage(username) {
+    return`${username} just logged in`
+}
+
+loginUserMessage("Astrak")      //execution done but not output: reason => we never give a command to print
+console.log(loginUserMessage("Astrak"));    //Astrak just logged in
