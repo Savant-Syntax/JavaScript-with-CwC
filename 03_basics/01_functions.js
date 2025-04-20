@@ -38,3 +38,10 @@ function add_2_Numbers(number1, number2) {
 
 const resultt = add_2_Numbers(3, 7)     //Now the function is returning the value, that's why it is possible to store in the variable "resultt".
 console.log(resultt);
+
+function add_2_Numberss(number1, number2) {
+    return number1 + number2            //shortcut of using return
+}
+
+const output = add_2_Numberss(4, 8)
+console.log(output);
