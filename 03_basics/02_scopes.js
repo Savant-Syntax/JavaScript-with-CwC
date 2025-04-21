@@ -21,5 +21,6 @@ console.log(c);     //output => 30
 //This things creates bugs in code bases when on a single project multiple person works together. And they assign same variable for multiple purpose.
 //var only holds the last updated value. No matter where it has been changed
 
-
+//for let a = 50. Inside the {} is block scope.
+//outside the {} it is global scope
 
