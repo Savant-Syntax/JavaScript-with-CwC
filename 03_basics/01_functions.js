@@ -84,7 +84,7 @@ console.log(loginUserMessagess("Astrak"));              //If user enter the valu
 
 //+++++++++++++++Function part 2++++++++++++++++++++//
 
-//shoping cart
+//shopping cart
 //unknown number of arguments
 function calculateCartPrice(num1) {
     return num1
@@ -92,5 +92,17 @@ function calculateCartPrice(num1) {
 
 console.log(calculateCartPrice(2));                     //output => 2
 console.log(calculateCartPrice(200, 300, 400));         //expected => 200, 300, 400 but actual output is 200
+
+//How to solve this?
+//We have to rest operator "..."
+// ... => it's purpose is to pack the data into bundle
+//Basically it pass multiple values in a function
+
+function calculateCartPrice_2(...num1) {
+    return num1
+}
+
+console.log(calculateCartPrice_2(200, 300, 400));       //[ 200, 300, 400 ]
+
 
 
