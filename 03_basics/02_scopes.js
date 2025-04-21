@@ -46,3 +46,17 @@ one()
 
 //Both function is executed but inner function can retrive data from outer function but outer function cannot retrive data from inner function.
 //Reason: The outer function act as global scope for the inner function.
+
+//practice question: To find error
+
+if (true) {
+    const username = "Astrak"
+    if (username === "Astrak") {
+        const website = " youtube"
+        console.log(username + website);
+        
+    }
+    // console.log(website);    //Error
+    
+}
+// console.log(username);   //Error
