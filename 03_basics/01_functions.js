@@ -110,3 +110,17 @@ function calculateCartPrice_3(val1, val2, ...num1) {
 
 console.log(calculateCartPrice_3(200, 300, 400, 500));  // [ 400, 500 ] => 200, 300 value got stored in val1, val2 respectively and rest of the value stored in num1
 
+//Using object
+//How to pass an object in function
+
+const user = {
+    username: "Astrak",
+    price: 199,
+}
+
+function handleObject(anyobject) {
+    console.log(`User name is ${anyobject.username} and price is ${anyobject.price}`);
+    console.log(`User name is ${anyobject.username} and price is ${anyobject.prics}`);      //prices become undefined: type checking is very important
+}
+
+handleObject(user)
