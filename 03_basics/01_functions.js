@@ -124,3 +124,9 @@ function handleObject(anyobject) {
 }
 
 handleObject(user)
+
+//Other method to pass an object in function
+handleObject({
+    username: "Sam",
+    price: 399
+})
