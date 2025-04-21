@@ -5,9 +5,9 @@ var c = 30
 if (true) {
     let a = 50
     const b = 60
-    console.log(a);     //output => 50
-    console.log(b);     //output => 60
-    console.log(c);     //output => 30
+    console.log("Inner: ", a);     //output => 50
+    console.log("Inner: ", b);     //output => 60
+    console.log("Inner: ", c);     //output => 30
     
 }
 
@@ -24,3 +24,25 @@ console.log(c);     //output => 30
 //for let a = 50. Inside the {} is block scope.
 //outside the {} it is global scope
 
+
+
+//+++++++++++++++Nested Scope++++++++++++++++//
+
+function one() {
+    const username = "Astrak"
+    console.log("one() is executed");
+    
+    function two() {
+        const website = "youtube"
+        console.log(username);
+        console.log("two() is executed"); 
+        
+    }
+    // console.log(website);    //Error
+    two()
+    
+}
+one()
+
+//Both function is executed but inner function can retrive data from outer function but outer function cannot retrive data from inner function.
+//Reason: The outer function act as global scope for the inner function.
