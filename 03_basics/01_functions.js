@@ -104,5 +104,9 @@ function calculateCartPrice_2(...num1) {
 
 console.log(calculateCartPrice_2(200, 300, 400));       //[ 200, 300, 400 ]
 
+function calculateCartPrice_3(val1, val2, ...num1) {
+    return num1
+}
 
+console.log(calculateCartPrice_3(200, 300, 400, 500));  // [ 400, 500 ] => 200, 300 value got stored in val1, val2 respectively and rest of the value stored in num1
 
