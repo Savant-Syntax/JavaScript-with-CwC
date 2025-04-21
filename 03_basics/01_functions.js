@@ -130,3 +130,13 @@ handleObject({
     username: "Sam",
     price: 399
 })
+
+//Passing array in function
+const myNewArray = [200, 300, 400, 500, 600]
+
+function returnSecondValue(getArray) {
+    return getArray[1]
+}
+
+console.log(returnSecondValue(myNewArray));          //300 => Use variable
+console.log(returnSecondValue([100, 200, 300, 400, 500, 600]));     //200 => without variable
