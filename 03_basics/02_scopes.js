@@ -60,3 +60,12 @@ if (true) {
     
 }
 // console.log(username);   //Error
+
+// ++++++++++++++++++++++ Interesting ++++++++++++++++++++ //
+
+//function declaration and call
+function addOne(num1) {
+    return(num1 + 1)
+}
+console.log(addOne(5));
+
