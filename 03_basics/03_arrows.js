@@ -8,4 +8,8 @@ const user = {
 
 }
 
-user.welcomeMessage()
+user.welcomeMessage()   //Default value => Astrak
+user.username = "Sam"   //Changing the value.
+user.welcomeMessage()   //Changed value => Sam
+//How did we access the changed value?
+//=> this. used to access the current value so when we changed the value the changed value became the current value for the context.
