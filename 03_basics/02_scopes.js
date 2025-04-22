@@ -67,5 +67,10 @@ if (true) {
 function addOne(num1) {
     return(num1 + 1)
 }
-console.log(addOne(5));
+console.log(addOne(5));     //valid
 
+//fuction call and declaration
+console.log(addTwo(8));     //valid
+function addTwo(num2) {
+    return(num2 + 2)
+}
