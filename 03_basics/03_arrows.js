@@ -37,3 +37,10 @@ const juice = () => {
 }
 
 juice() //same output
+
+//*Syntax
+//const arrowFunctionName = (parameter1, parameter2) => {
+    //code...............
+//}
+
+//arrowFunctionName(argument1, argument2)
