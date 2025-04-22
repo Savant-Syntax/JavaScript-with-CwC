@@ -17,3 +17,12 @@ user.welcomeMessage()   //Changed value => Sam
 //=> this. used to access the current value so when we changed the value the changed value became the current value for the context.
 
 console.log(this);  // {} => empty object, but why? In node it refers to an empty object because now, there is no context inside global object.
+
+function chai() {
+    let username = "Astrak"
+    console.log(this)               //many functions
+    console.log(this.username)      //undefined
+
+}
+
+chai()  //In function and object "this" works differently
