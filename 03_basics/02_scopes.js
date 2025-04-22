@@ -74,3 +74,11 @@ console.log(addTwo(8));     //valid
 function addTwo(num2) {
     return(num2 + 2)
 }
+
+//function stored in variable and call
+
+const addThree = function (num3) {
+    return(num3 + 3)
+}
+console.log(addThree(9));   //valid
+
