@@ -64,12 +64,14 @@ if (true) {
 // ++++++++++++++++++++++ Interesting ++++++++++++++++++++ //
 
 //function declaration and call
+
 function addOne(num1) {
     return(num1 + 1)
 }
 console.log(addOne(5));     //valid
 
 //fuction call and declaration
+
 console.log(addTwo(8));     //valid
 function addTwo(num2) {
     return(num2 + 2)
@@ -81,4 +83,12 @@ const addThree = function (num3) {
     return(num3 + 3)
 }
 console.log(addThree(9));   //valid
+
+//function call and stored in variable
+
+console.log(addfour(16));   //invalid
+const addfour = function (num4) {
+    return(num4 + 4)
+}
+
 
