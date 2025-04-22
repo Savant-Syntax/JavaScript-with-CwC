@@ -26,3 +26,14 @@ function chai() {
 }
 
 chai()  //In function and object "this" works differently
+
+
+// ++++++++++++++++++ Arrow Function ++++++++++++++++++++ //
+
+const juice = () => {
+    let username = "Astrak"
+    console.log(this)               
+    console.log(this.username)  
+}
+
+juice() //same output
