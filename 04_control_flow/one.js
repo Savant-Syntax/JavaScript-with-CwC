@@ -19,3 +19,13 @@ if (2 === "2") {
 
 //some operator for comparison => "<, >, <=, >=, ==, !=, ===, !=="
 //"=" single equal to use assign value "==" double equal is use to check the value is equal.
+
+const isTempt = 45
+if (isTempt <= 50) {
+    console.log("temperature is greater that 40");
+    
+} else {
+    console.log("temperature is less that 40");
+    
+}
+console.log("executed");    //no matter the condition satisfied or not 
