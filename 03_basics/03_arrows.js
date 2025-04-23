@@ -20,7 +20,7 @@ console.log(this);  // {} => empty object, but why? In node it refers to an empt
 
 function chai() {
     let username = "Astrak"
-    console.log(this)               //many functions
+    //console.log(this)               //many functions
     console.log(this.username)      //undefined
 
 }
@@ -50,4 +50,14 @@ const add2 = (num1, num2) => {
     return num1 + num2
 }
 
-console.log(add2(5,5));
+console.log(add2(5, 5));
+
+//Implicit way to write arrow function
+const addTwoNum = (num1, num2) => num1 + num2   //no need to write return
+console.log(addTwoNum(6, 8));
+
+//Other way to write arrow function
+const addnum = (num1, num2) => (num1 + num2)    //mostly used in react
+console.log(addnum(10, 2));
+
+
