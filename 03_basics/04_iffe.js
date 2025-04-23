@@ -9,5 +9,9 @@
 
 //IFFE
 (function chai() {
-    console.log("DB CONNECTED");
+    console.log(`DB CONNECTED`);
+})();   //we have to end this line explicitly by using ";" at the end of the code so next line of code will get executed
+
+(function aurcode() {
+    console.log(`DB CONNECTED`);
 })()
