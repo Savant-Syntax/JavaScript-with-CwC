@@ -14,4 +14,10 @@
 
 (function aurcode() {
     console.log(`DB CONNECTED`);
-})()
+})();
+
+//use iffe in arrow function
+(() => {
+    console.log(`DB CONNECTED TWO`);
+    
+})();
