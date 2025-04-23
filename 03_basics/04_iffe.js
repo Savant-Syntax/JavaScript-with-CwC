@@ -21,3 +21,9 @@
     console.log(`DB CONNECTED TWO`);
     
 })();
+
+//passing argument and parameter
+((name) => {
+    console.log(`DB CONNECTED TWO ${name}`);
+    
+})("Astrak");
