@@ -37,3 +37,10 @@ if (score > 100) {
     console.log(`User power: ${power}`);   
 }
 //console.log(`User power: ${power}`);   //outside the scope it will not work
+
+//short notation
+const balance = 1000
+if(balance>500) console.log("test");    //this is ok
+//if(balance>500) console.log("test"), console.log("test2");  //this is not a good a practice
+;
+
