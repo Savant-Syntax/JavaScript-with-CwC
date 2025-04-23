@@ -60,4 +60,8 @@ console.log(addTwoNum(6, 8));
 const addnum = (num1, num2) => (num1 + num2)    //mostly used in react
 console.log(addnum(10, 2));
 
+//Access object in arrow function in inplicit way
+const accessObj = () => ({username: "Astrak"})
+console.log(accessObj());
+
 
