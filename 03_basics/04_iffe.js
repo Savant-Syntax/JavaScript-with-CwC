@@ -8,7 +8,7 @@
 // chai()
 
 //IFFE
-(function chai() {
+(function chai() {              //named iffe => function with name
     console.log(`DB CONNECTED`);
 })();   //we have to end this line explicitly by using ";" at the end of the code so next line of code will get executed
 
@@ -17,7 +17,7 @@
 })();
 
 //use iffe in arrow function
-(() => {
+(() => {                        //unnamed iffe => function without name
     console.log(`DB CONNECTED TWO`);
     
 })();
