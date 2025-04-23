@@ -28,4 +28,12 @@ if (isTempt <= 50) {
     console.log("temperature is less that 40");
     
 }
-console.log("executed");    //no matter the condition satisfied or not 
+console.log("executed");    //no matter the condition satisfied or not
+
+// +++++++++++++++++++++ Interesting ++++++++++++++++++++++++++++++
+const score = 200
+if (score > 100) {
+    const power = "fly"
+    console.log(`User power: ${power}`);   
+}
+//console.log(`User power: ${power}`);   //outside the scope it will not work
