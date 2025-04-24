@@ -44,7 +44,8 @@ switch (Month) {
     case "apr":
         console.log("April");
         break;
-
+    
     default:
+        console.log("default case match");
         break;
 }
