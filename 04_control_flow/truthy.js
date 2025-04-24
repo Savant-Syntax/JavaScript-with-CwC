@@ -16,14 +16,22 @@ if (userEmail) {
 
 //How to check an array is empty or not?
 const array = []
-if (array.length === 0) {
+if (array.length === 0) {                    //array's length = 0 then it an empty array
     console.log("Array is empty");
     
 }
 
 //How to check an object is empty or not?
 const object = {}
-if (object.keys(object).length === 0) {     //we converted our object inot array and then check the length of the array
+if (Object.keys(object).length === 0) {     //Basically we are converting an object into an array then checking its length
     console.log("Object is empty");
     
 }
+
+
+//Some general interesting things
+//false == 0 -> true
+//false == "" -> true
+//0 == "" -> true
+
+
