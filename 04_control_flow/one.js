@@ -58,3 +58,12 @@ if (balance < 500) {
     console.log("less than 1200");
     
 }
+
+//something interesting to use in real life
+const userLoggedIn = true
+const debitCard = true
+
+if (userLoggedIn && debitCard) {        //&& => both condition must be true for making the final outcome true
+    console.log("Allow to buy course");
+    
+}
