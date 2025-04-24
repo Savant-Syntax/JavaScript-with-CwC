@@ -62,8 +62,15 @@ if (balance < 500) {
 //something interesting to use in real life
 const userLoggedIn = true
 const debitCard = true
+const loggedInFromGoogle = false
+const loggedInEmail = true
 
-if (userLoggedIn && debitCard) {        //&& => both condition must be true for making the final outcome true
+if (userLoggedIn && debitCard) {        //"&&" => AND operator. All condition must be true for making the final outcome true
     console.log("Allow to buy course");
+    
+}
+
+if (loggedInFromGoogle || loggedInEmail) {      // "||" => OR operator. one true condition is enough to make the final output true
+    console.log("User logged in");
     
 }
