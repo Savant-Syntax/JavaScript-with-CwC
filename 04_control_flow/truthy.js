@@ -20,3 +20,10 @@ if (array.length === 0) {
     console.log("Array is empty");
     
 }
+
+//How to check an object is empty or not?
+const object = {}
+if (object.keys(object).length === 0) {     //we converted our object inot array and then check the length of the array
+    console.log("Object is empty");
+    
+}
