@@ -44,3 +44,17 @@ if(balance>500) console.log("test");    //this is ok
 //if(balance>500) console.log("test"), console.log("test2");  //this is not a good a practice
 ;
 
+//if-else => for multiple condition
+if (balance < 500) {
+    console.log("less than 500");
+    
+} else if (balance < 750) {
+    console.log("less than 750");
+    
+} else if (balance < 900) {
+    console.log("less than 900");
+    
+} else {
+    console.log("less than 1200");
+    
+}
