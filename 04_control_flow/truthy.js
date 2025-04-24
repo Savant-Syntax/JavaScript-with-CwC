@@ -35,3 +35,12 @@ if (Object.keys(object).length === 0) {     //Basically we are converting an obj
 //0 == "" -> true
 
 
+// Nullish Coalescing Operator (??): null undefined
+let val1;
+val1 = 5 ?? 10                             //ans =  5               
+// val1 = null ?? 10                       //ans =  10           
+// val1 = null ?? undefined                //ans =  undefined               
+// val1 = undefined ?? 10                  //ans =  10       
+// val1 = null ?? undefined ?? 10          //ans =  10       
+// val1 = null ?? undefined ?? 10 ?? 15    //ans =  10        
+console.log(val1);
