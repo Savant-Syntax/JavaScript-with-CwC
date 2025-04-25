@@ -27,11 +27,26 @@ for (let i = 1; i <= 10; i++) {
 
 //loop on array
 let myArray = ["flash", "batman", "superman"]
-console.log(myArray.length);
+//console.log(myArray.length);
 
 for (let i = 0; i < myArray.length; i++) {
     const element = myArray[i];
-    console.log(element);
+    //console.log(element);
+    
+    
+}
+
+
+// How to control a loop?
+//=> By using break and continue
+
+for (let i = 1; i <= 20; i++) {
+    if (i == 5) {
+        console.log(`Detected 5`);
+        break
+        
+    }
+    console.log(`value of i is ${i}`);
     
     
 }
