@@ -44,3 +44,8 @@ val1 = 5 ?? 10                             //ans =  5
 // val1 = null ?? undefined ?? 10          //ans =  10       
 // val1 = null ?? undefined ?? 10 ?? 15    //ans =  10        
 console.log(val1);
+
+//Terninary Operator
+//condition ? true : false
+const iceTeaPrice = 100
+iceTeaPrice <= 80 ? console.log("less than 80") : console.log("more than 80");
