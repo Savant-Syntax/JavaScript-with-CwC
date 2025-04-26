@@ -27,12 +27,25 @@ map.set('IN', 'India')                                          //unique value o
 
 //loop on map
 for (const key of map) {
-    console.log(key);                                           //same previous output
+    // console.log(key);                                           //same previous output
     
 }
 
 //if you want something else
 for (const [key, value] of map) {
-    console.log(key, ":-", value);
+    // console.log(key, ":-", value);
     
+}
+
+const myObject = {
+    'game1': 'NFS',
+    'game2': 'Clash of Clans',
+    'game3': 'Marvel Rivals',
+    'game4': 'Shadow Fight 2',
+    'game5': 'Temple Run',
+    'game6': 'Angry Birds',
+}
+
+for (const [key, value] of myObject) {
+    console.log(key, ":-", value);                                  //Error : Object is not iterable
 }
