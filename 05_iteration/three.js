@@ -22,4 +22,17 @@ map.set('IN', 'India')
 map.set('USA', 'United State of America')
 map.set('FR', 'France')
 map.set('IN', 'India')                                          //unique value only and maintain the order
-console.log(map);
+// console.log(map);
+
+
+//loop on map
+for (const key of map) {
+    console.log(key);                                           //same previous output
+    
+}
+
+//if you want something else
+for (const [key, value] of map) {
+    console.log(key, ":-", value);
+    
+}
