@@ -10,3 +10,10 @@ while (index <= 10) {                                               //intializat
     index = index + 2                                               //termination
 }
 
+//example with an array
+let myArray = ['flash', 'batman', 'superman']
+let arr = 0
+while (arr < myArray.length) {
+    console.log(`value is ${myArray[arr]}`);
+    arr = arr + 1                                                   //arr = arr + 1 === shortform ===> arr++
+}
