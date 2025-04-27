@@ -27,3 +27,24 @@ coding.forEach((item,index, arr)=> {
     
 })
 //yes we can
+
+
+//We can access object inside an array
+const myCoding = [
+    {
+        languageName: "javascript",
+        langueFileName: "js",
+    },
+    {
+        languageName: "java",
+        langueFileName: "java",
+    },
+    {
+        languageName: "python",
+        langueFileName: "py",
+    }
+]
+myCoding.forEach((item) => {
+    console.log(item.languageName);
+    
+})
