@@ -6,3 +6,13 @@ const values = coding.forEach((item) => {                   //yes
 })
 
 // console.log(values);                                        //undefined
+
+
+//filter
+//It also takes call-function
+//It retruns values
+//We have to give it a condition to use it
+const myNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const newNums = myNum.filter((num) => num > 4)
+console.log(newNums);
+
