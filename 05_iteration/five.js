@@ -14,8 +14,16 @@ coding.forEach((item) => {                                      //item can be an
 
 //++++++++ Interesting +++++++++
 function printMe(item) {
-    console.log(item);
+    // console.log(item);
     
 }
 
-coding.forEach(printMe);                                        //We are not calling the function we are refering the function
+// coding.forEach(printMe);                                        //We are not calling the function we are refering the function
+
+
+//So can we take anyother parameters too?
+coding.forEach((item,index, arr)=> {
+    // console.log(item, index, arr);
+    
+})
+//yes we can
