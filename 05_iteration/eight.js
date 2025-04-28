@@ -28,3 +28,30 @@ console.log(myTotal);
 const myTotals = myNums.reduce((acc, currval) => acc + currval, 0)
 console.log(myTotals);
 
+
+//Add all price in the shopping cart
+const shoppingCart = [
+    {
+        itemName: "js course",
+        price: 299
+
+    },
+    {
+        itemName: "py course",
+        price: 999
+
+    },
+    {
+        itemName: "mobile course",
+        price: 5999
+
+    },
+    {
+        itemName: "data Science course",
+        price: 12999
+
+    },
+]
+
+const priceToPay = shoppingCart.reduce((acc, item) => acc + item.price, 0)
+console.log(priceToPay);
