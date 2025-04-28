@@ -12,21 +12,21 @@ const sumWithInitial = array1.reduce(
 //2nd iteration of loop => accumulator (which is intitialValue + currentValue) + initialValue (2nd element of the array)
 //3rd and further more iteration of loop => accumulator = accumulator + currentValue
 
-console.log(sumWithInitial);
+// console.log(sumWithInitial);
 // Expected output: 10
 
 //Easy example
 const myNums = [1, 2, 3]
 const myTotal = myNums.reduce(function (acc, currval) {
-    console.log(`acc: ${acc} and currval: ${currval}`);
+    // console.log(`acc: ${acc} and currval: ${currval}`);
     
     return acc + currval
 }, 3)
-console.log(myTotal);
+// console.log(myTotal);
 
 //arrow function
 const myTotals = myNums.reduce((acc, currval) => acc + currval, 0)
-console.log(myTotals);
+// console.log(myTotals);
 
 
 //Add all price in the shopping cart
@@ -54,4 +54,4 @@ const shoppingCart = [
 ]
 
 const priceToPay = shoppingCart.reduce((acc, item) => acc + item.price, 0)
-console.log(priceToPay);
+// console.log(priceToPay);
