@@ -23,5 +23,11 @@ myArr_2.splice(1, 0, 2, 3, 4, 5, 6, 7)
 myArr_2.splice(1, 3, "a", "b", "c")
 //console.log(myArr_2);   //replace
 
+//? What if I wanted the removed value?
+console.log(myArr_2);   //[1. 'a', 'b', 'c', 5, 6, 7, 8, 9, 10]
+let removed_arr = myArr_2.splice(1, 3)
+console.log(`Removed array's values: ${removed_arr}`);
+console.log(myArr_2);
+
 
 
