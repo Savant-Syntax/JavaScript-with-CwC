@@ -89,4 +89,17 @@ let removedArray = languages.splice(2, 2)
 //? Declare an array `marks` with elements [90, 80, 70, 60]. Use the `includes` method to check if the number 80 is in the array. Log the result.
 
 let marks = [90, 80, 70, 60,]
-console.log(marks.includes(80));
+//console.log(marks.includes(80));
+
+
+//? Create an array `names` with ["John", "Alice", "Bob"]. Add "Eve" at the beginning and "Charlie" at the end. Remove "Alice" from the array using the `splice` method. Convert the final array into a string separated by commas and log it.
+
+let names = ["John", "Alice", "Bob"]
+names.unshift("Eve")            //Add "Eve" at the beginning
+names.push("Charlie")           //"Charlie" at the end
+// console.log(names);             //Original array
+// console.log(names.join());      //Convert the final array into a string
+
+
+
+
