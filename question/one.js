@@ -51,4 +51,13 @@ let spliced = myArr_4.splice(1, 4)
 let colors = ["Red", "Blue", "Green"]
 //console.log(colors[1]);     //Blue
 
+//? Create an array numbers with elements [10, 20, 30, 40, 50]. Add 60 and 70 at the end of the array. Remove the first element of the array. Check if the number 30 is included in the array and log the result.
+
+let numbers = [10, 20, 30, 40, 50]
+numbers.push(60, 70)                    //Added 60, 70 at the end of the array
+// console.log(numbers);
+numbers.shift()                         //Deleted the first element of the array
+// console.log(numbers);
+// console.log(numbers.includes(30));      //Checked, Is 30 present in this array or?
+
 
