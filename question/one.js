@@ -24,10 +24,10 @@ myArr_2.splice(1, 3, "a", "b", "c")
 //console.log(myArr_2);   //replace
 
 //? What if I wanted the removed value?
-console.log(myArr_2);   //[1. 'a', 'b', 'c', 5, 6, 7, 8, 9, 10]
+// console.log(myArr_2);   //[1. 'a', 'b', 'c', 5, 6, 7, 8, 9, 10]
 let removed_arr = myArr_2.splice(1, 3)
-console.log(`Removed array's values: ${removed_arr}`);
-console.log(myArr_2);
+// console.log(`Removed array's values: ${removed_arr}`);
+// console.log(myArr_2);
 
 //? How does the slice method differ from splice?
 // slice                                           |    splice
@@ -61,3 +61,9 @@ numbers.shift()                         //Deleted the first element of the array
 // console.log(numbers.includes(30));      //Checked, Is 30 present in this array or?
 
 
+//? Declare an array `fruits` with elements ["Apple", "Banana", "Mango", "Orange"]. Find the index of "Mango" and log it to the console. Try to find the index of "Grapes" and explain the output.
+
+let fruits = ["Apple", "Banana", "Mango", "Orange"]
+// console.log(fruits.indexOf("Mango"));       //2 -> real value
+// console.log(fruits.indexOf("Grapes"));      //-1 -> represent it doesn't exist
+// use indexof() for finding the index of the elements of the array
