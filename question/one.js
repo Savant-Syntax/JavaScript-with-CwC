@@ -86,3 +86,7 @@ let newArray = languages.slice(1, 3)
 let removedArray = languages.splice(2, 2)
 // console.log(removedArray);          //modified array
 
+//? Declare an array `marks` with elements [90, 80, 70, 60]. Use the `includes` method to check if the number 80 is in the array. Log the result.
+
+let marks = [90, 80, 70, 60,]
+console.log(marks.includes(80));
