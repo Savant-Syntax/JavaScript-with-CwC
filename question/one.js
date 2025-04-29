@@ -36,3 +36,15 @@ console.log(myArr_2);
 // 3. Returns the extracted value in a new array   |    3. Returns original array with modifications
 
 
+let myArr_3 = [1, 2, 3, 4, 5]
+let sliced = myArr_3.slice(1, 4)
+// console.log(sliced);     //new array
+// console.log(myArr_3);    //orginal remain unchanged
+
+let myArr_4 = ['a', 'b', 'c', 'd', 'e']
+let spliced = myArr_4.splice(1, 4)
+// console.log(spliced);    //extracted portion
+// console.log(myArr_4);    //orginal got modified
+
+
+
