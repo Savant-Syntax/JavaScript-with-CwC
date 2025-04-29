@@ -18,8 +18,10 @@ myArr_1.shift()
 const myArr_2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 myArr_2.splice(1, 6)    //remove
 // console.log(myArr_2);
-myArr_2.splice(1, 2, 2, 3, 4, 5, 6, 7)
-//console.log(myArr_2);   //add
+myArr_2.splice(1, 0, 2, 3, 4, 5, 6, 7)
+// console.log(myArr_2);   //add        0 -> remove nothing
 myArr_2.splice(1, 3, "a", "b", "c")
 //console.log(myArr_2);   //replace
+
+
 
