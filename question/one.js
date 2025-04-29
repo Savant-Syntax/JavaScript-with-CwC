@@ -74,3 +74,15 @@ let fruits = ["Apple", "Banana", "Mango", "Orange"]
 let days = ["Monday", "Tuesday", "Wednesday"]
 // console.log(days);              //real array
 // console.log(days.join());       //coverted array into string
+
+
+//? Create an array `languages` with elements ["JavaScript", "Python", "C++", "Java", "Ruby"]. Use the `slice` method to create a new array with elements from index 1 to 3. Log both the original and new arrays. Use the `splice` method to remove two elements starting from index 2. Log the modified array.
+
+let languages = ["Javascript", "Python", "C++", "Java", "Ruby"]
+let newArray = languages.slice(1, 3)
+// console.log(newArray);              //modified array
+// console.log(languages);             //original array
+
+let removedArray = languages.splice(2, 2)
+// console.log(removedArray);          //modified array
+
