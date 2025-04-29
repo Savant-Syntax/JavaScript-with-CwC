@@ -46,5 +46,9 @@ let spliced = myArr_4.splice(1, 4)
 // console.log(spliced);    //extracted portion
 // console.log(myArr_4);    //orginal got modified
 
+//? Declare an array named colors with elements "Red", "Blue", and "Green". Access the second element of the array and log it to the console.
+
+let colors = ["Red", "Blue", "Green"]
+console.log(colors[1]);     //Blue
 
 
