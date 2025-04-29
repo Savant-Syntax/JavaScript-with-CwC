@@ -67,3 +67,10 @@ let fruits = ["Apple", "Banana", "Mango", "Orange"]
 // console.log(fruits.indexOf("Mango"));       //2 -> real value
 // console.log(fruits.indexOf("Grapes"));      //-1 -> represent it doesn't exist
 // use indexof() for finding the index of the elements of the array
+
+
+//? Declare an array `days` with elements ["Monday", "Tuesday", "Wednesday"]. Convert this array into a string using the `join` method and log the string.
+
+let days = ["Monday", "Tuesday", "Wednesday"]
+// console.log(days);              //real array
+// console.log(days.join());       //coverted array into string
