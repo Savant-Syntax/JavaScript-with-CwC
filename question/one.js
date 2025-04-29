@@ -29,5 +29,10 @@ let removed_arr = myArr_2.splice(1, 3)
 console.log(`Removed array's values: ${removed_arr}`);
 console.log(myArr_2);
 
+//? How does the slice method differ from splice?
+// slice                                           |    splice
+// 1. Cuts a portion of an array                   |    1. Perform add, remove, replace operation on the original array
+// 2. Original array is remain unchanged           |    2. Original array getting changed after those operations
+// 3. Returns the extracted value in a new array   |    3. Returns original array with modifications
 
 
