@@ -50,3 +50,20 @@ const flat = arrayOne.flat()
 const infinity = (arrayTwo.flat(Infinity));
 // console.log(infinity);
 
+//? What is the difference between Array.isArray() and Array.from()?
+// Arrow.isArray() => checks the given value is an array or not. Output is a boolean form.
+// Arrow.fromArray() => creates a new array from a pre-existing value.
+
+// console.log(Array.isArray([1, 2, 3])); // true
+// console.log(Array.isArray('hello'));  // false
+// console.log(Array.isArray({}));       // false
+
+// console.log(Array.from('hello'));          // ['h', 'e', 'l', 'l', 'o']
+// console.log(Array.from([1, 2, 3], x => x * 2)); // [2, 4, 6]
+// Alternative
+// console.log(Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], function (x) {
+//    return x * 2
+// }));
+
+const set = new Set([1, 2, 3]);
+// console.log(Array.from(set));             // [1, 2, 3]
