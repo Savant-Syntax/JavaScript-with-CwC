@@ -42,12 +42,11 @@ const combinedArray = [...array1, "extra", ...array2];      //* Adding something
 //infinity => In flat the depth is set at infinity it simplify all level of complex nested array
 
 const arrayOne = [1, 2, 3, 4, 5, [6, 7, [8, 9, [10]]]]
-// const arrayTwo = [1, 2, 3, 4, 5, [6, 7, [8, 9, [10]]]]
+const arrayTwo = [1, 2, 3, 4, 5, [6, 7, [8, 9, [10]]]]
 
 const flat = arrayOne.flat()
 // console.log(flat);
 
 const infinity = (arrayTwo.flat(Infinity));
 // console.log(infinity);
-
 
