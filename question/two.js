@@ -6,4 +6,7 @@ let arr_2 = ["Ironman", "Captain America", "Hulk", "Thor"]
 //arr_1.push(arr_2)
 // console.log(arr_1);
 
-
+//? How does the concat method differ from the push method when combining arrays?
+// combine the given array into a new array
+let arr_3 = arr_1.concat(arr_2)
+//console.log(arr_3);
