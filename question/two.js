@@ -36,3 +36,18 @@ const combinedArray2 = [...array1, ...array2];
 //* ++++++++++ Interestiong ++++++++++
 const combinedArray = [...array1, "extra", ...array2];      //* Adding something extra is possible
 //console.log(combinedArray);     // Output: [1, 2, 3, "extra", 4, 5, 6]
+
+//? What is the purpose of the flat method in arrays? How does the Infinity argument affect it?
+//flat => simplify the complex nested array to one level down. depth = 1
+//infinity => In flat the depth is set at infinity it simplify all level of complex nested array
+
+const arrayOne = [1, 2, 3, 4, 5, [6, 7, [8, 9, [10]]]]
+// const arrayTwo = [1, 2, 3, 4, 5, [6, 7, [8, 9, [10]]]]
+
+const flat = arrayOne.flat()
+// console.log(flat);
+
+const infinity = (arrayTwo.flat(Infinity));
+// console.log(infinity);
+
+
