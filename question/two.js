@@ -77,4 +77,19 @@ const teamB = ["Player3", "Player4"]
 teamA.push(teamB)
 // console.log(teamA[2][1]);       //2D array concept
 
+//? Create two arrays: fruits = ["Apple", "Banana"] and vegetables = ["Carrot", "Tomato"]. Combine them using: The concat method, The spread operator.
+const fruits = ["Apples", "Banana"]
+const vegetables = ["Carrot", "Tomato"]
+
+// console.log(fruits.concat(vegetables));
+//Alternative
+const eatablesConcat = fruits.concat(vegetables)
+// console.log(eatablesConcat);
+
+
+const eatablesSpread = [...fruits, ...vegetables]
+// console.log(eatablesSpread);
+
+// Noticed: We can concat fruits and vegetables into fruits but cannot spread fruits and vegetables into fruits. We need a new variable to store their value while using spread method.
+
 
