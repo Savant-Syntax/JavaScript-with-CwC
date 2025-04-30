@@ -67,3 +67,14 @@ const infinity = (arrayTwo.flat(Infinity));
 
 const set = new Set([1, 2, 3]);
 // console.log(Array.from(set));             // [1, 2, 3]
+
+//Questions
+
+//? Declare two arrays, teamA = ["Player1", "Player2"] and teamB = ["Player3", "Player4"]. Use the push method to add teamB into teamA. Access and log the second player of teamB from the nested array.
+const teamA = ["Player1", "Player2"]
+const teamB = ["Player3", "Player4"]
+
+teamA.push(teamB)
+// console.log(teamA[2][1]);       //2D array concept
+
+
