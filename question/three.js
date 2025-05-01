@@ -74,4 +74,11 @@ const person = { name: "Astrak", age: 20 };
 const person4 = { "full name": "Astrak", age: 20 };
 // console.log(person4["full name"]); 
 const key2 = "age";
-// console.log(person4[key2]); 
+// console.log(person4[key2]);
+
+// ? Symbol-based keys
+// Symbols are unique identifiers. Even if two symbols have the same description, they are treated as different keys.
+
+const id = Symbol("id");
+const person5 = { [id]: 101, name: "Astrak" };
+console.log(person5[id]); 
