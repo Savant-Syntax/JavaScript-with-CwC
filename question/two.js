@@ -103,3 +103,9 @@ console.log(Array.from("World"));          // ['W', 'o', 'r', 'l', 'd']
 console.log(Array.of(5, 10, 15));          // [5, 10, 15]
 
 
+//? Declare an array nestedScores = [10, 20, [30, 40], [50, [60, 70]]]. Flatten it completely into a single array using the flat method. Add a score 80 to the flattened array using the spread operator. Log the result.
+let nestedScore = [10, 20, [30, 40], [50, [60, 70]]]
+let flattenedArray = nestedScore.flat(Infinity)
+let flattenedArray2 = [...flattenedArray, 80]
+console.log(flattenedArray2);
+
