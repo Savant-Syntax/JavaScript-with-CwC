@@ -92,4 +92,9 @@ const eatablesSpread = [...fruits, ...vegetables]
 
 // Noticed: We can concat fruits and vegetables into fruits but cannot spread fruits and vegetables into fruits. We need a new variable to store their value while using spread method.
 
+//? Declare an array nested = [1, [2, [3, [4]]]]. Use the flat method with Infinity to create a flat array. Log the result.
+const nested = [1, [2, [3, [4]]]]
+// console.log(nested.flat());             //[1, [2, [3, [4]]]]
+// console.log(nested.flat(Infinity));     //[1, 2, 3, 4]
+
 
