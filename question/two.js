@@ -97,4 +97,9 @@ const nested = [1, [2, [3, [4]]]]
 // console.log(nested.flat());             //[1, [2, [3, [4]]]]
 // console.log(nested.flat(Infinity));     //[1, 2, 3, 4]
 
+//? Check if "Hello" is an array using Array.isArray(). Log the result. Convert the string "World" into an array of characters using Array.from(). Log the result. Create an array with the numbers 5, 10, and 15 using Array.of(). Log the array.
+console.log(Array.isArray("Hello"));       // false
+console.log(Array.from("World"));          // ['W', 'o', 'r', 'l', 'd']
+console.log(Array.of(5, 10, 15));          // [5, 10, 15]
+
 
