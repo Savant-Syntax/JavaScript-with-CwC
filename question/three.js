@@ -55,5 +55,5 @@ const person3 = {
         zip: 10001,
     },
 };
-//erson3.greet();
+//Person3.greet();
 // console.log(person3.address.city);
