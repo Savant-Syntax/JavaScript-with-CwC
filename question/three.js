@@ -57,3 +57,10 @@ const person3 = {
 };
 //Person3.greet();
 // console.log(person3.address.city);
+
+//? Dot notation
+// Simplest way to access object properties when the key is a valid identifier (letters, numbers, underscores, no spaces or special characters).
+
+const person = { name: "Astrak", age: 20 };
+// console.log(person.name); 
+// console.log(person.age); 
