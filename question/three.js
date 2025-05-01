@@ -81,4 +81,4 @@ const key2 = "age";
 
 const id = Symbol("id");
 const person5 = { [id]: 101, name: "Astrak" };
-console.log(person5[id]); 
+//console.log(person5[id]); 
