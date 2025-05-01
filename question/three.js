@@ -62,5 +62,16 @@ const person3 = {
 // Simplest way to access object properties when the key is a valid identifier (letters, numbers, underscores, no spaces or special characters).
 
 const person = { name: "Astrak", age: 20 };
-// console.log(person.name); 
-// console.log(person.age); 
+// console.log(person.name);
+// console.log(person.age);
+
+//? Bracket notation
+// Useful when:
+// 1. The key has spaces or special characters.
+// 2. The key is stored in a variable.
+// 3. You need to compute the key dynamically.
+
+const person4 = { "full name": "Astrak", age: 20 };
+// console.log(person4["full name"]); 
+const key2 = "age";
+// console.log(person4[key2]); 
