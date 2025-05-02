@@ -121,3 +121,28 @@ sealedPerson.age = 29;
 // Adding a property fails
 sealedPerson.city = "Kolkata";
 // console.log(sealedPerson.city); //undefined
+
+//? Dynamic Key Updates
+// We can use variables as dynamic keys with Bracket Notation.
+
+const person7 = { name: "Astrak" };
+const key3 = "job";
+const key4 = "self-aware";
+
+// Adding properties dynamically
+person7[key3] = "Engineer";  // Use key3 for "job"
+person7[key4] = "Yes";       // Use key4 for "self-aware"
+
+// console.log(person7);
+// Output: { name: "Astrak", job: "Engineer", "self-aware": "Yes" }
+
+// The keys do not have to be the same, but the sequence of execution matters because you're modifying the object dynamically. Here's how it works:
+
+const person8 = { name: "Astrak" };
+const key5 = "job";
+
+person[key] = "Engineer"; // Adds or updates "job" to "Engineer"
+person[key] = "Doctor";   // Overwrites "job" to "Doctor"
+
+// console.log(person); 
+// Output: { name: "Astrak", job: "Doctor" }
