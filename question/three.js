@@ -81,4 +81,18 @@ const key2 = "age";
 
 const id = Symbol("id");
 const person5 = { [id]: 101, name: "Astrak" };
-//console.log(person5[id]); 
+//console.log(person5[id]);
+
+//? Modify an object
+// Dot Notation or Bracket Notation can be used to add or modify properties.
+
+const person6 = { name: "Alice" };
+
+// Adding a new property
+person6.age = 25; 
+console.log(person6); // Output: { name: "Alice", age: 25 }
+
+// Updating an existing property
+person6.name = "Bob";
+console.log(person6); // Output: { name: "Bob", age: 25 }
+
