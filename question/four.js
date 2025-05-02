@@ -15,4 +15,13 @@ const person = {};
 person[symKey] = "Symbol Value";
 
 // console.log(person);
-// console.log(person[symKey]); 
+// console.log(person[symKey]);
+
+//? Why Bracket Notation Is Required?
+// Unlike string keys, dot notation (object.key) doesn’t work for symbols because symbols aren’t valid JavaScript identifiers.
+
+//Imcorrect way -> Error
+console.log(person.symKey);     //undefined
+
+//Correct way
+console.log(person[symKey]); 
