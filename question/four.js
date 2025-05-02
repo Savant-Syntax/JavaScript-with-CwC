@@ -5,4 +5,4 @@
 const sym1 = Symbol("description1");
 const sym2 = Symbol("description2");
 
-console.log(sym1 === sym2);     //false
+// console.log(sym1 === sym2);     //false
