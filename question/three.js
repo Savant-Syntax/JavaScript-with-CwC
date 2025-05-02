@@ -108,3 +108,16 @@ const frozenPerson = Object.freeze({ name: "John", age: 30 });
 // Attempt to modify
 frozenPerson.age = 35; 
 //console.log(frozenPerson.age);      //failed
+
+//? seal()
+// Prevents adding or removing properties, but allows updates to existing properties.
+
+const sealedPerson = Object.seal({ name: "Ankit", age: 28 });
+
+// Updating allowed
+sealedPerson.age = 29;
+// console.log(sealedPerson.age); //29
+
+// Adding a property fails
+sealedPerson.city = "Kolkata";
+// console.log(sealedPerson.city); //undefined
