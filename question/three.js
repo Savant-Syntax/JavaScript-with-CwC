@@ -94,5 +94,17 @@ person6.age = 25;
 
 // Updating an existing property
 person6.name = "Bob";
-// console.log(person6); 
+// console.log(person6);
 
+// To prevent from modification.
+// Mthods : 1. freeze()     2. seal()
+
+//? freeze()
+// Makes the object completely immutable. No adding, updating, or deleting properties
+// Changes will silently fail in non-strict mode or throw an error in strict mode.
+
+const frozenPerson = Object.freeze({ name: "John", age: 30 });
+
+// Attempt to modify
+frozenPerson.age = 35; 
+//console.log(frozenPerson.age);      //failed
