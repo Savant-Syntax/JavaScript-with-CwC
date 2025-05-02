@@ -21,7 +21,7 @@ person[symKey] = "Symbol Value";
 // Unlike string keys, dot notation (object.key) doesn’t work for symbols because symbols aren’t valid JavaScript identifiers.
 
 //Imcorrect way -> Error
-console.log(person.symKey);     //undefined
+// console.log(person.symKey);     //undefined
 
 //Correct way
-console.log(person[symKey]); 
+// console.log(person[symKey]); 
