@@ -24,4 +24,21 @@ person[symKey] = "Symbol Value";
 // console.log(person.symKey);     //undefined
 
 //Correct way
-// console.log(person[symKey]); 
+// console.log(person[symKey]);
+
+//? Object Methods in JavaScript
+
+//? this method
+// Use the this keyword to refer to other properties within the same object.
+// this refers to the object in which the method is defined.
+// It gives you access to other properties of the same object.
+const person9 = {
+    firstName: "Savant",
+    lastName: "Syntax",
+    fullName: function () {
+      return `${this.firstName} ${this.lastName}`;
+    },
+  };
+  
+  // console.log(person9.fullName()); // Output: "Alice Doe"
+  
