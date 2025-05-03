@@ -45,3 +45,14 @@ const person9 = {
 //? Arrow function with this
 // Arrow functions do not bind their own this. Instead, they inherit this from the surrounding lexical scope.
 // Avoid using arrow functions as methods in objects if you need to use this.
+
+//Incorrect
+const person10 = {
+    name: "John",
+    greet: () => {
+      //console.log(`Hello, ${this.name}`);
+    },
+  };
+  
+  person10.greet(); // Output: "Hello, undefined" (because `this` is not bound)
+  
