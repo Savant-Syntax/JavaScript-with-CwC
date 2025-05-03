@@ -19,3 +19,19 @@ const obj1 = { name: "John" };
 const obj2 = { name: "Jane" }; 
 // console.log(obj1);
 // console.log(obj2);
+
+
+//? 2. Why can't we access full name using dot notation?
+// Dot notation retrieves the value assigned to the property. Since fullName is a function, its value is the function itself. To execute it and get the result, you need ().
+
+const person = {
+    firstName: "Johnny",
+    lastName: "Deep",
+    fullName: function () {
+      return `${this.firstName} ${this.lastName}`;
+    },
+  };
+  
+// console.log(person.fullName); 
+// console.log(person.fullName()); //Right way
+  
