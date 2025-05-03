@@ -42,3 +42,6 @@ const person9 = {
   
   // console.log(person9.fullName()); // Output: "Alice Doe"
   
+//? Arrow function with this
+// Arrow functions do not bind their own this. Instead, they inherit this from the surrounding lexical scope.
+// Avoid using arrow functions as methods in objects if you need to use this.
