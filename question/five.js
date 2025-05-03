@@ -79,3 +79,22 @@ delete obj4.name;
 
 "use strict";
 obj4.age = 30; // Throws TypeError
+
+
+//? 6. Write a method in an object that logs all key-value pairs of the object.
+
+const myObject = {
+    name: "Astrak",
+    age: 20,
+    job: "Engineer",
+    logKeyValuePairs: function () {
+      Object.entries(this).forEach(([key, value]) => {
+        if (typeof value !== "function") {
+          console.log(`${key}: ${value}`);
+        }
+      });
+    },
+  };
+  
+  myObject.logKeyValuePairs();
+  
