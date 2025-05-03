@@ -32,6 +32,19 @@ const person = {
     },
   };
   
-// console.log(person.fullName); 
+// console.log(person.fullName);
 // console.log(person.fullName()); //Right way
   
+
+//? What is the purpose of using a Symbol as a key in an object?
+// This prevents accidental overwriting or collision of object properties.
+
+const sym1 = Symbol("id");
+const sym2 = Symbol("id");
+
+const obj = {};
+obj[sym1] = "First ID";
+obj[sym2] = "Second ID";
+
+// console.log(obj[sym1]); 
+// console.log(obj[sym2]); 
