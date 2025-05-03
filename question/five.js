@@ -58,3 +58,24 @@ const obj3 = {
 };
 // console.log(obj3[mySymbol]);
 // console.log(obj3.mySymbol);     //dot notation will not work here
+
+
+//? 5. If Object.freeze() is used on an object, what happens when you try to update a property?
+//It makes the object immutable, meaning its properties cannot be added, updated, or deleted.
+
+const obj4 = { name: "John", age: 25 };
+// Freeze the object
+Object.freeze(obj4);
+// Attempt to modify properties
+obj4.age = 30; 
+// console.log(obj4.age);
+
+// Attempt to add new properties
+obj4.city = "New York"; 
+// console.log(obj4.city);
+// Attempt to delete properties
+delete obj4.name; 
+// console.log(obj4.name);
+
+"use strict";
+obj4.age = 30; // Throws TypeError
