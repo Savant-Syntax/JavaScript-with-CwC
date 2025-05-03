@@ -46,5 +46,15 @@ const obj = {};
 obj[sym1] = "First ID";
 obj[sym2] = "Second ID";
 
-// console.log(obj[sym1]); 
-// console.log(obj[sym2]); 
+// console.log(obj[sym1]);
+// console.log(obj[sym2]);
+
+
+//? 4. Write the code to create an object with a symbol key and access its value correctly.
+
+const mySymbol = Symbol("uniqueKey");
+const obj3 = {
+  [mySymbol]: "This is the value for the symbol key",
+};
+// console.log(obj3[mySymbol]);
+// console.log(obj3.mySymbol);     //dot notation will not work here
