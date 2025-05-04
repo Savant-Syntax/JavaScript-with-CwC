@@ -107,29 +107,12 @@ const singleton = {
   appName: "MyApp",
   version: "1.0",
   log: function (message) {
-    console.log(`[${this.appName} v${this.version}]: ${message}`);
+    //console.log(`[${this.appName} v${this.version}]: ${message}`);
   },
 };
 
 singleton.log("Starting application...");
 
-// A non-singleton object is a design where multiple instances of the object can be created. Each instance is independent and maintains its own state.
-// Characteristic: 1. Multiple Instances, 2. Encapsulation, 3. No Shared State
-function createPerson(name, age) {
-  return {
-    name: name,
-    age: age,
-    greet: function () {
-      console.log(`Hi, I'm ${this.name} and I'm ${this.age} years old.`);
-    },
-  };
-}
-
-const person1 = createPerson("Alice", 25);
-const person2 = createPerson("Bob", 30);
-
-person1.greet(); 
-person2.greet(); 
 
 
 
