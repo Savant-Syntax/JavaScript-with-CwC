@@ -128,6 +128,25 @@ function createPerson(name, age) {
 const personX = createPerson("Alice", 25);
 const personY = createPerson("Bob", 30);
 
-// personX.greet(); 
-// personY.greet(); 
+// personX.greet();
+// personY.greet();
 
+//? How can you check if an object is frozen?
+// By try to do:
+// 1. adding new property
+// 2. removing existing property
+// 3. updating existing property
+
+const objt = {
+  name: "Alice",
+};
+// Freeze the object
+Object.freeze(objt);
+// Check if the object is frozen
+console.log(Object.isFrozen(objt));
+
+const objZ = {
+  name: "Bob",
+};
+// Check if the object is frozen
+console.log(Object.isFrozen(objZ));
