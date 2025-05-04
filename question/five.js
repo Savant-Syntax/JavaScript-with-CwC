@@ -125,11 +125,9 @@ function createPerson(name, age) {
   };
 }
 
-// const person1 = createPerson("Alice", 25);
-// const person2 = createPerson("Bob", 30);
+const personX = createPerson("Alice", 25);
+const personY = createPerson("Bob", 30);
 
-personX.greet(); 
-personY.greet(); 
-
-
+// personX.greet(); 
+// personY.greet(); 
 
