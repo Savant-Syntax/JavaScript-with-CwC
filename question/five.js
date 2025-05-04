@@ -101,6 +101,8 @@ const myObject = {
 
 //? Explain the difference between using a singleton object and a non-singleton object in terms of application behavior.
 
+// A singleton object is a design pattern where only one instance of the object is created and shared across the entire application.
+// Characteristic: 1. Single Instance, 2. Global Access, 3. State Sharing
 const singleton = {
   appName: "MyApp",
   version: "1.0",
@@ -110,4 +112,6 @@ const singleton = {
 };
 
 singleton.log("Starting application...");
-// Output: [MyApp v1.0]: Starting application...
+
+
+
