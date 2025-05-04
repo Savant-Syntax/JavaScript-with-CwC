@@ -96,5 +96,18 @@ const myObject = {
     },
   };
   
-  myObject.logKeyValuePairs();
+  //myObject.logKeyValuePairs();
   
+
+//? Explain the difference between using a singleton object and a non-singleton object in terms of application behavior.
+
+const singleton = {
+  appName: "MyApp",
+  version: "1.0",
+  log: function (message) {
+    console.log(`[${this.appName} v${this.version}]: ${message}`);
+  },
+};
+
+singleton.log("Starting application...");
+// Output: [MyApp v1.0]: Starting application...
