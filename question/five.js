@@ -128,8 +128,8 @@ function createPerson(name, age) {
 // const person1 = createPerson("Alice", 25);
 // const person2 = createPerson("Bob", 30);
 
-person1.greet(); 
-person2.greet(); 
+personX.greet(); 
+personY.greet(); 
 
 
 
