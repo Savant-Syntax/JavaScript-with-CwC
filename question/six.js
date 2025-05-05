@@ -65,5 +65,24 @@ const movie = {
 
 // Log all key-value pairs
 // console.log("Entries:", Object.entries(movie));
+
+
+
+//? Check Property Existence:
+//? Create an object user with properties username, email, and isLoggedIn. Check if isLoggedIn and password exist in the object.
+
+const user = {
+    username: "ayano123",
+    email: "ayano@example.com",
+    isLoggedIn: true
+  };
+  
+  // Check if 'isLoggedIn' exists
+  //console.log("isLoggedIn exists:", 'isLoggedIn' in user); // Using 'in' operator
+  //console.log("isLoggedIn exists:", user.hasOwnProperty('isLoggedIn')); // Using hasOwnProperty()
+  
+  // Check if 'password' exists
+  //console.log("password exists:", 'password' in user); // Using 'in' operator
+  //console.log("password exists:", user.hasOwnProperty('password')); // Using hasOwnProperty()
   
 
