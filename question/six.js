@@ -86,3 +86,20 @@ const user = {
   //console.log("password exists:", user.hasOwnProperty('password')); // Using hasOwnProperty()
   
 
+
+//? Object Destructuring:
+//? Create an object course with title, price, and instructor. Destructure title and instructor, then log them.
+
+const course = {
+    title: "JavaScript Essentials",
+    price: 49.99,
+    instructor: "John Doe"
+  };
+  
+  // Destructure title and instructor
+  const { title, instructor } = course;
+  
+  // Log the destructured properties
+  //console.log("Title:", title);
+  //console.log("Instructor:", instructor);
+  
