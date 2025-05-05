@@ -103,3 +103,19 @@ const course = {
   //console.log("Title:", title);
   //console.log("Instructor:", instructor);
   
+
+//? Rename During Destructuring:
+//? Using the course object from the previous question, give an alias coursePrice to price and log it.
+
+const course2 = {
+    title: "JavaScript Essentials",
+    price: 49.99,
+    instructor: "John Doe"
+  };
+  
+  // Destructure price with alias coursePrice
+  const { price: coursePrice } = course2;
+  
+  // Log the alias property
+  //console.log("Course Price:", coursePrice);
+  
