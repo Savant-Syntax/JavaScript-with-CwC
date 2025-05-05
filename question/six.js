@@ -58,12 +58,12 @@ const movie = {
   };
   
 // Log all keys
-console.log("Keys:", Object.keys(movie));
+// console.log("Keys:", Object.keys(movie));
 
 // Log all values
-console.log("Values:", Object.values(movie));
+// console.log("Values:", Object.values(movie));
 
 // Log all key-value pairs
-console.log("Entries:", Object.entries(movie));
+// console.log("Entries:", Object.entries(movie));
   
 
