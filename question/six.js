@@ -119,3 +119,19 @@ const course2 = {
   // Log the alias property
   //console.log("Course Price:", coursePrice);
   
+
+
+//? Object Nesting and Optional Chaining:
+//? Create an object company with a nested ceo object containing name and age. Use optional chaining to access ceo.name.
+
+const company = {
+    name: "Tech Innovations",
+    ceo: {
+      name: "Alice Smith",
+      age: 45
+    }
+  };
+  
+  // Use optional chaining to access ceo.name
+  //console.log("CEO's Name:", company.ceo?.name);
+  
