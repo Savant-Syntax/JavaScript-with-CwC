@@ -31,4 +31,18 @@ const team = {
   };
   
 //console.log("Captain's last name:", team.captain.lastName);
-  
+
+
+//? Combining Objects:
+//? Combine two objects, {a: 1, b: 2} and {c: 3, d: 4}, into a new object using: Object.assign(), Spread operator (...).
+
+//Object.assign():
+const obj1 = { a: 1, b: 2 };
+const obj2 = { c: 3, d: 4 };
+
+const combinedUsingAssign = Object.assign({}, obj1, obj2);
+//console.log("Combined using Object.assign():", combinedUsingAssign);
+
+//Spread operator (...)
+const combinedUsingSpread = { ...obj1, ...obj2 };
+//console.log("Combined using spread operator:", combinedUsingSpread);
