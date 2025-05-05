@@ -17,4 +17,18 @@ const student2 = {
   };
   
 //console.log(student2);
+
+
+//? Object Nesting:
+//? Create an object team with a nested captain object containing firstName and lastName. Access and log the captain.lastName.
+
+const team = {
+    name: "Dream Team",
+    captain: {
+      firstName: "Michael",
+      lastName: "Jordan"
+    }
+  };
+  
+//console.log("Captain's last name:", team.captain.lastName);
   
