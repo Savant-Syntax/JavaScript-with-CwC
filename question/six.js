@@ -46,3 +46,24 @@ const combinedUsingAssign = Object.assign({}, obj1, obj2);
 //Spread operator (...)
 const combinedUsingSpread = { ...obj1, ...obj2 };
 //console.log("Combined using spread operator:", combinedUsingSpread);
+
+
+//? Object Keys and Values:
+//? Create an object movie with properties title, director, and releaseYear. Log: All keys using Object.keys(), All values using Object.values(), All key-value pairs using Object.entries()
+
+const movie = {
+    title: "Inception",
+    director: "Christopher Nolan",
+    releaseYear: 2010
+  };
+  
+// Log all keys
+console.log("Keys:", Object.keys(movie));
+
+// Log all values
+console.log("Values:", Object.values(movie));
+
+// Log all key-value pairs
+console.log("Entries:", Object.entries(movie));
+  
+
