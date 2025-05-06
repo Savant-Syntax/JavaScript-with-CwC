@@ -158,7 +158,7 @@ const book = {
   author: "J.K. Rowling"
 };
 
-// Dynamically add yearPublished property
+
 book.yearPublished = 1997;
 
 console.log("Updated Book Object:", book);
