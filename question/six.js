@@ -135,3 +135,16 @@ const company = {
   // Use optional chaining to access ceo.name
   //console.log("CEO's Name:", company.ceo?.name);
   
+
+
+//? Spread Operator for Combining:
+//? Create two objects: {x: 5, y: 10} and {z: 15, w: 20}. Combine them using the spread operator and log the result.
+
+const objOne = { x: 5, y: 10 };
+const objTwo = { z: 15, w: 20 };
+
+// Combine using the spread operator
+const combinedObject = { ...objOne, ...objTwo };
+
+// Log the result
+console.log("Combined Object:", combinedObject);
