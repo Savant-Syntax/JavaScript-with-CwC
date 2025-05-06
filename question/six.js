@@ -174,3 +174,16 @@ const person = {
 person.age = 26;    //update property
 person.hobby = "Reading";   //add new property
 // console.log("Updated Person Object:", person);
+
+//? Looping Through Object:
+//? Create an object fruits with keys as fruit names (e.g., apple, banana) and values as their quantities. Use a for...in loop to log each fruit and its quantity.
+
+const fruits = {
+  apple: 10,
+  banana: 20,
+  mango: 15
+};
+
+for (const fruit in fruits) {
+  console.log(`${fruit}: ${fruits[fruit]}`);
+}
