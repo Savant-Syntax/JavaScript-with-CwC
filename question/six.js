@@ -146,5 +146,4 @@ const objTwo = { z: 15, w: 20 };
 // Combine using the spread operator
 const combinedObject = { ...objOne, ...objTwo };
 
-// Log the result
-console.log("Combined Object:", combinedObject);
+//console.log("Combined Object:", combinedObject);
