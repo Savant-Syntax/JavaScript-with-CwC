@@ -147,3 +147,18 @@ const objTwo = { z: 15, w: 20 };
 const combinedObject = { ...objOne, ...objTwo };
 
 //console.log("Combined Object:", combinedObject);
+
+
+
+//? Dynamic Property Addition:
+//? Create an object book with properties title and author. Dynamically add a new property yearPublished and log the updated object.
+
+const book = {
+  title: "Harry Potter and the Sorcerer's Stone",
+  author: "J.K. Rowling"
+};
+
+// Dynamically add yearPublished property
+book.yearPublished = 1997;
+
+console.log("Updated Book Object:", book);
