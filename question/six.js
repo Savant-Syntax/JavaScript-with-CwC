@@ -162,3 +162,15 @@ const book = {
 book.yearPublished = 1997;
 
 // console.log("Updated Book Object:", book);
+
+
+//? Modify Object Properties:
+//? Create an object person with properties name and age. Update the age property to a new value and add a new property hobby. Log the updated object.
+
+const person = {
+  name: "Emma",
+  age: 25
+};
+person.age = 26;    //update property
+person.hobby = "Reading";   //add new property
+console.log("Updated Person Object:", person);
