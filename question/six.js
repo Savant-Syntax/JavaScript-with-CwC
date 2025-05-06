@@ -218,5 +218,5 @@ const newObj2 = { x: 5, y: 10 };
 const newObj3 = { x: 5, y: 20 };
 
 // Test the function with new variables
-console.log("newObj1 and newObj2 are equal:", areObjectsEqual(newObj1, newObj2)); // true
-console.log("newObj1 and newObj3 are equal:", areObjectsEqual(newObj1, newObj3)); // false
+// console.log("newObj1 and newObj2 are equal:", areObjectsEqual(newObj1, newObj2)); // true
+// console.log("newObj1 and newObj3 are equal:", areObjectsEqual(newObj1, newObj3)); // false
