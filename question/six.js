@@ -187,3 +187,36 @@ const fruits = {
 for (const fruit in fruits) {
  //console.log(`${fruit}: ${fruits[fruit]}`);
 }
+
+
+
+//? Object Comparison:
+//? Create two objects, {a: 1, b: 2} and {a: 1, b: 2}. Write a function to check if two objects are equal by comparing their keys and values.
+
+function areObjectsEqual(obj1, obj2) {
+  const keys1 = Object.keys(obj1);
+  const keys2 = Object.keys(obj2);
+
+  // Check if the number of keys is the same
+  if (keys1.length !== keys2.length) {
+    return false;
+  }
+
+  // Check if all keys and values are the same
+  for (const key of keys1) {
+    if (obj1[key] !== obj2[key]) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+// Example objects using new variables
+const newObj1 = { x: 5, y: 10 };
+const newObj2 = { x: 5, y: 10 };
+const newObj3 = { x: 5, y: 20 };
+
+// Test the function with new variables
+console.log("newObj1 and newObj2 are equal:", areObjectsEqual(newObj1, newObj2)); // true
+console.log("newObj1 and newObj3 are equal:", areObjectsEqual(newObj1, newObj3)); // false
