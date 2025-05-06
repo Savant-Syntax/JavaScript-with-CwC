@@ -185,5 +185,5 @@ const fruits = {
 };
 
 for (const fruit in fruits) {
-  console.log(`${fruit}: ${fruits[fruit]}`);
+ //console.log(`${fruit}: ${fruits[fruit]}`);
 }
