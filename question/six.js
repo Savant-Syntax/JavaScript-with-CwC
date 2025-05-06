@@ -173,4 +173,4 @@ const person = {
 };
 person.age = 26;    //update property
 person.hobby = "Reading";   //add new property
-console.log("Updated Person Object:", person);
+// console.log("Updated Person Object:", person);
