@@ -161,4 +161,4 @@ const book = {
 
 book.yearPublished = 1997;
 
-console.log("Updated Book Object:", book);
+// console.log("Updated Book Object:", book);
