@@ -39,3 +39,20 @@ function printPattern(rows) {
 }
 
 // printPattern(5);
+
+
+//? Parameter and Return values
+
+// Modify the function addTwoNumbers to check if both parameters are numbers before adding them. If not, return an error message.
+
+function addTwoNumbers(a, b) {
+    if (typeof a !== "number" || typeof b !== "number") {
+        return "Both arguments must be numbers.";
+    }
+    return a + b;
+}
+
+// Example usage:
+console.log(addTwoNumbers(5, 10));   
+console.log(addTwoNumbers(5, "10")); 
+console.log(addTwoNumbers(5));       
