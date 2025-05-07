@@ -52,6 +52,22 @@ function addTwoNumbers(a, b) {
     return a + b;
 }
 
-// console.log(addTwoNumbers(5, 10));   
-// console.log(addTwoNumbers(5, "10")); 
-// console.log(addTwoNumbers(5));       
+// console.log(addTwoNumbers(5, 10));
+// console.log(addTwoNumbers(5, "10"));
+// console.log(addTwoNumbers(5));
+
+
+// Write a function multiplyNumbers that multiplies all the numbers passed as arguments using the rest operator.
+
+function multiplyNumbers(...numbers) {
+    if (numbers.some(num => typeof num !== "number")) {
+        return "All arguments must be numbers.";
+    }
+    return numbers.reduce((product, num) => product * num, 1);
+}
+
+// Example usage:
+console.log(multiplyNumbers(2, 3, 4));  
+console.log(multiplyNumbers(5, 10));   
+console.log(multiplyNumbers(2, "3"));   
+console.log(multiplyNumbers());        
