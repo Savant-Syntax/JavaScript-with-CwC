@@ -67,7 +67,7 @@ function multiplyNumbers(...numbers) {
 }
 
 // Example usage:
-console.log(multiplyNumbers(2, 3, 4));  
-console.log(multiplyNumbers(5, 10));   
-console.log(multiplyNumbers(2, "3"));   
-console.log(multiplyNumbers());        
+// console.log(multiplyNumbers(2, 3, 4));  
+// console.log(multiplyNumbers(5, 10));   
+// console.log(multiplyNumbers(2, "3"));   
+// console.log(multiplyNumbers());        
