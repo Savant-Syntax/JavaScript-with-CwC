@@ -38,4 +38,4 @@ function printPattern(rows) {
     }
 }
 
-printPattern(5);
+// printPattern(5);
