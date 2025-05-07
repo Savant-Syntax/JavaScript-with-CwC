@@ -7,5 +7,5 @@ function greetUser(name = "Guest") {
     console.log(`Hello, ${name}!`);
 }
 
-greetUser("Astrak"); 
-greetUser();         
+//greetUser("Astrak"); 
+//greetUser();         
