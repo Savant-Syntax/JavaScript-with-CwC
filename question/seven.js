@@ -52,7 +52,6 @@ function addTwoNumbers(a, b) {
     return a + b;
 }
 
-// Example usage:
-console.log(addTwoNumbers(5, 10));   
-console.log(addTwoNumbers(5, "10")); 
-console.log(addTwoNumbers(5));       
+// console.log(addTwoNumbers(5, 10));   
+// console.log(addTwoNumbers(5, "10")); 
+// console.log(addTwoNumbers(5));       
