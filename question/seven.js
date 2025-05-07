@@ -20,6 +20,22 @@ function subtractNumbers(a, b) {
     return a - b;
 }
 
-// console.log(subtractNumbers(10, 5));   
+// console.log(subtractNumbers(10, 5));
 // console.log(subtractNumbers(7, "3"));
-// console.log(subtractNumbers(20));   
+// console.log(subtractNumbers(20));
+
+
+//3. Write a function printPattern that prints a pattern like:
+// *
+// **
+// ***
+// ****
+// *****
+
+function printPattern(rows) {
+    for (let i = 1; i <= rows; i++) {
+        console.log("*".repeat(i));
+    }
+}
+
+printPattern(5);
