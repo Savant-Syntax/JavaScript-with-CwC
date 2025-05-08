@@ -103,7 +103,31 @@ function calculateTotalPrice(prices) {
 }
 
 const prices = [19.99, 25.50, 3.75, 10];
-// console.log(calculateTotalPrice(prices)); 
+// console.log(calculateTotalPrice(prices));
 // console.log(calculateTotalPrice([10, 20, 30]));
-// console.log(calculateTotalPrice([]));           
-// console.log(calculateTotalPrice([15, -5, 10])); 
+// console.log(calculateTotalPrice([]));
+// console.log(calculateTotalPrice([15, -5, 10]));
+
+
+// Create a function userDetails that accepts an object with name, age, and city properties and logs a sentence describing the user.
+
+function userDetails(user) {
+    if (
+        typeof user !== 'object' ||
+        typeof user.name !== 'string' ||
+        typeof user.age !== 'number' ||
+        typeof user.city !== 'string'
+    ) {
+        console.log("Invalid input: Provide an object with name (string), age (number), and city (string).");
+        return;
+    }
+
+    console.log(`${user.name} is ${user.age} years old and lives in ${user.city}.`);
+}
+
+// Example usage
+const user1 = { name: "Astrak", age: 25, city: "New York" };
+const user2 = { name: "Alice", age: 30, city: "London" };
+
+userDetails(user1); 
+userDetails(user2);
