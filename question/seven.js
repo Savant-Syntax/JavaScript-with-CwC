@@ -144,8 +144,29 @@ function getEvenNumbers(numbers) {
 }
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// console.log(getEvenNumbers(numbers)); 
-// console.log(getEvenNumbers([10, 15, 20, 25])); 
-// console.log(getEvenNumbers([1, 3, 5]));        
-// console.log(getEvenNumbers([]));               
-// console.log(getEvenNumbers(["10", 20, 30]));   
+// console.log(getEvenNumbers(numbers));
+// console.log(getEvenNumbers([10, 15, 20, 25]));
+// console.log(getEvenNumbers([1, 3, 5]));
+// console.log(getEvenNumbers([]));
+// console.log(getEvenNumbers(["10", 20, 30]));
+
+
+//? Advanced
+
+// Write a function mergeArrays that takes two arrays as arguments and returns a new array that merges them without duplicates.
+
+function mergeArrays(arr1, arr2) {
+    if (!Array.isArray(arr1) || !Array.isArray(arr2)) {
+        return "Invalid input: Provide two arrays.";
+    }
+    return [...new Set([...arr1, ...arr2])];
+}
+
+const array1 = [1, 2, 3, 4];
+const array2 = [3, 4, 5, 6];
+
+console.log(mergeArrays(array1, array2));
+console.log(mergeArrays([1, 2, 3], [3, 4, 5]));  
+console.log(mergeArrays([10, 20], [20, 30]));    
+console.log(mergeArrays([], [1, 2, 3]));         
+console.log(mergeArrays([1, 2], "not an array"));
