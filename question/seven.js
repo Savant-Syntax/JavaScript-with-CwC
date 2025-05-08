@@ -103,7 +103,7 @@ function calculateTotalPrice(prices) {
 }
 
 const prices = [19.99, 25.50, 3.75, 10];
-console.log(calculateTotalPrice(prices)); 
-console.log(calculateTotalPrice([10, 20, 30]));
-console.log(calculateTotalPrice([]));           
-console.log(calculateTotalPrice([15, -5, 10])); 
+// console.log(calculateTotalPrice(prices)); 
+// console.log(calculateTotalPrice([10, 20, 30]));
+// console.log(calculateTotalPrice([]));           
+// console.log(calculateTotalPrice([15, -5, 10])); 
