@@ -129,5 +129,5 @@ function userDetails(user) {
 const user1 = { name: "Astrak", age: 25, city: "New York" };
 const user2 = { name: "Alice", age: 30, city: "London" };
 
-userDetails(user1); 
-userDetails(user2);
+// userDetails(user1); 
+// userDetails(user2);
