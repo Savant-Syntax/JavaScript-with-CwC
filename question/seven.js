@@ -86,5 +86,5 @@ function checkEligibility(person) {
 const person1 = { name: "Astrak", age: 20 };
 const person2 = { name: "Alice", age: 16 };
 
-console.log(checkEligibility(person1)); 
-console.log(checkEligibility(person2)); 
+// console.log(checkEligibility(person1)); 
+// console.log(checkEligibility(person2)); 
