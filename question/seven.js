@@ -86,5 +86,24 @@ function checkEligibility(person) {
 const person1 = { name: "Astrak", age: 20 };
 const person2 = { name: "Alice", age: 16 };
 
-// console.log(checkEligibility(person1)); 
-// console.log(checkEligibility(person2)); 
+// console.log(checkEligibility(person1));
+// console.log(checkEligibility(person2));
+
+
+//? Object and Array Manipulation
+
+// Write a function calculateTotalPrice that takes an array of prices as input and returns the total price.
+
+function calculateTotalPrice(prices) {
+    if (!Array.isArray(prices) || prices.some(price => typeof price !== 'number' || price < 0)) {
+        return "Invalid input: Provide an array of non-negative numbers.";
+    }
+
+    return prices.reduce((total, price) => total + price, 0);
+}
+
+const prices = [19.99, 25.50, 3.75, 10];
+console.log(calculateTotalPrice(prices)); 
+console.log(calculateTotalPrice([10, 20, 30]));
+console.log(calculateTotalPrice([]));           
+console.log(calculateTotalPrice([15, -5, 10])); 
