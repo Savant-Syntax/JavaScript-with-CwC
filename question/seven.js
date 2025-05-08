@@ -165,8 +165,8 @@ function mergeArrays(arr1, arr2) {
 const array1 = [1, 2, 3, 4];
 const array2 = [3, 4, 5, 6];
 
-console.log(mergeArrays(array1, array2));
-console.log(mergeArrays([1, 2, 3], [3, 4, 5]));  
-console.log(mergeArrays([10, 20], [20, 30]));    
-console.log(mergeArrays([], [1, 2, 3]));         
-console.log(mergeArrays([1, 2], "not an array"));
+// console.log(mergeArrays(array1, array2));
+// console.log(mergeArrays([1, 2, 3], [3, 4, 5]));  
+// console.log(mergeArrays([10, 20], [20, 30]));    
+// console.log(mergeArrays([], [1, 2, 3]));         
+// console.log(mergeArrays([1, 2], "not an array"));
