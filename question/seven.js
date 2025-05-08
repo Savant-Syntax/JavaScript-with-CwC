@@ -129,5 +129,23 @@ function userDetails(user) {
 const user1 = { name: "Astrak", age: 25, city: "New York" };
 const user2 = { name: "Alice", age: 30, city: "London" };
 
-// userDetails(user1); 
+// userDetails(user1);
 // userDetails(user2);
+
+
+// Write a function getEvenNumbers that takes an array of numbers and returns an array of even numbers.
+
+function getEvenNumbers(numbers) {
+    if (!Array.isArray(numbers) || numbers.some(num => typeof num !== 'number')) {
+        return "Invalid input: Provide an array of numbers.";
+    }
+
+    return numbers.filter(num => num % 2 === 0);
+}
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(getEvenNumbers(numbers)); 
+console.log(getEvenNumbers([10, 15, 20, 25])); 
+console.log(getEvenNumbers([1, 3, 5]));        
+console.log(getEvenNumbers([]));               
+console.log(getEvenNumbers(["10", 20, 30]));   
