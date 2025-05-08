@@ -144,8 +144,8 @@ function getEvenNumbers(numbers) {
 }
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-console.log(getEvenNumbers(numbers)); 
-console.log(getEvenNumbers([10, 15, 20, 25])); 
-console.log(getEvenNumbers([1, 3, 5]));        
-console.log(getEvenNumbers([]));               
-console.log(getEvenNumbers(["10", 20, 30]));   
+// console.log(getEvenNumbers(numbers)); 
+// console.log(getEvenNumbers([10, 15, 20, 25])); 
+// console.log(getEvenNumbers([1, 3, 5]));        
+// console.log(getEvenNumbers([]));               
+// console.log(getEvenNumbers(["10", 20, 30]));   
