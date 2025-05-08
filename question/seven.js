@@ -67,7 +67,24 @@ function multiplyNumbers(...numbers) {
 }
 
 // Example usage:
-// console.log(multiplyNumbers(2, 3, 4));  
-// console.log(multiplyNumbers(5, 10));   
-// console.log(multiplyNumbers(2, "3"));   
-// console.log(multiplyNumbers());        
+// console.log(multiplyNumbers(2, 3, 4));
+// console.log(multiplyNumbers(5, 10));
+// console.log(multiplyNumbers(2, "3"));
+// console.log(multiplyNumbers());
+
+
+// Create a function checkEligibility that accepts an object with name and age properties. If the age is greater than or equal to 18, it should return "Eligible to vote"; otherwise, "Not eligible."
+
+function checkEligibility(person) {
+    if (typeof person !== 'object' || !person.name || typeof person.age !== 'number') {
+        return "Invalid input";
+    }
+
+    return person.age >= 18 ? `${person.name} is Eligible to vote` : `${person.name} is Not eligible to vote`;
+}
+
+const person1 = { name: "Astrak", age: 20 };
+const person2 = { name: "Alice", age: 16 };
+
+console.log(checkEligibility(person1)); 
+console.log(checkEligibility(person2)); 
