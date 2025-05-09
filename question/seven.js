@@ -243,4 +243,4 @@ function countVowels(str) {
 
 const inputString = "Hello, World!";
 const vowelCount = countVowels(inputString);
-console.log(vowelCount); 
+// console.log(vowelCount); 
