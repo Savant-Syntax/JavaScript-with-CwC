@@ -197,4 +197,4 @@ function getMaxValue(numbers) {
 
 const numberss = [10, 20, 5, 8, 30];
 const maxValue = getMaxValue(numberss);
-console.log(maxValue);
+// console.log(maxValue);
