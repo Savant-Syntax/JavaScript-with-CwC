@@ -198,3 +198,21 @@ function getMaxValue(numbers) {
 const numberss = [10, 20, 5, 8, 30];
 const maxValue = getMaxValue(numberss);
 // console.log(maxValue);
+
+
+//? Challenge
+
+// Create a function cartSummary that accepts an array of cart items, where each item is an object with name, quantity, and price properties. The function should return the total cost of the cart.
+
+function cartSummary(cartItems) {
+    return cartItems.reduce((total, item) => total + item.quantity * item.price, 0);
+}
+
+const cart = [
+    { name: "Laptop", quantity: 1, price: 80000 },
+    { name: "Phone", quantity: 2, price: 6000 },
+    { name: "Tablet", quantity: 3, price: 30000 }
+];
+
+const totalCost = cartSummary(cart);
+console.log(totalCost); 
