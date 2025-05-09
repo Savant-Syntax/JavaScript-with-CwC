@@ -186,5 +186,5 @@ const products = [
 ];
 
 const filteredProducts = filterProducts(products, 50000);
-console.log(filteredProducts);
+// console.log(filteredProducts);
 
