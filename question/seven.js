@@ -231,5 +231,5 @@ function parseURL(url) {
 
 const url = "https://www.example.com/path/to/page";
 const parsedURL = parseURL(url);
-console.log(parsedURL);
+// console.log(parsedURL);
 
