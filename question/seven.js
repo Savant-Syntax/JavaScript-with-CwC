@@ -215,4 +215,4 @@ const cart = [
 ];
 
 const totalCost = cartSummary(cart);
-console.log(totalCost); 
+// console.log(totalCost); 
