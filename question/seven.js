@@ -166,7 +166,25 @@ const array1 = [1, 2, 3, 4];
 const array2 = [3, 4, 5, 6];
 
 // console.log(mergeArrays(array1, array2));
-// console.log(mergeArrays([1, 2, 3], [3, 4, 5]));  
-// console.log(mergeArrays([10, 20], [20, 30]));    
-// console.log(mergeArrays([], [1, 2, 3]));         
+// console.log(mergeArrays([1, 2, 3], [3, 4, 5]));
+// console.log(mergeArrays([10, 20], [20, 30]));
+// console.log(mergeArrays([], [1, 2, 3]));
 // console.log(mergeArrays([1, 2], "not an array"));
+
+
+// Create a function filterProducts that accepts an array of product objects (each with name and price) and a minimum price, and returns a list of products costing more than the minimum price.
+
+function filterProducts(products, minPrice) {
+    return products.filter(product => product.price > minPrice);
+}
+
+const products = [
+    { name: "Laptop", price: 80000 },
+    { name: "Phone", price: 6000 },
+    { name: "Tablet", price: 30000 },
+    { name: "Monitor", price: 20000 }
+];
+
+const filteredProducts = filterProducts(products, 50000);
+console.log(filteredProducts);
+
