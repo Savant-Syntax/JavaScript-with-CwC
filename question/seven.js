@@ -188,3 +188,13 @@ const products = [
 const filteredProducts = filterProducts(products, 50000);
 // console.log(filteredProducts);
 
+
+// Write a function getMaxValue that takes an array of numbers and returns the largest number in the array.
+
+function getMaxValue(numbers) {
+    return Math.max(...numbers);
+}
+
+const numberss = [10, 20, 5, 8, 30];
+const maxValue = getMaxValue(numberss);
+console.log(maxValue);
