@@ -215,4 +215,21 @@ const cart = [
 ];
 
 const totalCost = cartSummary(cart);
-// console.log(totalCost); 
+// console.log(totalCost);
+
+
+// Write a function parseURL that accepts a URL string and returns an object with keys like protocol, hostname, and path.
+
+function parseURL(url) {
+    const urlObject = new URL(url);
+    return {
+        protocol: urlObject.protocol.replace(':', ''),
+        hostname: urlObject.hostname,
+        path: urlObject.pathname
+    };
+}
+
+const url = "https://www.example.com/path/to/page";
+const parsedURL = parseURL(url);
+console.log(parsedURL);
+
