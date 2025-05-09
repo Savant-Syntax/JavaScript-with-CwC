@@ -233,3 +233,14 @@ const url = "https://www.example.com/path/to/page";
 const parsedURL = parseURL(url);
 // console.log(parsedURL);
 
+
+// Write a function countVowels that takes a string as input and returns the number of vowels in the string.
+
+function countVowels(str) {
+    const vowels = 'aeiouAEIOU';
+    return Array.from(str).filter(char => vowels.includes(char)).length;
+}
+
+const inputString = "Hello, World!";
+const vowelCount = countVowels(inputString);
+console.log(vowelCount); 
