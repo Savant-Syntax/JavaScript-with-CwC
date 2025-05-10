@@ -286,3 +286,16 @@ function mostFrequent(arr) {
 const array = [1, 3, 2, 3, 4, 1, 3, 1, 1];
 const result = mostFrequent(array);
 // console.log(result);
+
+
+// Check Palindrome
+// Write a function isPalindrome that takes a string and returns true if it is a palindrome (ignoring case, spaces, and punctuation), and false otherwise.
+
+const text = "A man, a plan, a canal, Panama"; 
+const isTextPalindrome = isPalindrome(text); 
+console.log(isTextPalindrome);
+
+function isPalindrome(str) {
+    const cleanedStr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+    return cleanedStr === cleanedStr.split('').reverse().join('');
+}
