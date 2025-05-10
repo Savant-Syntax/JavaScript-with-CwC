@@ -283,7 +283,6 @@ function mostFrequent(arr) {
     }
     return mostFrequentItem;
 }
-
 const array = [1, 3, 2, 3, 4, 1, 3, 1, 1];
 const result = mostFrequent(array);
 // console.log(result);
