@@ -293,7 +293,7 @@ const result = mostFrequent(array);
 
 const text = "A man, a plan, a canal, Panama"; 
 const isTextPalindrome = isPalindrome(text); 
-console.log(isTextPalindrome);
+//console.log(isTextPalindrome);
 
 function isPalindrome(str) {
     const cleanedStr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
