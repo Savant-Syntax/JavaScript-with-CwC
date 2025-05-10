@@ -264,3 +264,26 @@ const flattened = flattenArray(nestedArray);
 // console.log(flattened);
 
 
+// Find Most Frequent Element
+// Create a function mostFrequent that accepts an array and returns the element that appears the most times. If there is a tie, return any one of them.
+
+function mostFrequent(arr) {
+    const frequencyMap = arr.reduce((map, item) => {
+        map[item] = (map[item] || 0) + 1; 
+        return map;
+    }, {});
+
+    let maxCount = 0;
+    let mostFrequentItem = null;
+    for (const [item, count] of Object.entries(frequencyMap)) {
+        if (count > maxCount) {
+            maxCount = count;
+            mostFrequentItem = item;
+        }
+    }
+    return mostFrequentItem;
+}
+
+const array = [1, 3, 2, 3, 4, 1, 3, 1, 1];
+const result = mostFrequent(array);
+// console.log(result);
