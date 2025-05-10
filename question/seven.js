@@ -339,4 +339,4 @@ function sumDigits(num) {
 
 const number = 12345;
 const sum = sumDigits(number);
-console.log(sum); 
+// console.log(sum); 
