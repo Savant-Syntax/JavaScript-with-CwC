@@ -324,3 +324,19 @@ const items = [
 
 const groupedByRole = groupBy(items, "role");
 // console.log(groupedByRole);
+
+
+// Sum of Digits
+// Write a function sumDigits that takes a positive integer and returns the sum of its digits.
+
+function sumDigits(num) {
+    return num
+        .toString()
+        .split('') 
+        .map(Number) 
+        .reduce((sum, digit) => sum + digit, 0); 
+}
+
+const number = 12345;
+const sum = sumDigits(number);
+console.log(sum); 
