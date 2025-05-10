@@ -299,3 +299,28 @@ function isPalindrome(str) {
     const cleanedStr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
     return cleanedStr === cleanedStr.split('').reverse().join('');
 }
+
+
+// Group by Property
+// Write a function groupBy that takes an array of objects and a property name, and groups the objects by that property.
+
+function groupBy(array, property) {
+    return array.reduce((result, item) => {
+        const key = item[property];
+        if (!result[key]) {
+            result[key] = [];
+        }
+        result[key].push(item);
+        return result;
+    }, {});
+}
+
+const items = [
+    { name: "Alice", role: "developer" },
+    { name: "Bob", role: "designer" },
+    { name: "Charlie", role: "developer" },
+    { name: "Daisy", role: "manager" }
+];
+
+const groupedByRole = groupBy(items, "role");
+console.log(groupedByRole);
