@@ -243,4 +243,23 @@ function countVowels(str) {
 
 const inputString = "Hello, World!";
 const vowelCount = countVowels(inputString);
-// console.log(vowelCount); 
+// console.log(vowelCount);
+
+
+
+// Flatten Nested Arrays
+// Write a function flattenArray that takes a nested array of any depth as input and returns a flattened array.
+
+function flattenArray(nestedArray) {
+    return nestedArray.reduce((acc, item) => {
+        if (Array.isArray(item)) {
+            return acc.concat(flattenArray(item)); 
+        } else {
+            return acc.concat(item); 
+        }
+    }, []);
+}
+
+const nestedArray = [1, [2, [3, [4, 5]], 6], 7];
+const flattened = flattenArray(nestedArray);
+console.log(flattened);
