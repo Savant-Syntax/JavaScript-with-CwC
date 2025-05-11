@@ -375,3 +375,19 @@ const string1 = "listen";
 const string2 = "silent";
 const resultTwo = isAnagram(string1, string2);
 // console.log(resultTwo);
+
+
+// Find Missing Number in Array
+// Write a function findMissingNumber that takes an array of consecutive numbers (with one number missing) and returns the missing number.
+
+function findMissingNumber(arr) {
+    const n = arr.length + 1; // Total numbers including the missing one
+    const expectedSum = (n * (n + 1)) / 2; // Sum of the first n natural numbers
+    const actualSum = arr.reduce((sum, num) => sum + num, 0); // Sum of the array
+    return expectedSum - actualSum; // The difference is the missing number
+}
+
+
+const num = [1, 2, 3, 4, 6]; // 5 is missing
+const missingNumber = findMissingNumber(num);
+console.log(missingNumber); // Output: 5
