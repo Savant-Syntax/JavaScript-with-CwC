@@ -390,3 +390,18 @@ function findMissingNumber(arr) {
 const num = [1, 2, 3, 4, 6]; // 5 is missing
 const missingNumber = findMissingNumber(num);
 // console.log(missingNumber); // Output: 5
+
+
+// Longest Word in Sentence
+// Create a function findLongestWord that takes a sentence as input and returns the longest word.
+
+function findLongestWord(sentence) {
+    // Split the sentence into words and remove punctuation
+    const words = sentence.match(/\b\w+\b/g); 
+    // Find the longest word
+    return words.reduce((longest, word) => word.length > longest.length ? word : longest, "");
+}
+
+const sentence = "The quick brown fox jumped over the lazy dog!";
+const longestWord = findLongestWord(sentence);
+console.log(longestWord); 
