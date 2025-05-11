@@ -422,4 +422,4 @@ function rotateArray(arr, k) {
 const arrayOne = [1, 2, 3, 4, 5];
 const k = 1;
 const rotatedArray = rotateArray(arrayOne, k);
-console.log(rotatedArray); // Output: [4, 5, 1, 2, 3]
+// console.log(rotatedArray); // Output: [4, 5, 1, 2, 3]
