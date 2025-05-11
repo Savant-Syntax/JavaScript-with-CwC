@@ -389,4 +389,4 @@ function findMissingNumber(arr) {
 
 const num = [1, 2, 3, 4, 6]; // 5 is missing
 const missingNumber = findMissingNumber(num);
-console.log(missingNumber); // Output: 5
+// console.log(missingNumber); // Output: 5
