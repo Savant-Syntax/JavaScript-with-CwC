@@ -359,4 +359,20 @@ function generateFibonacci(n) {
 
 const n = 10;
 const fibonacciSequence = generateFibonacci(n);
-// console.log(fibonacciSequence); 
+// console.log(fibonacciSequence);
+
+
+// Anagram Checker
+// Create a function isAnagram that takes two strings and returns true if they are anagrams of each other, and false otherwise.
+
+function isAnagram(str1, str2) {
+    // Clean and sort both strings
+    const cleanString = (str) => str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase().split('').sort().join('');
+    return cleanString(str1) === cleanString(str2);
+}
+
+// Example usage:
+const string1 = "listen";
+const string2 = "silent";
+const resultTwo = isAnagram(string1, string2);
+console.log(resultTwo); // Output: true
