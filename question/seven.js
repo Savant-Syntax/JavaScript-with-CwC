@@ -359,4 +359,4 @@ function generateFibonacci(n) {
 
 const n = 10;
 const fibonacciSequence = generateFibonacci(n);
-console.log(fibonacciSequence); 
+// console.log(fibonacciSequence); 
