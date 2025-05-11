@@ -404,4 +404,22 @@ function findLongestWord(sentence) {
 
 const sentence = "The quick brown fox jumped over the lazy dog!";
 const longestWord = findLongestWord(sentence);
-// console.log(longestWord); 
+// console.log(longestWord);
+
+
+// Array Rotation
+// Write a function rotateArray that rotates the elements of an array to the right by k steps.
+
+function rotateArray(arr, k) {
+    const n = arr.length;
+    if (n === 0 || k % n === 0) return arr; // Handle edge cases
+
+    k = k % n; // Adjust k for rotations greater than array length
+    return arr.slice(-k).concat(arr.slice(0, n - k));
+}
+
+// Example usage:
+const arrayOne = [1, 2, 3, 4, 5];
+const k = 1;
+const rotatedArray = rotateArray(arrayOne, k);
+console.log(rotatedArray); // Output: [4, 5, 1, 2, 3]
