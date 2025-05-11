@@ -371,8 +371,7 @@ function isAnagram(str1, str2) {
     return cleanString(str1) === cleanString(str2);
 }
 
-// Example usage:
 const string1 = "listen";
 const string2 = "silent";
 const resultTwo = isAnagram(string1, string2);
-console.log(resultTwo); // Output: true
+// console.log(resultTwo);
