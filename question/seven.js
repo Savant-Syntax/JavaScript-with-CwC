@@ -404,4 +404,4 @@ function findLongestWord(sentence) {
 
 const sentence = "The quick brown fox jumped over the lazy dog!";
 const longestWord = findLongestWord(sentence);
-console.log(longestWord); 
+// console.log(longestWord); 
