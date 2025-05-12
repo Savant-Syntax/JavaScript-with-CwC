@@ -539,10 +539,10 @@ const promise3 = Promise.resolve(30);
 
 customPromiseAll([promise1, promise2, promise3])
     .then((results) => {
-        console.log("All promises resolved:", results);
+        //console.log("All promises resolved:", results);
     })
     .catch((error) => {
-        console.error("One of the promises rejected:", error);
+        //console.error("One of the promises rejected:", error);
     });
 
 // Example with a rejected promise
@@ -550,8 +550,8 @@ const failingPromise = Promise.reject("Error occurred");
 
 customPromiseAll([promise1, failingPromise, promise3])
     .then((results) => {
-        console.log("All promises resolved:", results);
+        //console.log("All promises resolved:", results);
     })
     .catch((error) => {
-        console.error("One of the promises rejected:", error);
+        //console.error("One of the promises rejected:", error);
     });
