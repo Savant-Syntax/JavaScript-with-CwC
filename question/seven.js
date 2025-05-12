@@ -582,3 +582,68 @@ const LogMessage = throttle((message) => {
 //logMessage("Call 1");
 //setTimeout(() => LogMessage("Call 2"), 500); // Ignored, as it's within the interval
 //setTimeout(() => LogMessage("Call 3"), 1100); // Executed, as it's after the interval
+
+
+// Event Emitter
+// Implement an EventEmitter class that allows for subscribing to events, emitting events, and unsubscribing from events.
+
+class EventEmitter {
+    constructor() {
+        this.events = {};
+    }
+
+    // Subscribe to an event
+    on(event, listener) {
+        if (!this.events[event]) {
+            this.events[event] = [];
+        }
+        this.events[event].push(listener);
+        return () => this.off(event, listener); // Return an unsubscribe function
+    }
+
+    // Unsubscribe from an event
+    off(event, listener) {
+        if (!this.events[event]) return;
+
+        this.events[event] = this.events[event].filter((l) => l !== listener);
+    }
+
+    // Emit an event
+    emit(event, ...args) {
+        if (!this.events[event]) return;
+
+        this.events[event].forEach((listener) => listener(...args));
+    }
+
+    // Subscribe to an event, triggered only once
+    once(event, listener) {
+        const wrapper = (...args) => {
+            listener(...args);
+            this.off(event, wrapper); // Remove the listener after it's called once
+        };
+        this.on(event, wrapper);
+    }
+}
+
+// Example usage
+const emitter = new EventEmitter();
+
+// Listener for a "message" event
+const unsubscribe = emitter.on("message", (msg) => {
+    console.log(`Received message: ${msg}`);
+});
+
+// Emit the "message" event
+emitter.emit("message", "Hello, World!");
+emitter.emit("message", "Another message");
+
+// Unsubscribe from the "message" event
+unsubscribe();
+emitter.emit("message", "This will not be logged");
+
+// Use the `once` method
+emitter.once("greet", (name) => {
+    console.log(`Hello, ${name}!`);
+});
+emitter.emit("greet", "Astrak");
+emitter.emit("greet", "Alice"); // Will not trigger
