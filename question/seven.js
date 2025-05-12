@@ -634,8 +634,8 @@ const unsubscribe = emitter.on("message", (msg) => {
 });
 
 // Emit the "message" event
-emitter.emit("message", "Hello, World!");
-emitter.emit("message", "Another message");
+// emitter.emit("message", "Hello, World!");
+// emitter.emit("message", "Another message");
 
 // Unsubscribe from the "message" event
 unsubscribe();
@@ -645,5 +645,5 @@ emitter.emit("message", "This will not be logged");
 emitter.once("greet", (name) => {
     console.log(`Hello, ${name}!`);
 });
-emitter.emit("greet", "Astrak");
-emitter.emit("greet", "Alice"); // Will not trigger
+// emitter.emit("greet", "Astrak");
+//emitter.emit("greet", "Alice"); // Will not trigger
