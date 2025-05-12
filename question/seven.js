@@ -466,3 +466,33 @@ clone.hobbies.push("coding");
 // console.log(original);
 // console.log(clone);
 
+// Debounce Function
+// Implement a debounce function that delays the execution of a given function until after a specified delay has elapsed since the last time it was invoked.
+
+function debounce(func, delay) {
+    let timer; // Holds the timeout ID
+
+    return function (...args) {
+        const context = this; // Preserve the context (`this`)
+
+        // Clear the previous timer
+        clearTimeout(timer);
+
+        // Set a new timer
+        timer = setTimeout(() => {
+            func.apply(context, args); // Execute the function
+        }, delay);
+    };
+}
+
+// Example usage:
+const logMessage = debounce((message) => {
+    console.log(`Debounced message: ${message}`);
+}, 1000);
+
+// Simulate rapid calls
+logMessage("Call 1");
+logMessage("Call 2");
+logMessage("Call 3");
+
+// Only "Call 3" will be logged after 1 second
