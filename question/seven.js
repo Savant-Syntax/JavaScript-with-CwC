@@ -555,3 +555,30 @@ customPromiseAll([promise1, failingPromise, promise3])
     .catch((error) => {
         //console.error("One of the promises rejected:", error);
     });
+
+
+// Throttle Function
+// Write a throttle function that ensures a given function is executed at most once every specified interval.
+
+function throttle(func, interval) {
+    let lastExecutionTime = 0;
+
+    return function (...args) {
+        const now = Date.now();
+
+        if (now - lastExecutionTime >= interval) {
+            lastExecutionTime = now;
+            func.apply(this, args);
+        }
+    };
+}
+
+// Example usage
+const LogMessage = throttle((message) => {
+    console.log(`Throttled message: ${message}`);
+}, 1000);
+
+// Simulate rapid calls
+logMessage("Call 1");
+setTimeout(() => LogMessage("Call 2"), 500); // Ignored, as it's within the interval
+setTimeout(() => LogMessage("Call 3"), 1100); // Executed, as it's after the interval
