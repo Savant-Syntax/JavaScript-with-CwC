@@ -463,6 +463,6 @@ const clone = deepClone(original);
 clone.address.city = "Kolkata";
 clone.hobbies.push("coding");
 
-console.log(original);
-console.log(clone);
+// console.log(original);
+// console.log(clone);
 
