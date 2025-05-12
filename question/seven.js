@@ -491,8 +491,8 @@ const logMessage = debounce((message) => {
 }, 1000);
 
 // Simulate rapid calls
-logMessage("Call 1");
-logMessage("Call 2");
-logMessage("Call 3");
+// logMessage("Call 1");
+// logMessage("Call 2");
+// logMessage("Call 3");
 
 // Only "Call 3" will be logged after 1 second
