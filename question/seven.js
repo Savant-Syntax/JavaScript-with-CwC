@@ -423,3 +423,46 @@ const arrayOne = [1, 2, 3, 4, 5];
 const k = 1;
 const rotatedArray = rotateArray(arrayOne, k);
 // console.log(rotatedArray); // Output: [4, 5, 1, 2, 3]
+
+
+// Deep Clone Object
+// Write a function deepClone that creates a deep clone of a given object. It should handle nested objects and arrays.
+
+function deepClone(obj) {
+    if (obj === null || typeof obj !== 'object') {
+        return obj; // Return primitives and null as is
+    }
+
+    if (Array.isArray(obj)) {
+        // Handle arrays
+        return obj.map(deepClone);
+    }
+
+    // Handle objects
+    const clonedObj = {};
+    for (const key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            clonedObj[key] = deepClone(obj[key]); // Recursively clone each property
+        }
+    }
+    return clonedObj;
+}
+
+// Example usage
+const original = {
+    name: "Astrak",
+    age: 30,
+    hobbies: ["reading", "gaming"],
+    address: {
+        city: "Delhi",
+        zip: "10001"
+    }
+};
+
+const clone = deepClone(original);
+clone.address.city = "Kolkata";
+clone.hobbies.push("coding");
+
+console.log(original);
+console.log(clone);
+
