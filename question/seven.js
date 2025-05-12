@@ -496,3 +496,62 @@ const logMessage = debounce((message) => {
 // logMessage("Call 3");
 
 // Only "Call 3" will be logged after 1 second
+
+
+// Custom Promise.all Implementation
+// Create a function customPromiseAll that replicates the behavior of Promise.all. It should take an array of promises and return a single promise that resolves when all promises resolve or rejects if any promise rejects.
+
+function customPromiseAll(promises) {
+    return new Promise((resolve, reject) => {
+        if (!Array.isArray(promises)) {
+            return reject(new TypeError("Input must be an array"));
+        }
+
+        const results = [];
+        let completedPromises = 0;
+
+        promises.forEach((promise, index) => {
+            Promise.resolve(promise) // Ensure the input is treated as a promise
+                .then((value) => {
+                    results[index] = value; // Store the resolved value at the correct index
+                    completedPromises++;
+
+                    if (completedPromises === promises.length) {
+                        resolve(results); // Resolve only when all promises have resolved
+                    }
+                })
+                .catch((error) => {
+                    reject(error); // Reject as soon as one promise fails
+                });
+        });
+
+        // Handle the case where the array is empty
+        if (promises.length === 0) {
+            resolve([]);
+        }
+    });
+}
+
+// Example usage:
+const promise1 = Promise.resolve(10);
+const promise2 = Promise.resolve(20);
+const promise3 = Promise.resolve(30);
+
+customPromiseAll([promise1, promise2, promise3])
+    .then((results) => {
+        console.log("All promises resolved:", results);
+    })
+    .catch((error) => {
+        console.error("One of the promises rejected:", error);
+    });
+
+// Example with a rejected promise
+const failingPromise = Promise.reject("Error occurred");
+
+customPromiseAll([promise1, failingPromise, promise3])
+    .then((results) => {
+        console.log("All promises resolved:", results);
+    })
+    .catch((error) => {
+        console.error("One of the promises rejected:", error);
+    });
