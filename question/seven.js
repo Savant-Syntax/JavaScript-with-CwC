@@ -579,6 +579,6 @@ const LogMessage = throttle((message) => {
 }, 1000);
 
 // Simulate rapid calls
-logMessage("Call 1");
-setTimeout(() => LogMessage("Call 2"), 500); // Ignored, as it's within the interval
-setTimeout(() => LogMessage("Call 3"), 1100); // Executed, as it's after the interval
+//logMessage("Call 1");
+//setTimeout(() => LogMessage("Call 2"), 500); // Ignored, as it's within the interval
+//setTimeout(() => LogMessage("Call 3"), 1100); // Executed, as it's after the interval
