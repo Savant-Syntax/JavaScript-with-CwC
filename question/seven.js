@@ -678,3 +678,29 @@ const memoizedAdd = memoize(add);
 // Testing the memoized function
 // console.log(memoizedAdd(1, 2)); // Calculating result for: [1,2], Output: 3
 // console.log(memoizedAdd(1, 2)); // Fetching from cache
+
+
+// Flatten a Nested Array
+// Create a function flattenArray that takes a nested array and returns a flat array. The function should handle arrays of arbitrary depth.
+
+function flattenArray(arr) {
+    const result = [];
+
+    function flatten(element) {
+        if (Array.isArray(element)) {
+            for (const item of element) {
+                flatten(item); // Recursively flatten nested arrays
+            }
+        } else {
+            result.push(element); // Add non-array elements to the result
+        }
+    }
+
+    flatten(arr);
+    return result;
+}
+
+// Example usage
+const nestedArrayOne = [1, [2, [3, 4], 5], 6, [7, [8, 9]]];
+console.log(flattenArray(nestedArrayOne)); 
+// Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
