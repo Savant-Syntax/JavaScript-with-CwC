@@ -702,5 +702,25 @@ function flattenArray(arr) {
 
 // Example usage
 const nestedArrayOne = [1, [2, [3, 4], 5], 6, [7, [8, 9]]];
-// console.log(flattenArray(nestedArrayOne)); 
+// console.log(flattenArray(nestedArrayOne));
 // Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+// Custom setTimeout Using Promise
+// Implement a function customSetTimeout that mimics the behavior of setTimeout using Promise.
+
+function customSetTimeout(callback, delay) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            callback();
+            resolve();
+        }, delay);
+    });
+}
+
+// Example usage
+customSetTimeout(() => {
+    console.log("Executed after 2 seconds");
+}, 2000).then(() => {
+    console.log("Promise resolved");
+});
