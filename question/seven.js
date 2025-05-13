@@ -702,5 +702,5 @@ function flattenArray(arr) {
 
 // Example usage
 const nestedArrayOne = [1, [2, [3, 4], 5], 6, [7, [8, 9]]];
-console.log(flattenArray(nestedArrayOne)); 
+// console.log(flattenArray(nestedArrayOne)); 
 // Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
