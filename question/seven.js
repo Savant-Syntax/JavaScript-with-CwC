@@ -734,7 +734,6 @@ function customSetTimeout(delay) {
     });
 }
 
-// Example usage
-customSetTimeout(2000).then(() => {
-    console.log("Executed after 2 seconds");
-});
+// customSetTimeout(2000).then(() => {
+//     console.log("Executed after 2 seconds");
+// });
