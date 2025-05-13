@@ -676,5 +676,5 @@ function add(a, b) {
 const memoizedAdd = memoize(add);
 
 // Testing the memoized function
-console.log(memoizedAdd(1, 2)); // Calculating result for: [1,2], Output: 3
-console.log(memoizedAdd(1, 2)); // Fetching from cache
+// console.log(memoizedAdd(1, 2)); // Calculating result for: [1,2], Output: 3
+// console.log(memoizedAdd(1, 2)); // Fetching from cache
