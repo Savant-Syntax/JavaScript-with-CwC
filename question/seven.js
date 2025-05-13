@@ -737,3 +737,35 @@ function customSetTimeout(delay) {
 // customSetTimeout(2000).then(() => {
 //     console.log("Executed after 2 seconds");
 // });
+
+
+// Binary Search Implementation
+// Write a function binarySearch that implements the binary search algorithm. It should take a sorted array and a target value and return the index of the target (or -1 if not found).
+
+function binarySearch(sortedArray, target) {
+    let left = 0;
+    let right = sortedArray.length - 1;
+
+    while (left <= right) {
+        const mid = Math.floor((left + right) / 2);
+
+        if (sortedArray[mid] === target) {
+            return mid; // Target found
+        }
+
+        if (sortedArray[mid] < target) {
+            left = mid + 1; // Search in the right half
+        } else {
+            right = mid - 1; // Search in the left half
+        }
+    }
+
+    return -1; // Target not found
+}
+
+// Example usage
+const sortedArray = [1, 3, 5, 7, 9, 11];
+const target = 7;
+
+const resultt = binarySearch(sortedArray, target);
+console.log(resultt); // Output: 3 (index of the target in the array)
