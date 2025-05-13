@@ -723,3 +723,18 @@ function customSetTimeout(callback, delay) {
 // }, 2000).then(() => {
 //     console.log("Promise resolved");
 // });
+
+
+// Custom setTimeout Using Promise
+// Implement a function customSetTimeout that mimics the behavior of setTimeout using Promise.
+
+function customSetTimeout(delay) {
+    return new Promise((resolve) => {
+        setTimeout(resolve, delay);
+    });
+}
+
+// Example usage
+customSetTimeout(2000).then(() => {
+    console.log("Executed after 2 seconds");
+});
