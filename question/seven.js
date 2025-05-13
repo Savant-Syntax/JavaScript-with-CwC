@@ -647,3 +647,34 @@ emitter.once("greet", (name) => {
 });
 // emitter.emit("greet", "Astrak");
 //emitter.emit("greet", "Alice"); // Will not trigger
+
+
+// Implement a Memoization Function
+// Write a function memoize that takes another function as input and returns a memoized version of it. The memoized function should cache results for previously seen inputs.
+
+function memoize(func) {
+    const cache = new Map();
+
+    return function (...args) {
+        const key = JSON.stringify(args); // Serialize arguments to use as cache key
+        if (cache.has(key)) {
+            console.log("Fetching from cache for:", args);
+            return cache.get(key);
+        }
+        console.log("Calculating result for:", args);
+        const result = func(...args);
+        cache.set(key, result);
+        return result;
+    };
+}
+
+// Example usage: A simple function to calculate the sum of two numbers
+function add(a, b) {
+    return a + b;
+}
+
+const memoizedAdd = memoize(add);
+
+// Testing the memoized function
+console.log(memoizedAdd(1, 2)); // Calculating result for: [1,2], Output: 3
+console.log(memoizedAdd(1, 2)); // Fetching from cache
