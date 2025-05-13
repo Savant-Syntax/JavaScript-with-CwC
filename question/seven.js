@@ -718,9 +718,8 @@ function customSetTimeout(callback, delay) {
     });
 }
 
-// Example usage
-customSetTimeout(() => {
-    console.log("Executed after 2 seconds");
-}, 2000).then(() => {
-    console.log("Promise resolved");
-});
+// customSetTimeout(() => {
+//     console.log("Executed after 2 seconds");
+// }, 2000).then(() => {
+//     console.log("Promise resolved");
+// });
