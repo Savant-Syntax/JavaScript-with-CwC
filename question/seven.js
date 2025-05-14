@@ -810,4 +810,4 @@ function generateRandomString(length) {
 }
 
 // Example usage
-console.log(generateRandomString(10)); // Example Output: "a1b2c3d4e5"
+// console.log(generateRandomString(10)); // Example Output: "a1b2c3d4e5"
