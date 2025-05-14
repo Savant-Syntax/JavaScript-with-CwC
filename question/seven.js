@@ -791,3 +791,23 @@ const params = parseQueryParams(url);
 
 // console.log(params);
 // Output: { name: "JohnDoe", age: "25", city: "NewYork" }
+
+// Generate Random String
+// Implement a function generateRandomString that takes a length as input and returns a random alphanumeric string of that length.
+
+function generateRandomString(length) {
+  const characters =
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  const charactersLength = characters.length;
+  let result = '';
+
+  for (let i = 0; i < length; i++) {
+    const randomIndex = Math.floor(Math.random() * charactersLength);
+    result += characters[randomIndex];
+  }
+
+  return result;
+}
+
+// Example usage
+console.log(generateRandomString(10)); // Example Output: "a1b2c3d4e5"
