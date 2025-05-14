@@ -900,5 +900,5 @@ function evaluatePostfix(expression) {
 }
 
 // Example usage
-console.log(evaluatePostfix(['2', '3', '+', '4', '*'])); // Output: 20
-console.log(evaluatePostfix(['5', '1', '2', '+', '4', '*', '+', '3', '-'])); // Output: 14
+// console.log(evaluatePostfix(['2', '3', '+', '4', '*'])); // Output: 20
+// console.log(evaluatePostfix(['5', '1', '2', '+', '4', '*', '+', '3', '-'])); // Output: 14
