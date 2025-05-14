@@ -852,3 +852,53 @@ function findAnagrams(word, words) {
 
 // Example usage
 // console.log(findAnagrams('listen', ['enlist', 'google', 'inlets', 'banana'])); // ["enlist", "inlets"]
+
+// Evaluate Postfix Expression
+// Implement a function evaluatePostfix that evaluates a postfix (Reverse Polish) expression and returns its result.
+
+function evaluatePostfix(expression) {
+  const stack = [];
+
+  // Helper function to perform the operation
+  const performOperation = (a, b, operator) => {
+    switch (operator) {
+      case '+':
+        return a + b;
+      case '-':
+        return a - b;
+      case '*':
+        return a * b;
+      case '/':
+        return a / b;
+      default:
+        throw new Error(`Invalid operator: ${operator}`);
+    }
+  };
+
+  for (const token of expression) {
+    if (!isNaN(token)) {
+      // If the token is a number, push it to the stack
+      stack.push(Number(token));
+    } else {
+      // Token is an operator; pop two numbers from the stack
+      const b = stack.pop();
+      const a = stack.pop();
+      if (a === undefined || b === undefined) {
+        throw new Error('Invalid expression');
+      }
+      // Perform the operation and push the result back
+      stack.push(performOperation(a, b, token));
+    }
+  }
+
+  // Final result should be the only value left in the stack
+  if (stack.length !== 1) {
+    throw new Error('Invalid postfix expression');
+  }
+
+  return stack.pop();
+}
+
+// Example usage
+console.log(evaluatePostfix(['2', '3', '+', '4', '*'])); // Output: 20
+console.log(evaluatePostfix(['5', '1', '2', '+', '4', '*', '+', '3', '-'])); // Output: 14
