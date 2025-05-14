@@ -811,3 +811,27 @@ function generateRandomString(length) {
 
 // Example usage
 // console.log(generateRandomString(10)); // Example Output: "a1b2c3d4e5"
+
+// Custom Array.prototype.map
+// Create a custom implementation of the map function, myMap, that works on arrays.
+
+Array.prototype.myMap = function (callback) {
+  if (typeof callback !== 'function') {
+    throw new TypeError('Callback must be a function');
+  }
+
+  const result = [];
+  for (let i = 0; i < this.length; i++) {
+    // Ensure undefined values in sparse arrays are skipped
+    if (Object.prototype.hasOwnProperty.call(this, i)) {
+      result.push(callback(this[i], i, this));
+    }
+  }
+
+  return result;
+};
+
+// Example usage
+const arr = [1, 2, 3];
+const resultOne = arr.myMap((num) => num * 2);
+console.log(resultOne); // [2, 4, 6]
