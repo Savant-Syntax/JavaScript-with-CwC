@@ -834,4 +834,4 @@ Array.prototype.myMap = function (callback) {
 // Example usage
 const arr = [1, 2, 3];
 const resultOne = arr.myMap((num) => num * 2);
-console.log(resultOne); // [2, 4, 6]
+// console.log(resultOne); // [2, 4, 6]
