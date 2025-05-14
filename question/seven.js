@@ -3,27 +3,25 @@
 //Questions
 // 1. Write a function greetUser that takes a user's name as input and prints a greeting message. If no name is provided, it should print "Hello, Guest!"
 
-function greetUser(name = "Guest") {
-    console.log(`Hello, ${name}!`);
+function greetUser(name = 'Guest') {
+  console.log(`Hello, ${name}!`);
 }
 
 //greetUser("Astrak");
 //greetUser();
 
-
 //2. Create a function subtractNumbers that takes two numbers as arguments and returns their difference. Handle cases where the arguments are not numbers.
 
 function subtractNumbers(a, b) {
-    if (typeof a !== "number" || typeof b !== "number") {
-        return "Both arguments must be numbers.";
-    }
-    return a - b;
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    return 'Both arguments must be numbers.';
+  }
+  return a - b;
 }
 
 // console.log(subtractNumbers(10, 5));
 // console.log(subtractNumbers(7, "3"));
 // console.log(subtractNumbers(20));
-
 
 //3. Write a function printPattern that prints a pattern like:
 // *
@@ -33,37 +31,35 @@ function subtractNumbers(a, b) {
 // *****
 
 function printPattern(rows) {
-    for (let i = 1; i <= rows; i++) {
-        console.log("*".repeat(i));
-    }
+  for (let i = 1; i <= rows; i++) {
+    console.log('*'.repeat(i));
+  }
 }
 
 // printPattern(5);
-
 
 //? Parameter and Return values
 
 // Modify the function addTwoNumbers to check if both parameters are numbers before adding them. If not, return an error message.
 
 function addTwoNumbers(a, b) {
-    if (typeof a !== "number" || typeof b !== "number") {
-        return "Both arguments must be numbers.";
-    }
-    return a + b;
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    return 'Both arguments must be numbers.';
+  }
+  return a + b;
 }
 
 // console.log(addTwoNumbers(5, 10));
 // console.log(addTwoNumbers(5, "10"));
 // console.log(addTwoNumbers(5));
 
-
 // Write a function multiplyNumbers that multiplies all the numbers passed as arguments using the rest operator.
 
 function multiplyNumbers(...numbers) {
-    if (numbers.some(num => typeof num !== "number")) {
-        return "All arguments must be numbers.";
-    }
-    return numbers.reduce((product, num) => product * num, 1);
+  if (numbers.some((num) => typeof num !== 'number')) {
+    return 'All arguments must be numbers.';
+  }
+  return numbers.reduce((product, num) => product * num, 1);
 }
 
 // Example usage:
@@ -72,75 +68,87 @@ function multiplyNumbers(...numbers) {
 // console.log(multiplyNumbers(2, "3"));
 // console.log(multiplyNumbers());
 
-
 // Create a function checkEligibility that accepts an object with name and age properties. If the age is greater than or equal to 18, it should return "Eligible to vote"; otherwise, "Not eligible."
 
 function checkEligibility(person) {
-    if (typeof person !== 'object' || !person.name || typeof person.age !== 'number') {
-        return "Invalid input";
-    }
+  if (
+    typeof person !== 'object' ||
+    !person.name ||
+    typeof person.age !== 'number'
+  ) {
+    return 'Invalid input';
+  }
 
-    return person.age >= 18 ? `${person.name} is Eligible to vote` : `${person.name} is Not eligible to vote`;
+  return person.age >= 18
+    ? `${person.name} is Eligible to vote`
+    : `${person.name} is Not eligible to vote`;
 }
 
-const person1 = { name: "Astrak", age: 20 };
-const person2 = { name: "Alice", age: 16 };
+const person1 = { name: 'Astrak', age: 20 };
+const person2 = { name: 'Alice', age: 16 };
 
 // console.log(checkEligibility(person1));
 // console.log(checkEligibility(person2));
-
 
 //? Object and Array Manipulation
 
 // Write a function calculateTotalPrice that takes an array of prices as input and returns the total price.
 
 function calculateTotalPrice(prices) {
-    if (!Array.isArray(prices) || prices.some(price => typeof price !== 'number' || price < 0)) {
-        return "Invalid input: Provide an array of non-negative numbers.";
-    }
+  if (
+    !Array.isArray(prices) ||
+    prices.some((price) => typeof price !== 'number' || price < 0)
+  ) {
+    return 'Invalid input: Provide an array of non-negative numbers.';
+  }
 
-    return prices.reduce((total, price) => total + price, 0);
+  return prices.reduce((total, price) => total + price, 0);
 }
 
-const prices = [19.99, 25.50, 3.75, 10];
+const prices = [19.99, 25.5, 3.75, 10];
 // console.log(calculateTotalPrice(prices));
 // console.log(calculateTotalPrice([10, 20, 30]));
 // console.log(calculateTotalPrice([]));
 // console.log(calculateTotalPrice([15, -5, 10]));
 
-
 // Create a function userDetails that accepts an object with name, age, and city properties and logs a sentence describing the user.
 
 function userDetails(user) {
-    if (
-        typeof user !== 'object' ||
-        typeof user.name !== 'string' ||
-        typeof user.age !== 'number' ||
-        typeof user.city !== 'string'
-    ) {
-        console.log("Invalid input: Provide an object with name (string), age (number), and city (string).");
-        return;
-    }
+  if (
+    typeof user !== 'object' ||
+    typeof user.name !== 'string' ||
+    typeof user.age !== 'number' ||
+    typeof user.city !== 'string'
+  ) {
+    console.log(
+      'Invalid input: Provide an object with name (string), age (number), and city (string).'
+    );
+    return;
+  }
 
-    console.log(`${user.name} is ${user.age} years old and lives in ${user.city}.`);
+  console.log(
+    `${user.name} is ${user.age} years old and lives in ${user.city}.`
+  );
 }
 
 // Example usage
-const user1 = { name: "Astrak", age: 25, city: "New York" };
-const user2 = { name: "Alice", age: 30, city: "London" };
+const user1 = { name: 'Astrak', age: 25, city: 'New York' };
+const user2 = { name: 'Alice', age: 30, city: 'London' };
 
 // userDetails(user1);
 // userDetails(user2);
 
-
 // Write a function getEvenNumbers that takes an array of numbers and returns an array of even numbers.
 
 function getEvenNumbers(numbers) {
-    if (!Array.isArray(numbers) || numbers.some(num => typeof num !== 'number')) {
-        return "Invalid input: Provide an array of numbers.";
-    }
+  if (
+    !Array.isArray(numbers) ||
+    numbers.some((num) => typeof num !== 'number')
+  ) {
+    return 'Invalid input: Provide an array of numbers.';
+  }
 
-    return numbers.filter(num => num % 2 === 0);
+  return numbers.filter((num) => num % 2 === 0);
 }
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -150,16 +158,15 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // console.log(getEvenNumbers([]));
 // console.log(getEvenNumbers(["10", 20, 30]));
 
-
 //? Advanced
 
 // Write a function mergeArrays that takes two arrays as arguments and returns a new array that merges them without duplicates.
 
 function mergeArrays(arr1, arr2) {
-    if (!Array.isArray(arr1) || !Array.isArray(arr2)) {
-        return "Invalid input: Provide two arrays.";
-    }
-    return [...new Set([...arr1, ...arr2])];
+  if (!Array.isArray(arr1) || !Array.isArray(arr2)) {
+    return 'Invalid input: Provide two arrays.';
+  }
+  return [...new Set([...arr1, ...arr2])];
 }
 
 const array1 = [1, 2, 3, 4];
@@ -171,251 +178,247 @@ const array2 = [3, 4, 5, 6];
 // console.log(mergeArrays([], [1, 2, 3]));
 // console.log(mergeArrays([1, 2], "not an array"));
 
-
 // Create a function filterProducts that accepts an array of product objects (each with name and price) and a minimum price, and returns a list of products costing more than the minimum price.
 
 function filterProducts(products, minPrice) {
-    return products.filter(product => product.price > minPrice);
+  return products.filter((product) => product.price > minPrice);
 }
 
 const products = [
-    { name: "Laptop", price: 80000 },
-    { name: "Phone", price: 6000 },
-    { name: "Tablet", price: 30000 },
-    { name: "Monitor", price: 20000 }
+  { name: 'Laptop', price: 80000 },
+  { name: 'Phone', price: 6000 },
+  { name: 'Tablet', price: 30000 },
+  { name: 'Monitor', price: 20000 },
 ];
 
 const filteredProducts = filterProducts(products, 50000);
 // console.log(filteredProducts);
 
-
 // Write a function getMaxValue that takes an array of numbers and returns the largest number in the array.
 
 function getMaxValue(numbers) {
-    return Math.max(...numbers);
+  return Math.max(...numbers);
 }
 
 const numberss = [10, 20, 5, 8, 30];
 const maxValue = getMaxValue(numberss);
 // console.log(maxValue);
 
-
 //? Challenge
 
 // Create a function cartSummary that accepts an array of cart items, where each item is an object with name, quantity, and price properties. The function should return the total cost of the cart.
 
 function cartSummary(cartItems) {
-    return cartItems.reduce((total, item) => total + item.quantity * item.price, 0);
+  return cartItems.reduce(
+    (total, item) => total + item.quantity * item.price,
+    0
+  );
 }
 
 const cart = [
-    { name: "Laptop", quantity: 1, price: 80000 },
-    { name: "Phone", quantity: 2, price: 6000 },
-    { name: "Tablet", quantity: 3, price: 30000 }
+  { name: 'Laptop', quantity: 1, price: 80000 },
+  { name: 'Phone', quantity: 2, price: 6000 },
+  { name: 'Tablet', quantity: 3, price: 30000 },
 ];
 
 const totalCost = cartSummary(cart);
 // console.log(totalCost);
 
-
 // Write a function parseURL that accepts a URL string and returns an object with keys like protocol, hostname, and path.
 
 function parseURL(url) {
-    const urlObject = new URL(url);
-    return {
-        protocol: urlObject.protocol.replace(':', ''),
-        hostname: urlObject.hostname,
-        path: urlObject.pathname
-    };
+  const urlObject = new URL(url);
+  return {
+    protocol: urlObject.protocol.replace(':', ''),
+    hostname: urlObject.hostname,
+    path: urlObject.pathname,
+  };
 }
 
-const url = "https://www.example.com/path/to/page";
+const url = 'https://www.example.com/path/to/page';
 const parsedURL = parseURL(url);
 // console.log(parsedURL);
-
 
 // Write a function countVowels that takes a string as input and returns the number of vowels in the string.
 
 function countVowels(str) {
-    const vowels = 'aeiouAEIOU';
-    return Array.from(str).filter(char => vowels.includes(char)).length;
+  const vowels = 'aeiouAEIOU';
+  return Array.from(str).filter((char) => vowels.includes(char)).length;
 }
 
-const inputString = "Hello, World!";
+const inputString = 'Hello, World!';
 const vowelCount = countVowels(inputString);
 // console.log(vowelCount);
-
-
 
 // Flatten Nested Arrays
 // Write a function flattenArray that takes a nested array of any depth as input and returns a flattened array.
 
 function flattenArray(nestedArray) {
-    return nestedArray.reduce((acc, item) => {
-        if (Array.isArray(item)) {
-            return acc.concat(flattenArray(item)); 
-        } else {
-            return acc.concat(item); 
-        }
-    }, []);
+  return nestedArray.reduce((acc, item) => {
+    if (Array.isArray(item)) {
+      return acc.concat(flattenArray(item));
+    } else {
+      return acc.concat(item);
+    }
+  }, []);
 }
 const nestedArray = [1, [2, [3, [4, 5]], 6], 7];
 const flattened = flattenArray(nestedArray);
 // console.log(flattened);
 
-
 // Find Most Frequent Element
 // Create a function mostFrequent that accepts an array and returns the element that appears the most times. If there is a tie, return any one of them.
 
 function mostFrequent(arr) {
-    const frequencyMap = arr.reduce((map, item) => {
-        map[item] = (map[item] || 0) + 1; 
-        return map;
-    }, {});
+  const frequencyMap = arr.reduce((map, item) => {
+    map[item] = (map[item] || 0) + 1;
+    return map;
+  }, {});
 
-    let maxCount = 0;
-    let mostFrequentItem = null;
-    for (const [item, count] of Object.entries(frequencyMap)) {
-        if (count > maxCount) {
-            maxCount = count;
-            mostFrequentItem = item;
-        }
+  let maxCount = 0;
+  let mostFrequentItem = null;
+  for (const [item, count] of Object.entries(frequencyMap)) {
+    if (count > maxCount) {
+      maxCount = count;
+      mostFrequentItem = item;
     }
-    return mostFrequentItem;
+  }
+  return mostFrequentItem;
 }
 const array = [1, 3, 2, 3, 4, 1, 3, 1, 1];
 const result = mostFrequent(array);
 // console.log(result);
 
-
 // Check Palindrome
 // Write a function isPalindrome that takes a string and returns true if it is a palindrome (ignoring case, spaces, and punctuation), and false otherwise.
 
-const text = "A man, a plan, a canal, Panama"; 
-const isTextPalindrome = isPalindrome(text); 
+const text = 'A man, a plan, a canal, Panama';
+const isTextPalindrome = isPalindrome(text);
 //console.log(isTextPalindrome);
 
 function isPalindrome(str) {
-    const cleanedStr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
-    return cleanedStr === cleanedStr.split('').reverse().join('');
+  const cleanedStr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+  return cleanedStr === cleanedStr.split('').reverse().join('');
 }
-
 
 // Group by Property
 // Write a function groupBy that takes an array of objects and a property name, and groups the objects by that property.
 
 function groupBy(array, property) {
-    return array.reduce((result, item) => {
-        const key = item[property];
-        if (!result[key]) {
-            result[key] = [];
-        }
-        result[key].push(item);
-        return result;
-    }, {});
+  return array.reduce((result, item) => {
+    const key = item[property];
+    if (!result[key]) {
+      result[key] = [];
+    }
+    result[key].push(item);
+    return result;
+  }, {});
 }
 
 const items = [
-    { name: "Alice", role: "developer" },
-    { name: "Bob", role: "designer" },
-    { name: "Charlie", role: "developer" },
-    { name: "Daisy", role: "manager" }
+  { name: 'Alice', role: 'developer' },
+  { name: 'Bob', role: 'designer' },
+  { name: 'Charlie', role: 'developer' },
+  { name: 'Daisy', role: 'manager' },
 ];
 
-const groupedByRole = groupBy(items, "role");
+const groupedByRole = groupBy(items, 'role');
 // console.log(groupedByRole);
-
 
 // Sum of Digits
 // Write a function sumDigits that takes a positive integer and returns the sum of its digits.
 
 function sumDigits(num) {
-    return num
-        .toString()
-        .split('') 
-        .map(Number) 
-        .reduce((sum, digit) => sum + digit, 0); 
+  return num
+    .toString()
+    .split('')
+    .map(Number)
+    .reduce((sum, digit) => sum + digit, 0);
 }
 
 const number = 12345;
 const sum = sumDigits(number);
 // console.log(sum);
 
-
 // Generate Fibonacci Sequence
 // Write a function generateFibonacci that takes a number n and returns the first n numbers in the Fibonacci sequence.
 
 function generateFibonacci(n) {
-    if (n <= 0) return [];
-    if (n === 1) return [0];
-    if (n === 2) return [0, 1];
+  if (n <= 0) return [];
+  if (n === 1) return [0];
+  if (n === 2) return [0, 1];
 
-    const fibonacci = [0, 1];
-    for (let i = 2; i < n; i++) {
-        fibonacci.push(fibonacci[i - 1] + fibonacci[i - 2]);
-    }
-    return fibonacci;
+  const fibonacci = [0, 1];
+  for (let i = 2; i < n; i++) {
+    fibonacci.push(fibonacci[i - 1] + fibonacci[i - 2]);
+  }
+  return fibonacci;
 }
 
 const n = 10;
 const fibonacciSequence = generateFibonacci(n);
 // console.log(fibonacciSequence);
 
-
 // Anagram Checker
 // Create a function isAnagram that takes two strings and returns true if they are anagrams of each other, and false otherwise.
 
 function isAnagram(str1, str2) {
-    // Clean and sort both strings
-    const cleanString = (str) => str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase().split('').sort().join('');
-    return cleanString(str1) === cleanString(str2);
+  // Clean and sort both strings
+  const cleanString = (str) =>
+    str
+      .replace(/[^a-zA-Z0-9]/g, '')
+      .toLowerCase()
+      .split('')
+      .sort()
+      .join('');
+  return cleanString(str1) === cleanString(str2);
 }
 
-const string1 = "listen";
-const string2 = "silent";
+const string1 = 'listen';
+const string2 = 'silent';
 const resultTwo = isAnagram(string1, string2);
 // console.log(resultTwo);
-
 
 // Find Missing Number in Array
 // Write a function findMissingNumber that takes an array of consecutive numbers (with one number missing) and returns the missing number.
 
 function findMissingNumber(arr) {
-    const n = arr.length + 1; // Total numbers including the missing one
-    const expectedSum = (n * (n + 1)) / 2; // Sum of the first n natural numbers
-    const actualSum = arr.reduce((sum, num) => sum + num, 0); // Sum of the array
-    return expectedSum - actualSum; // The difference is the missing number
+  const n = arr.length + 1; // Total numbers including the missing one
+  const expectedSum = (n * (n + 1)) / 2; // Sum of the first n natural numbers
+  const actualSum = arr.reduce((sum, num) => sum + num, 0); // Sum of the array
+  return expectedSum - actualSum; // The difference is the missing number
 }
 
 const num = [1, 2, 3, 4, 6]; // 5 is missing
 const missingNumber = findMissingNumber(num);
 // console.log(missingNumber); // Output: 5
 
-
 // Longest Word in Sentence
 // Create a function findLongestWord that takes a sentence as input and returns the longest word.
 
 function findLongestWord(sentence) {
-    // Split the sentence into words and remove punctuation
-    const words = sentence.match(/\b\w+\b/g); 
-    // Find the longest word
-    return words.reduce((longest, word) => word.length > longest.length ? word : longest, "");
+  // Split the sentence into words and remove punctuation
+  const words = sentence.match(/\b\w+\b/g);
+  // Find the longest word
+  return words.reduce(
+    (longest, word) => (word.length > longest.length ? word : longest),
+    ''
+  );
 }
 
-const sentence = "The quick brown fox jumped over the lazy dog!";
+const sentence = 'The quick brown fox jumped over the lazy dog!';
 const longestWord = findLongestWord(sentence);
 // console.log(longestWord);
-
 
 // Array Rotation
 // Write a function rotateArray that rotates the elements of an array to the right by k steps.
 
 function rotateArray(arr, k) {
-    const n = arr.length;
-    if (n === 0 || k % n === 0) return arr; // Handle edge cases
+  const n = arr.length;
+  if (n === 0 || k % n === 0) return arr; // Handle edge cases
 
-    k = k % n; // Adjust k for rotations greater than array length
-    return arr.slice(-k).concat(arr.slice(0, n - k));
+  k = k % n; // Adjust k for rotations greater than array length
+  return arr.slice(-k).concat(arr.slice(0, n - k));
 }
 
 // Example usage:
@@ -424,44 +427,43 @@ const k = 1;
 const rotatedArray = rotateArray(arrayOne, k);
 // console.log(rotatedArray); // Output: [4, 5, 1, 2, 3]
 
-
 // Deep Clone Object
 // Write a function deepClone that creates a deep clone of a given object. It should handle nested objects and arrays.
 
 function deepClone(obj) {
-    if (obj === null || typeof obj !== 'object') {
-        return obj; // Return primitives and null as is
-    }
+  if (obj === null || typeof obj !== 'object') {
+    return obj; // Return primitives and null as is
+  }
 
-    if (Array.isArray(obj)) {
-        // Handle arrays
-        return obj.map(deepClone);
-    }
+  if (Array.isArray(obj)) {
+    // Handle arrays
+    return obj.map(deepClone);
+  }
 
-    // Handle objects
-    const clonedObj = {};
-    for (const key in obj) {
-        if (obj.hasOwnProperty(key)) {
-            clonedObj[key] = deepClone(obj[key]); // Recursively clone each property
-        }
+  // Handle objects
+  const clonedObj = {};
+  for (const key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      clonedObj[key] = deepClone(obj[key]); // Recursively clone each property
     }
-    return clonedObj;
+  }
+  return clonedObj;
 }
 
 // Example usage
 const original = {
-    name: "Astrak",
-    age: 30,
-    hobbies: ["reading", "gaming"],
-    address: {
-        city: "Delhi",
-        zip: "10001"
-    }
+  name: 'Astrak',
+  age: 30,
+  hobbies: ['reading', 'gaming'],
+  address: {
+    city: 'Delhi',
+    zip: '10001',
+  },
 };
 
 const clone = deepClone(original);
-clone.address.city = "Kolkata";
-clone.hobbies.push("coding");
+clone.address.city = 'Kolkata';
+clone.hobbies.push('coding');
 
 // console.log(original);
 // console.log(clone);
@@ -470,24 +472,24 @@ clone.hobbies.push("coding");
 // Implement a debounce function that delays the execution of a given function until after a specified delay has elapsed since the last time it was invoked.
 
 function debounce(func, delay) {
-    let timer; // Holds the timeout ID
+  let timer; // Holds the timeout ID
 
-    return function (...args) {
-        const context = this; // Preserve the context (`this`)
+  return function (...args) {
+    const context = this; // Preserve the context (`this`)
 
-        // Clear the previous timer
-        clearTimeout(timer);
+    // Clear the previous timer
+    clearTimeout(timer);
 
-        // Set a new timer
-        timer = setTimeout(() => {
-            func.apply(context, args); // Execute the function
-        }, delay);
-    };
+    // Set a new timer
+    timer = setTimeout(() => {
+      func.apply(context, args); // Execute the function
+    }, delay);
+  };
 }
 
 // Example usage:
 const logMessage = debounce((message) => {
-    console.log(`Debounced message: ${message}`);
+  console.log(`Debounced message: ${message}`);
 }, 1000);
 
 // Simulate rapid calls
@@ -497,39 +499,38 @@ const logMessage = debounce((message) => {
 
 // Only "Call 3" will be logged after 1 second
 
-
 // Custom Promise.all Implementation
 // Create a function customPromiseAll that replicates the behavior of Promise.all. It should take an array of promises and return a single promise that resolves when all promises resolve or rejects if any promise rejects.
 
 function customPromiseAll(promises) {
-    return new Promise((resolve, reject) => {
-        if (!Array.isArray(promises)) {
-            return reject(new TypeError("Input must be an array"));
-        }
+  return new Promise((resolve, reject) => {
+    if (!Array.isArray(promises)) {
+      return reject(new TypeError('Input must be an array'));
+    }
 
-        const results = [];
-        let completedPromises = 0;
+    const results = [];
+    let completedPromises = 0;
 
-        promises.forEach((promise, index) => {
-            Promise.resolve(promise) // Ensure the input is treated as a promise
-                .then((value) => {
-                    results[index] = value; // Store the resolved value at the correct index
-                    completedPromises++;
+    promises.forEach((promise, index) => {
+      Promise.resolve(promise) // Ensure the input is treated as a promise
+        .then((value) => {
+          results[index] = value; // Store the resolved value at the correct index
+          completedPromises++;
 
-                    if (completedPromises === promises.length) {
-                        resolve(results); // Resolve only when all promises have resolved
-                    }
-                })
-                .catch((error) => {
-                    reject(error); // Reject as soon as one promise fails
-                });
+          if (completedPromises === promises.length) {
+            resolve(results); // Resolve only when all promises have resolved
+          }
+        })
+        .catch((error) => {
+          reject(error); // Reject as soon as one promise fails
         });
-
-        // Handle the case where the array is empty
-        if (promises.length === 0) {
-            resolve([]);
-        }
     });
+
+    // Handle the case where the array is empty
+    if (promises.length === 0) {
+      resolve([]);
+    }
+  });
 }
 
 // Example usage:
@@ -538,44 +539,43 @@ const promise2 = Promise.resolve(20);
 const promise3 = Promise.resolve(30);
 
 customPromiseAll([promise1, promise2, promise3])
-    .then((results) => {
-        //console.log("All promises resolved:", results);
-    })
-    .catch((error) => {
-        //console.error("One of the promises rejected:", error);
-    });
+  .then((results) => {
+    //console.log("All promises resolved:", results);
+  })
+  .catch((error) => {
+    //console.error("One of the promises rejected:", error);
+  });
 
 // Example with a rejected promise
-const failingPromise = Promise.reject("Error occurred");
+const failingPromise = Promise.reject('Error occurred');
 
 customPromiseAll([promise1, failingPromise, promise3])
-    .then((results) => {
-        //console.log("All promises resolved:", results);
-    })
-    .catch((error) => {
-        //console.error("One of the promises rejected:", error);
-    });
-
+  .then((results) => {
+    //console.log("All promises resolved:", results);
+  })
+  .catch((error) => {
+    //console.error("One of the promises rejected:", error);
+  });
 
 // Throttle Function
 // Write a throttle function that ensures a given function is executed at most once every specified interval.
 
 function throttle(func, interval) {
-    let lastExecutionTime = 0;
+  let lastExecutionTime = 0;
 
-    return function (...args) {
-        const now = Date.now();
+  return function (...args) {
+    const now = Date.now();
 
-        if (now - lastExecutionTime >= interval) {
-            lastExecutionTime = now;
-            func.apply(this, args);
-        }
-    };
+    if (now - lastExecutionTime >= interval) {
+      lastExecutionTime = now;
+      func.apply(this, args);
+    }
+  };
 }
 
 // Example usage
 const LogMessage = throttle((message) => {
-    console.log(`Throttled message: ${message}`);
+  console.log(`Throttled message: ${message}`);
 }, 1000);
 
 // Simulate rapid calls
@@ -583,54 +583,53 @@ const LogMessage = throttle((message) => {
 //setTimeout(() => LogMessage("Call 2"), 500); // Ignored, as it's within the interval
 //setTimeout(() => LogMessage("Call 3"), 1100); // Executed, as it's after the interval
 
-
 // Event Emitter
 // Implement an EventEmitter class that allows for subscribing to events, emitting events, and unsubscribing from events.
 
 class EventEmitter {
-    constructor() {
-        this.events = {};
+  constructor() {
+    this.events = {};
+  }
+
+  // Subscribe to an event
+  on(event, listener) {
+    if (!this.events[event]) {
+      this.events[event] = [];
     }
+    this.events[event].push(listener);
+    return () => this.off(event, listener); // Return an unsubscribe function
+  }
 
-    // Subscribe to an event
-    on(event, listener) {
-        if (!this.events[event]) {
-            this.events[event] = [];
-        }
-        this.events[event].push(listener);
-        return () => this.off(event, listener); // Return an unsubscribe function
-    }
+  // Unsubscribe from an event
+  off(event, listener) {
+    if (!this.events[event]) return;
 
-    // Unsubscribe from an event
-    off(event, listener) {
-        if (!this.events[event]) return;
+    this.events[event] = this.events[event].filter((l) => l !== listener);
+  }
 
-        this.events[event] = this.events[event].filter((l) => l !== listener);
-    }
+  // Emit an event
+  emit(event, ...args) {
+    if (!this.events[event]) return;
 
-    // Emit an event
-    emit(event, ...args) {
-        if (!this.events[event]) return;
+    this.events[event].forEach((listener) => listener(...args));
+  }
 
-        this.events[event].forEach((listener) => listener(...args));
-    }
-
-    // Subscribe to an event, triggered only once
-    once(event, listener) {
-        const wrapper = (...args) => {
-            listener(...args);
-            this.off(event, wrapper); // Remove the listener after it's called once
-        };
-        this.on(event, wrapper);
-    }
+  // Subscribe to an event, triggered only once
+  once(event, listener) {
+    const wrapper = (...args) => {
+      listener(...args);
+      this.off(event, wrapper); // Remove the listener after it's called once
+    };
+    this.on(event, wrapper);
+  }
 }
 
 // Example usage
 const emitter = new EventEmitter();
 
 // Listener for a "message" event
-const unsubscribe = emitter.on("message", (msg) => {
-    console.log(`Received message: ${msg}`);
+const unsubscribe = emitter.on('message', (msg) => {
+  console.log(`Received message: ${msg}`);
 });
 
 // Emit the "message" event
@@ -639,38 +638,37 @@ const unsubscribe = emitter.on("message", (msg) => {
 
 // Unsubscribe from the "message" event
 unsubscribe();
-emitter.emit("message", "This will not be logged");
+emitter.emit('message', 'This will not be logged');
 
 // Use the `once` method
-emitter.once("greet", (name) => {
-    console.log(`Hello, ${name}!`);
+emitter.once('greet', (name) => {
+  console.log(`Hello, ${name}!`);
 });
 // emitter.emit("greet", "Astrak");
 //emitter.emit("greet", "Alice"); // Will not trigger
-
 
 // Implement a Memoization Function
 // Write a function memoize that takes another function as input and returns a memoized version of it. The memoized function should cache results for previously seen inputs.
 
 function memoize(func) {
-    const cache = new Map();
+  const cache = new Map();
 
-    return function (...args) {
-        const key = JSON.stringify(args); // Serialize arguments to use as cache key
-        if (cache.has(key)) {
-            console.log("Fetching from cache for:", args);
-            return cache.get(key);
-        }
-        console.log("Calculating result for:", args);
-        const result = func(...args);
-        cache.set(key, result);
-        return result;
-    };
+  return function (...args) {
+    const key = JSON.stringify(args); // Serialize arguments to use as cache key
+    if (cache.has(key)) {
+      console.log('Fetching from cache for:', args);
+      return cache.get(key);
+    }
+    console.log('Calculating result for:', args);
+    const result = func(...args);
+    cache.set(key, result);
+    return result;
+  };
 }
 
 // Example usage: A simple function to calculate the sum of two numbers
 function add(a, b) {
-    return a + b;
+  return a + b;
 }
 
 const memoizedAdd = memoize(add);
@@ -679,25 +677,24 @@ const memoizedAdd = memoize(add);
 // console.log(memoizedAdd(1, 2)); // Calculating result for: [1,2], Output: 3
 // console.log(memoizedAdd(1, 2)); // Fetching from cache
 
-
 // Flatten a Nested Array
 // Create a function flattenArray that takes a nested array and returns a flat array. The function should handle arrays of arbitrary depth.
 
 function flattenArray(arr) {
-    const result = [];
+  const result = [];
 
-    function flatten(element) {
-        if (Array.isArray(element)) {
-            for (const item of element) {
-                flatten(item); // Recursively flatten nested arrays
-            }
-        } else {
-            result.push(element); // Add non-array elements to the result
-        }
+  function flatten(element) {
+    if (Array.isArray(element)) {
+      for (const item of element) {
+        flatten(item); // Recursively flatten nested arrays
+      }
+    } else {
+      result.push(element); // Add non-array elements to the result
     }
+  }
 
-    flatten(arr);
-    return result;
+  flatten(arr);
+  return result;
 }
 
 // Example usage
@@ -705,17 +702,16 @@ const nestedArrayOne = [1, [2, [3, 4], 5], 6, [7, [8, 9]]];
 // console.log(flattenArray(nestedArrayOne));
 // Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-
 // Custom setTimeout Using Promise
 // Implement a function customSetTimeout that mimics the behavior of setTimeout using Promise.
 
 function customSetTimeout(callback, delay) {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            callback();
-            resolve();
-        }, delay);
-    });
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      callback();
+      resolve();
+    }, delay);
+  });
 }
 
 // customSetTimeout(() => {
@@ -724,43 +720,41 @@ function customSetTimeout(callback, delay) {
 //     console.log("Promise resolved");
 // });
 
-
 // Custom setTimeout Using Promise
 // Implement a function customSetTimeout that mimics the behavior of setTimeout using Promise.
 
 function customSetTimeout(delay) {
-    return new Promise((resolve) => {
-        setTimeout(resolve, delay);
-    });
+  return new Promise((resolve) => {
+    setTimeout(resolve, delay);
+  });
 }
 
 // customSetTimeout(2000).then(() => {
 //     console.log("Executed after 2 seconds");
 // });
 
-
 // Binary Search Implementation
 // Write a function binarySearch that implements the binary search algorithm. It should take a sorted array and a target value and return the index of the target (or -1 if not found).
 
 function binarySearch(sortedArray, target) {
-    let left = 0;
-    let right = sortedArray.length - 1;
+  let left = 0;
+  let right = sortedArray.length - 1;
 
-    while (left <= right) {
-        const mid = Math.floor((left + right) / 2);
+  while (left <= right) {
+    const mid = Math.floor((left + right) / 2);
 
-        if (sortedArray[mid] === target) {
-            return mid; // Target found
-        }
-
-        if (sortedArray[mid] < target) {
-            left = mid + 1; // Search in the right half
-        } else {
-            right = mid - 1; // Search in the left half
-        }
+    if (sortedArray[mid] === target) {
+      return mid; // Target found
     }
 
-    return -1; // Target not found
+    if (sortedArray[mid] < target) {
+      left = mid + 1; // Search in the right half
+    } else {
+      right = mid - 1; // Search in the left half
+    }
+  }
+
+  return -1; // Target not found
 }
 
 // const sortedArray = [1, 3, 5, 7, 9, 11];
@@ -768,3 +762,32 @@ function binarySearch(sortedArray, target) {
 
 // const resultt = binarySearch(sortedArray, target);
 // console.log(resultt); // Output: 3 (index of the target in the array)
+
+// Parse Query Parameters
+// Write a function parseQueryParams that takes a URL string and extracts its query parameters into an object.
+
+function parseQueryParams(url) {
+  const queryParams = {};
+  const queryStringStart = url.indexOf('?');
+
+  if (queryStringStart === -1) {
+    return queryParams; // No query parameters found
+  }
+
+  const queryString = url.slice(queryStringStart + 1);
+  const pairs = queryString.split('&');
+
+  for (const pair of pairs) {
+    const [key, value] = pair.split('=');
+    queryParams[decodeURIComponent(key)] = decodeURIComponent(value || '');
+  }
+
+  return queryParams;
+}
+
+// Example usage
+const urlOne = 'https://example.com/page?name=JohnDoe&age=25&city=NewYork';
+const params = parseQueryParams(url);
+
+console.log(params);
+// Output: { name: "JohnDoe", age: "25", city: "NewYork" }
