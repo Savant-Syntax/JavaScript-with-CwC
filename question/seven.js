@@ -789,5 +789,5 @@ function parseQueryParams(url) {
 const urlOne = 'https://example.com/page?name=JohnDoe&age=25&city=NewYork';
 const params = parseQueryParams(url);
 
-console.log(params);
+// console.log(params);
 // Output: { name: "JohnDoe", age: "25", city: "NewYork" }
