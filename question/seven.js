@@ -835,3 +835,20 @@ Array.prototype.myMap = function (callback) {
 const arr = [1, 2, 3];
 const resultOne = arr.myMap((num) => num * 2);
 // console.log(resultOne); // [2, 4, 6]
+
+// Find All Anagrams
+// Write a function findAnagrams that takes a word and an array of words, and returns all the words from the array that are anagrams of the given word.
+
+function findAnagrams(word, words) {
+  // Helper function to sort the characters of a word
+  const sortWord = (str) => str.split('').sort().join('');
+
+  // Sort the target word for comparison
+  const sortedWord = sortWord(word);
+
+  // Filter words that match the sorted target word
+  return words.filter((w) => sortWord(w) === sortedWord);
+}
+
+// Example usage
+console.log(findAnagrams('listen', ['enlist', 'google', 'inlets', 'banana'])); // ["enlist", "inlets"]
