@@ -851,4 +851,4 @@ function findAnagrams(word, words) {
 }
 
 // Example usage
-console.log(findAnagrams('listen', ['enlist', 'google', 'inlets', 'banana'])); // ["enlist", "inlets"]
+// console.log(findAnagrams('listen', ['enlist', 'google', 'inlets', 'banana'])); // ["enlist", "inlets"]
