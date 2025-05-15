@@ -902,3 +902,43 @@ function evaluatePostfix(expression) {
 // Example usage
 // console.log(evaluatePostfix(['2', '3', '+', '4', '*'])); // Output: 20
 // console.log(evaluatePostfix(['5', '1', '2', '+', '4', '*', '+', '3', '-'])); // Output: 14
+
+// Evaluate Postfix Expression
+// Write a function evaluatePostfix that takes an array of strings representing a postfix expression and returns the evaluated result.
+
+function evaluatePostfix(expression) {
+  const stack = [];
+
+  for (let token of expression) {
+    if (!isNaN(token)) {
+      // If token is a number, push it to the stack
+      stack.push(Number(token));
+    } else {
+      // Token is an operator; pop two elements from the stack
+      const b = stack.pop();
+      const a = stack.pop();
+
+      switch (token) {
+        case '+':
+          stack.push(a + b);
+          break;
+        case '-':
+          stack.push(a - b);
+          break;
+        case '*':
+          stack.push(a * b);
+          break;
+        case '/':
+          stack.push(a / b);
+          break;
+        default:
+          throw new Error(`Invalid operator: ${token}`);
+      }
+    }
+  }
+
+  // Final result will be the only element left in the stack
+  return stack.pop();
+}
+
+console.log(evaluatePostfix(['2', '3', '+', '4', '*'])); // 20
