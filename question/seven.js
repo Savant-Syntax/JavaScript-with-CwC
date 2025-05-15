@@ -997,3 +997,32 @@ function infixToPostfix(expression) {
 
 // const infixExpression = '2 + 3 * 4';
 // console.log(infixToPostfix(infixExpression));
+
+// Check Balanced Parentheses
+// Write a function isBalanced that checks if a given string of parentheses, brackets, and braces is balanced. Use a stack to solve this problem.
+
+function isBalanced(expression) {
+  const stack = [];
+  const matchingPairs = {
+    ')': '(',
+    ']': '[',
+    '}': '{',
+  };
+
+  for (let char of expression) {
+    if (['(', '[', '{'].includes(char)) {
+      // Push opening brackets onto the stack
+      stack.push(char);
+    } else if ([')', ']', '}'].includes(char)) {
+      // Check if the stack is empty or if the top of the stack doesn't match
+      if (stack.length === 0 || stack.pop() !== matchingPairs[char]) {
+        return false;
+      }
+    }
+  }
+
+  // If the stack is empty, all brackets were matched
+  return stack.length === 0;
+}
+
+console.log(isBalanced('{[()]}'));
