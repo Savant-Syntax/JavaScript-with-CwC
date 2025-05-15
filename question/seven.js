@@ -1067,3 +1067,59 @@ const originalStack = [1, 2, 3, 4];
 const reversedStack = reverseStack(originalStack);
 
 // console.log(reversedStack); // [4, 3, 2, 1]
+
+// Implement Stack Using Array
+// Write a class Stack that implements the basic stack operations (push, pop, peek, and isEmpty) using an
+
+class Stack {
+  constructor() {
+    this.stack = []; // Internal array to hold stack elements
+  }
+
+  // Push element onto the stack
+  push(value) {
+    this.stack.push(value);
+  }
+
+  // Pop element from the stack
+  pop() {
+    if (this.isEmpty()) {
+      throw new Error('Stack is empty!');
+    }
+    return this.stack.pop();
+  }
+
+  // Peek the top element without removing it
+  peek() {
+    if (this.isEmpty()) {
+      throw new Error('Stack is empty!');
+    }
+    return this.stack[this.stack.length - 1];
+  }
+
+  // Check if the stack is empty
+  isEmpty() {
+    return this.stack.length === 0;
+  }
+
+  // Get the size of the stack
+  size() {
+    return this.stack.length;
+  }
+}
+
+const myStack = new Stack();
+
+console.log(myStack.isEmpty()); // true
+
+myStack.push(10);
+myStack.push(20);
+myStack.push(30);
+
+console.log(myStack.peek()); // 30
+console.log(myStack.pop()); // 30
+console.log(myStack.size()); // 2
+console.log(myStack.isEmpty()); // false
+console.log(myStack.pop()); // 20
+console.log(myStack.pop()); // 10
+console.log(myStack.isEmpty()); // true
