@@ -1108,18 +1108,18 @@ class Stack {
   }
 }
 
-const myStack = new Stack();
+// const myStack = new Stack();
 
-console.log(myStack.isEmpty()); // true
+// console.log(myStack.isEmpty()); // true
 
-myStack.push(10);
-myStack.push(20);
-myStack.push(30);
+// myStack.push(10);
+// myStack.push(20);
+// myStack.push(30);
 
-console.log(myStack.peek()); // 30
-console.log(myStack.pop()); // 30
-console.log(myStack.size()); // 2
-console.log(myStack.isEmpty()); // false
-console.log(myStack.pop()); // 20
-console.log(myStack.pop()); // 10
-console.log(myStack.isEmpty()); // true
+// console.log(myStack.peek()); // 30
+// console.log(myStack.pop()); // 30
+// console.log(myStack.size()); // 2
+// console.log(myStack.isEmpty()); // false
+// console.log(myStack.pop()); // 20
+// console.log(myStack.pop()); // 10
+// console.log(myStack.isEmpty()); // true
