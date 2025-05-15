@@ -995,5 +995,5 @@ function infixToPostfix(expression) {
   return result;
 }
 
-const infixExpression = '2 + 3 * 4';
-console.log(infixToPostfix(infixExpression));
+// const infixExpression = '2 + 3 * 4';
+// console.log(infixToPostfix(infixExpression));
