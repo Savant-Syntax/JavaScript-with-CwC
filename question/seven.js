@@ -1025,4 +1025,4 @@ function isBalanced(expression) {
   return stack.length === 0;
 }
 
-console.log(isBalanced('{[()]}'));
+// console.log(isBalanced('{[()]}'));    //true
