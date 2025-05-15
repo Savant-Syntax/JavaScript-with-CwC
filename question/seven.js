@@ -1066,4 +1066,4 @@ function insertAtBottom(stack, value) {
 const originalStack = [1, 2, 3, 4];
 const reversedStack = reverseStack(originalStack);
 
-console.log(reversedStack); // [4, 3, 2, 1]
+// console.log(reversedStack); // [4, 3, 2, 1]
