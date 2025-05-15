@@ -941,4 +941,4 @@ function evaluatePostfix(expression) {
   return stack.pop();
 }
 
-console.log(evaluatePostfix(['2', '3', '+', '4', '*'])); // 20
+// console.log(evaluatePostfix(['2', '3', '+', '4', '*'])); // 20
