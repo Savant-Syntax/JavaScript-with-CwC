@@ -1026,3 +1026,44 @@ function isBalanced(expression) {
 }
 
 // console.log(isBalanced('{[()]}'));    //true
+
+// Reverse a Stack
+// Write a function reverseStack that takes a stack (represented as an array) and returns a new stack with elements in reverse order. Do not use built-in reverse functions.
+
+function reverseStack(stack) {
+  if (stack.length === 0) {
+    return [];
+  }
+
+  // Pop the top element
+  const top = stack.pop();
+
+  // Reverse the rest of the stack recursively
+  const reversed = reverseStack(stack);
+
+  // Insert the popped element at the bottom
+  insertAtBottom(reversed, top);
+
+  return reversed;
+}
+
+function insertAtBottom(stack, value) {
+  if (stack.length === 0) {
+    stack.push(value);
+    return;
+  }
+
+  // Remove the top element
+  const top = stack.pop();
+
+  // Recursive call to insert value at the bottom
+  insertAtBottom(stack, value);
+
+  // Restore the top element
+  stack.push(top);
+}
+
+const originalStack = [1, 2, 3, 4];
+const reversedStack = reverseStack(originalStack);
+
+console.log(reversedStack); // [4, 3, 2, 1]
