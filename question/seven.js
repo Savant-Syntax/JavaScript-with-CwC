@@ -942,3 +942,58 @@ function evaluatePostfix(expression) {
 }
 
 // console.log(evaluatePostfix(['2', '3', '+', '4', '*'])); // 20
+
+// Convert Infix to Postfix
+// Write a function infixToPostfix that converts an infix expression (e.g., "2 + 3 * 4") into a postfix expression (e.g., ["2", "3", "4", "*", "+"]).
+
+function infixToPostfix(expression) {
+  const precedence = {
+    '+': 1,
+    '-': 1,
+    '*': 2,
+    '/': 2,
+    '^': 3,
+  };
+
+  const isOperator = (char) => ['+', '-', '*', '/', '^'].includes(char);
+  const isOperand = (char) => !isNaN(char);
+
+  const stack = []; // For operators
+  const result = []; // For output (postfix expression)
+
+  for (let token of expression.split(' ')) {
+    if (isOperand(token)) {
+      // If it's an operand, add to result
+      result.push(token);
+    } else if (isOperator(token)) {
+      // If it's an operator, pop from stack to result until stack is empty
+      // or the operator at the top of the stack has lower precedence
+      while (
+        stack.length &&
+        precedence[stack[stack.length - 1]] >= precedence[token]
+      ) {
+        result.push(stack.pop());
+      }
+      stack.push(token);
+    } else if (token === '(') {
+      // Push left parenthesis onto the stack
+      stack.push(token);
+    } else if (token === ')') {
+      // Pop to result until left parenthesis is encountered
+      while (stack.length && stack[stack.length - 1] !== '(') {
+        result.push(stack.pop());
+      }
+      stack.pop(); // Remove the '('
+    }
+  }
+
+  // Pop remaining operators in the stack
+  while (stack.length) {
+    result.push(stack.pop());
+  }
+
+  return result;
+}
+
+const infixExpression = '2 + 3 * 4';
+console.log(infixToPostfix(infixExpression));
