@@ -1145,8 +1145,8 @@ function popFromStack(stack) {
 }
 let stackOne = [1, 2, 3];
 
-console.log(popFromStack(stackOne)); // 3
-console.log(stackOne); // [1, 2]
-console.log(popFromStack(stackOne)); // 2
-console.log(popFromStack(stackOne)); // 1
-console.log(popFromStack(stackOne)); // "Stack is empty"
+// console.log(popFromStack(stackOne)); // 3
+// console.log(stackOne); // [1, 2]
+// console.log(popFromStack(stackOne)); // 2
+// console.log(popFromStack(stackOne)); // 1
+// console.log(popFromStack(stackOne)); // "Stack is empty"
