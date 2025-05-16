@@ -1133,4 +1133,4 @@ function pushToStack(stack, value) {
 let stack = [1, 2, 3];
 let value = 4;
 
-console.log(pushToStack(stack, value)); // [1, 2, 3, 4]
+// console.log(pushToStack(stack, value)); // [1, 2, 3, 4]
