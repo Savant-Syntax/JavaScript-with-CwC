@@ -1123,3 +1123,14 @@ class Stack {
 // console.log(myStack.pop()); // 20
 // console.log(myStack.pop()); // 10
 // console.log(myStack.isEmpty()); // true
+
+// Write a function pushToStack that takes a stack (array) and a value, pushes the value onto the stack, and returns the updated stack.
+
+function pushToStack(stack, value) {
+  stack.push(value); // Add the value to the top of the stack
+  return stack; // Return the updated stack
+}
+let stack = [1, 2, 3];
+let value = 4;
+
+console.log(pushToStack(stack, value)); // [1, 2, 3, 4]
