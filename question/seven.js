@@ -1185,6 +1185,6 @@ let stack3 = [1, 2, 3];
 let stack4 = [];
 let stack5 = [5, 10, 15, 20];
 
-console.log(countStack(stack3)); // 3
-console.log(countStack(stack4)); // 0
-console.log(countStack(stack5)); // 4
+// console.log(countStack(stack3)); // 3
+// console.log(countStack(stack4)); // 0
+// console.log(countStack(stack5)); // 4
