@@ -1134,3 +1134,19 @@ let stack = [1, 2, 3];
 let value = 4;
 
 // console.log(pushToStack(stack, value)); // [1, 2, 3, 4]
+
+// Write a function popFromStack that takes a stack (array), removes the top element, and returns it. If the stack is empty, return "Stack is empty".
+
+function popFromStack(stack) {
+  if (stack.length === 0) {
+    return 'Stack is empty'; // Return a message if the stack is empty
+  }
+  return stack.pop(); // Remove and return the top element
+}
+let stackOne = [1, 2, 3];
+
+console.log(popFromStack(stackOne)); // 3
+console.log(stackOne); // [1, 2]
+console.log(popFromStack(stackOne)); // 2
+console.log(popFromStack(stackOne)); // 1
+console.log(popFromStack(stackOne)); // "Stack is empty"
