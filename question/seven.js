@@ -1173,5 +1173,5 @@ function isStackEmpty(stack) {
 let stack1 = [1, 2, 3];
 let stack2 = [];
 
-console.log(isStackEmpty(stack1)); // false
-console.log(isStackEmpty(stack2)); // true
+// console.log(isStackEmpty(stack1)); // false
+// console.log(isStackEmpty(stack2)); // true
