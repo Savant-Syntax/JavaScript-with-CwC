@@ -1175,3 +1175,16 @@ let stack2 = [];
 
 // console.log(isStackEmpty(stack1)); // false
 // console.log(isStackEmpty(stack2)); // true
+
+// Write a function countStack that takes a stack (array) and returns the number of elements in the stack.
+
+function countStack(stack) {
+  return stack.length; // Return the number of elements in the stack
+}
+let stack3 = [1, 2, 3];
+let stack4 = [];
+let stack5 = [5, 10, 15, 20];
+
+console.log(countStack(stack3)); // 3
+console.log(countStack(stack4)); // 0
+console.log(countStack(stack5)); // 4
