@@ -1164,3 +1164,14 @@ let stackTwo = [1, 2, 3];
 // console.log(peekStack(stackTwo)); // 3
 // console.log(stackTwo); // [1, 2, 3] (Stack remains unchanged)
 // console.log(peekStack([])); // "Stack is empty"
+
+// Write a function isStackEmpty that takes a stack (array) and returns true if the stack is empty, otherwise false.
+
+function isStackEmpty(stack) {
+  return stack.length === 0; // Return true if the stack is empty, otherwise false
+}
+let stack1 = [1, 2, 3];
+let stack2 = [];
+
+console.log(isStackEmpty(stack1)); // false
+console.log(isStackEmpty(stack2)); // true
