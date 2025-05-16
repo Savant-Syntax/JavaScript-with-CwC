@@ -1181,6 +1181,7 @@ let stack2 = [];
 function countStack(stack) {
   return stack.length; // Return the number of elements in the stack
 }
+
 let stack3 = [1, 2, 3];
 let stack4 = [];
 let stack5 = [5, 10, 15, 20];
