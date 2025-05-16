@@ -1150,3 +1150,17 @@ let stackOne = [1, 2, 3];
 // console.log(popFromStack(stackOne)); // 2
 // console.log(popFromStack(stackOne)); // 1
 // console.log(popFromStack(stackOne)); // "Stack is empty"
+
+// Write a function peekStack that takes a stack (array) and returns the top element without removing it. If the stack is empty, return "Stack is empty".
+
+function peekStack(stack) {
+  if (stack.length === 0) {
+    return 'Stack is empty'; // Return a message if the stack is empty
+  }
+  return stack[stack.length - 1]; // Return the top element without removing it
+}
+let stackTwo = [1, 2, 3];
+
+console.log(peekStack(stackTwo)); // 3
+console.log(stackTwo); // [1, 2, 3] (Stack remains unchanged)
+console.log(peekStack([])); // "Stack is empty"
