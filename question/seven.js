@@ -1284,3 +1284,22 @@ function debounce(func, delay) {
 // setTimeout(() => debouncedLogMessage('Final Call'), 500); // Will override the earlier calls
 
 // Output after 1 second (only "Final Call" will be logged)
+
+// Write a function countUniqueCharacters that takes a string and returns the count of unique characters in the string. Ignore case sensitivity.
+
+function countUniqueCharacters(str) {
+  // Convert the string to lowercase and remove spaces
+  const normalizedStr = str.toLowerCase().replace(/\s+/g, '');
+
+  // Use a Set to store unique characters
+  const uniqueChars = new Set(normalizedStr);
+
+  // Return the count of unique characters
+  return uniqueChars.size;
+}
+
+// Example usage
+console.log(countUniqueCharacters('Hello World')); // Output: 7
+console.log(countUniqueCharacters('AaBbCc')); // Output: 3
+console.log(countUniqueCharacters('123 321')); // Output: 3
+console.log(countUniqueCharacters('')); // Output: 0
