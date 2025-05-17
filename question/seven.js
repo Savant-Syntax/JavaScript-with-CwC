@@ -1298,8 +1298,7 @@ function countUniqueCharacters(str) {
   return uniqueChars.size;
 }
 
-// Example usage
-console.log(countUniqueCharacters('Hello World')); // Output: 7
-console.log(countUniqueCharacters('AaBbCc')); // Output: 3
-console.log(countUniqueCharacters('123 321')); // Output: 3
-console.log(countUniqueCharacters('')); // Output: 0
+// console.log(countUniqueCharacters('Hello World')); // Output: 7
+// console.log(countUniqueCharacters('AaBbCc')); // Output: 3
+// console.log(countUniqueCharacters('123 321')); // Output: 3
+// console.log(countUniqueCharacters('')); // Output: 0
