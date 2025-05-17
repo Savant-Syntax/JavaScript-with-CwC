@@ -1276,13 +1276,12 @@ function debounce(func, delay) {
   };
 }
 
-// Example usage
-const log_Message = (message) => console.log(message);
+// const log_Message = (message) => console.log(message);
 
-const debouncedLogMessage = debounce(logMessage, 1000);
+// const debouncedLogMessage = debounce(logMessage, 1000);
 
-debouncedLogMessage('Hello'); // Will execute only after 1 second, if not triggered again
-debouncedLogMessage('Hello, again!'); // Cancels the previous call and resets the timer
-setTimeout(() => debouncedLogMessage('Final Call'), 500); // Will override the earlier calls
+// debouncedLogMessage('Hello'); // Will execute only after 1 second, if not triggered again
+// debouncedLogMessage('Hello, again!'); // Cancels the previous call and resets the timer
+// setTimeout(() => debouncedLogMessage('Final Call'), 500); // Will override the earlier calls
 
 // Output after 1 second (only "Final Call" will be logged)
