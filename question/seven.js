@@ -1228,8 +1228,8 @@ function isPalindrome(str) {
   return cleanStr === reversedStr;
 }
 
-console.log(isPalindrome('A man, a plan, a canal: Panama')); // Output: true
-console.log(isPalindrome('racecar')); // Output: true
-console.log(isPalindrome('hello')); // Output: false
-console.log(isPalindrome('')); // Output: true (Empty string is considered a palindrome)
-console.log(isPalindrome('No lemon, no melon')); // Output: true
+// console.log(isPalindrome('A man, a plan, a canal: Panama')); // Output: true
+// console.log(isPalindrome('racecar')); // Output: true
+// console.log(isPalindrome('hello')); // Output: false
+// console.log(isPalindrome('')); // Output: true (Empty string is considered a palindrome)
+// console.log(isPalindrome('No lemon, no melon')); // Output: true
