@@ -1216,3 +1216,20 @@ function secondLargest(arr) {
 // console.log(secondLargest([5, 5, 5])); // Output: null
 // console.log(secondLargest([1])); // Output: null
 // console.log(secondLargest([])); // Output: null
+
+// Write a function isPalindrome that checks if a given string is a palindrome (reads the same backward as forward). Ignore spaces, punctuation, and case.
+
+function isPalindrome(str) {
+  // Normalize the string: remove non-alphanumeric characters and convert to lowercase
+  const cleanStr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+
+  // Check if the string is equal to its reverse
+  const reversedStr = cleanStr.split('').reverse().join('');
+  return cleanStr === reversedStr;
+}
+
+console.log(isPalindrome('A man, a plan, a canal: Panama')); // Output: true
+console.log(isPalindrome('racecar')); // Output: true
+console.log(isPalindrome('hello')); // Output: false
+console.log(isPalindrome('')); // Output: true (Empty string is considered a palindrome)
+console.log(isPalindrome('No lemon, no melon')); // Output: true
