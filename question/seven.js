@@ -1212,8 +1212,7 @@ function secondLargest(arr) {
   return secondLargest === -Infinity ? null : secondLargest;
 }
 
-// Example usage
-console.log(secondLargest([10, 20, 30, 40])); // Output: 30
-console.log(secondLargest([5, 5, 5])); // Output: null
-console.log(secondLargest([1])); // Output: null
-console.log(secondLargest([])); // Output: null
+// console.log(secondLargest([10, 20, 30, 40])); // Output: 30
+// console.log(secondLargest([5, 5, 5])); // Output: null
+// console.log(secondLargest([1])); // Output: null
+// console.log(secondLargest([])); // Output: null
