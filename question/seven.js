@@ -1262,3 +1262,27 @@ function flattenArray(nestedArray) {
 // console.log(flattenArray([1, [2, [3, [4, [5]]]]])); // Output: [1, 2, 3, 4, 5]
 // console.log(flattenArray([])); // Output: []
 // console.log(flattenArray([1, 2, 3])); // Output: [1, 2, 3]
+
+// Implement a debounce function. It should take a function and a delay as arguments and ensure that the function is called only once within the delay period, no matter how many times it’s triggered.
+
+function debounce(func, delay) {
+  let timeoutId;
+
+  return function (...args) {
+    clearTimeout(timeoutId); // Clear the previous timeout
+    timeoutId = setTimeout(() => {
+      func.apply(this, args); // Call the function with the correct context and arguments
+    }, delay);
+  };
+}
+
+// Example usage
+const log_Message = (message) => console.log(message);
+
+const debouncedLogMessage = debounce(logMessage, 1000);
+
+debouncedLogMessage('Hello'); // Will execute only after 1 second, if not triggered again
+debouncedLogMessage('Hello, again!'); // Cancels the previous call and resets the timer
+setTimeout(() => debouncedLogMessage('Final Call'), 500); // Will override the earlier calls
+
+// Output after 1 second (only "Final Call" will be logged)
