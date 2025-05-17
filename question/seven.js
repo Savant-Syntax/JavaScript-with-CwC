@@ -1277,7 +1277,6 @@ function debounce(func, delay) {
 }
 
 // const log_Message = (message) => console.log(message);
-
 // const debouncedLogMessage = debounce(logMessage, 1000);
 
 // debouncedLogMessage('Hello'); // Will execute only after 1 second, if not triggered again
