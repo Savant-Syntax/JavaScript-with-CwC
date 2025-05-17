@@ -1189,3 +1189,31 @@ let stack5 = [5, 10, 15, 20];
 // console.log(countStack(stack3)); // 3
 // console.log(countStack(stack4)); // 0
 // console.log(countStack(stack5)); // 4
+
+// Write a function secondLargest that takes an array of numbers and returns the second largest number. If there’s no such number, return null.
+
+function secondLargest(arr) {
+  if (arr.length < 2) {
+    return null; // Not enough elements for a second largest
+  }
+
+  let largest = -Infinity;
+  let secondLargest = -Infinity;
+
+  for (const num of arr) {
+    if (num > largest) {
+      secondLargest = largest; // Update second largest
+      largest = num; // Update largest
+    } else if (num > secondLargest && num < largest) {
+      secondLargest = num; // Update second largest
+    }
+  }
+
+  return secondLargest === -Infinity ? null : secondLargest;
+}
+
+// Example usage
+console.log(secondLargest([10, 20, 30, 40])); // Output: 30
+console.log(secondLargest([5, 5, 5])); // Output: null
+console.log(secondLargest([1])); // Output: null
+console.log(secondLargest([])); // Output: null
