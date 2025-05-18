@@ -1326,3 +1326,22 @@ function isPrime(num) {
 // console.log(isPrime(1)); // Output: false
 // console.log(isPrime(0)); // Output: false
 // console.log(isPrime(25)); // Output: false
+
+// Write a function find Intersection that takes two arrays and returns an array containing their intersection (common elements).
+
+function findIntersection(arr1, arr2) {
+  // Convert the second array into a Set for efficient lookups
+  const set2 = new Set(arr2);
+
+  // Filter elements from the first array that exist in the Set
+  const intersection = arr1.filter((item) => set2.has(item));
+
+  // Return the resulting array
+  return intersection;
+}
+
+// Example usage
+console.log(findIntersection([1, 2, 3, 4], [3, 4, 5, 6])); // Output: [3, 4]
+console.log(findIntersection([7, 8, 9], [10, 11, 12])); // Output: []
+console.log(findIntersection([1, 2, 2, 3], [2, 3, 3, 4])); // Output: [2, 3]
+console.log(findIntersection([], [1, 2, 3])); // Output: []
