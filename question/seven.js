@@ -1340,8 +1340,7 @@ function findIntersection(arr1, arr2) {
   return intersection;
 }
 
-// Example usage
-console.log(findIntersection([1, 2, 3, 4], [3, 4, 5, 6])); // Output: [3, 4]
-console.log(findIntersection([7, 8, 9], [10, 11, 12])); // Output: []
-console.log(findIntersection([1, 2, 2, 3], [2, 3, 3, 4])); // Output: [2, 3]
-console.log(findIntersection([], [1, 2, 3])); // Output: []
+// console.log(findIntersection([1, 2, 3, 4], [3, 4, 5, 6])); // Output: [3, 4]
+// console.log(findIntersection([7, 8, 9], [10, 11, 12])); // Output: []
+// console.log(findIntersection([1, 2, 2, 3], [2, 3, 3, 4])); // Output: [2, 3]
+// console.log(findIntersection([], [1, 2, 3])); // Output: []
