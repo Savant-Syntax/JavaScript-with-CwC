@@ -1302,3 +1302,28 @@ function countUniqueCharacters(str) {
 // console.log(countUniqueCharacters('AaBbCc')); // Output: 3
 // console.log(countUniqueCharacters('123 321')); // Output: 3
 // console.log(countUniqueCharacters('')); // Output: 0
+
+// Write a function isPrime that takes a number as input and returns true if the number is prime, otherwise false.
+
+function isPrime(num) {
+  if (num <= 1) {
+    return false; // Numbers less than or equal to 1 are not prime
+  }
+
+  // Check divisors from 2 up to the square root of the number
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false; // If divisible, it's not prime
+    }
+  }
+
+  return true; // Number is prime
+}
+
+// Example usage
+console.log(isPrime(2)); // Output: true
+console.log(isPrime(4)); // Output: false
+console.log(isPrime(17)); // Output: true
+console.log(isPrime(1)); // Output: false
+console.log(isPrime(0)); // Output: false
+console.log(isPrime(25)); // Output: false
