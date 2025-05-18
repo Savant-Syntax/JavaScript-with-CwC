@@ -1320,10 +1320,9 @@ function isPrime(num) {
   return true; // Number is prime
 }
 
-// Example usage
-console.log(isPrime(2)); // Output: true
-console.log(isPrime(4)); // Output: false
-console.log(isPrime(17)); // Output: true
-console.log(isPrime(1)); // Output: false
-console.log(isPrime(0)); // Output: false
-console.log(isPrime(25)); // Output: false
+// console.log(isPrime(2)); // Output: true
+// console.log(isPrime(4)); // Output: false
+// console.log(isPrime(17)); // Output: true
+// console.log(isPrime(1)); // Output: false
+// console.log(isPrime(0)); // Output: false
+// console.log(isPrime(25)); // Output: false
