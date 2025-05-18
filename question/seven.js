@@ -1344,3 +1344,37 @@ function findIntersection(arr1, arr2) {
 // console.log(findIntersection([7, 8, 9], [10, 11, 12])); // Output: []
 // console.log(findIntersection([1, 2, 2, 3], [2, 3, 3, 4])); // Output: [2, 3]
 // console.log(findIntersection([], [1, 2, 3])); // Output: []
+
+// Write a function memoize that takes another function as input and returns a memoized version of it.
+
+function memoize(fn) {
+  const cache = new Map(); // Create a cache to store results
+  return function (...args) {
+    const key = JSON.stringify(args); // Use JSON.stringify to handle different argument combinations
+    if (cache.has(key)) {
+      console.log(`Fetching from cache for arguments: ${args}`);
+      return cache.get(key); // Return cached result
+    }
+    const result = fn(...args); // Call the original function
+    cache.set(key, result); // Cache the result
+    console.log(`Calculating result for arguments: ${args}`);
+    return result;
+  };
+}
+
+// Factorial function
+function factorial(n) {
+  if (n === 0 || n === 1) {
+    return 1;
+  }
+  return n * factorial(n - 1);
+}
+
+// Memoize the factorial function
+const memoizedFactorial = memoize(factorial);
+
+// Example usage
+console.log(memoizedFactorial(5)); // Output: 120 (calculated)
+console.log(memoizedFactorial(5)); // Output: 120 (cached)
+console.log(memoizedFactorial(6)); // Output: 720 (calculated, uses result from 5!)
+console.log(memoizedFactorial(6)); // Output: 720 (cached)
