@@ -1373,8 +1373,7 @@ function factorial(n) {
 // Memoize the factorial function
 const memoizedFactorial = memoize(factorial);
 
-// Example usage
-console.log(memoizedFactorial(5)); // Output: 120 (calculated)
-console.log(memoizedFactorial(5)); // Output: 120 (cached)
-console.log(memoizedFactorial(6)); // Output: 720 (calculated, uses result from 5!)
-console.log(memoizedFactorial(6)); // Output: 720 (cached)
+// console.log(memoizedFactorial(5)); // Output: 120 (calculated)
+// console.log(memoizedFactorial(5)); // Output: 120 (cached)
+// console.log(memoizedFactorial(6)); // Output: 720 (calculated, uses result from 5!)
+// console.log(memoizedFactorial(6)); // Output: 720 (cached)
