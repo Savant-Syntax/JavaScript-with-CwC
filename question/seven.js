@@ -1440,8 +1440,7 @@ function areArraysEqual(arr1, arr2) {
   return true; // Arrays are identical
 }
 
-// Example usage:
-console.log(areArraysEqual([1, 2, 3], [1, 2, 3])); // Output: true
-console.log(areArraysEqual([1, 2, 3], [3, 2, 1])); // Output: false
-console.log(areArraysEqual([1, 2, 3], [1, 2])); // Output: false
-console.log(areArraysEqual([], [])); // Output: true
+// console.log(areArraysEqual([1, 2, 3], [1, 2, 3])); // Output: true
+// console.log(areArraysEqual([1, 2, 3], [3, 2, 1])); // Output: false
+// console.log(areArraysEqual([1, 2, 3], [1, 2])); // Output: false
+// console.log(areArraysEqual([], [])); // Output: true
