@@ -1413,3 +1413,13 @@ function longestWorD(sentence) {
 // console.log(longestWorD('JavaScript is amazing')); // Output: "JavaScript"
 // console.log(longestWorD('I love coding challenges')); // Output: "challenges"
 // console.log(longestWorD('')); // Output: null
+
+// Write a function removeDuplicates that takes an array and returns a new array with duplicates removed.
+function removeDuplicates(arr) {
+  return [...new Set(arr)];
+}
+
+// Example usage:
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // Output: [1, 2, 3, 4, 5]
+console.log(removeDuplicates(['a', 'b', 'a', 'c', 'b'])); // Output: ["a", "b", "c"]
+console.log(removeDuplicates([])); // Output: []
