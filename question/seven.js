@@ -1410,6 +1410,6 @@ function longestWorD(sentence) {
   return longest;
 }
 
-console.log(longestWorD('JavaScript is amazing')); // Output: "JavaScript"
-console.log(longestWorD('I love coding challenges')); // Output: "challenges"
-console.log(longestWorD('')); // Output: null
+// console.log(longestWorD('JavaScript is amazing')); // Output: "JavaScript"
+// console.log(longestWorD('I love coding challenges')); // Output: "challenges"
+// console.log(longestWorD('')); // Output: null
