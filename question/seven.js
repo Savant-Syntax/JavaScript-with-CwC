@@ -1444,3 +1444,14 @@ function areArraysEqual(arr1, arr2) {
 // console.log(areArraysEqual([1, 2, 3], [3, 2, 1])); // Output: false
 // console.log(areArraysEqual([1, 2, 3], [1, 2])); // Output: false
 // console.log(areArraysEqual([], [])); // Output: true
+
+// Write a function reverseWords that takes a string as input and reverses the order of the words.
+function reverseWords(sentence) {
+  // Split the sentence into words, reverse the array, and join back into a string
+  return sentence.split(' ').reverse().join(' ');
+}
+
+console.log(reverseWords('Hello World')); // Output: "World Hello"
+console.log(reverseWords('JavaScript is fun')); // Output: "fun is JavaScript"
+console.log(reverseWords('')); // Output: ""
+console.log(reverseWords('SingleWord')); // Output: "SingleWord"
