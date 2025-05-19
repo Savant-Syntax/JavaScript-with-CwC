@@ -1451,7 +1451,7 @@ function reverseWords(sentence) {
   return sentence.split(' ').reverse().join(' ');
 }
 
-console.log(reverseWords('Hello World')); // Output: "World Hello"
-console.log(reverseWords('JavaScript is fun')); // Output: "fun is JavaScript"
-console.log(reverseWords('')); // Output: ""
-console.log(reverseWords('SingleWord')); // Output: "SingleWord"
+// console.log(reverseWords('Hello World')); // Output: "World Hello"
+// console.log(reverseWords('JavaScript is fun')); // Output: "fun is JavaScript"
+// console.log(reverseWords('')); // Output: ""
+// console.log(reverseWords('SingleWord')); // Output: "SingleWord"
