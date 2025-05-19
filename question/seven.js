@@ -1388,6 +1388,6 @@ function sumOfDigits(num) {
     .reduce((sum, digit) => sum + digit, 0); // Sum up the digits
 }
 
-console.log(sumOfDigits(123)); // Output: 6 (1 + 2 + 3)
-console.log(sumOfDigits(-456)); // Output: 15 (4 + 5 + 6)
-console.log(sumOfDigits(0)); // Output: 0
+// console.log(sumOfDigits(123)); // Output: 6 (1 + 2 + 3)
+// console.log(sumOfDigits(-456)); // Output: 15 (4 + 5 + 6)
+// console.log(sumOfDigits(0)); // Output: 0
