@@ -1422,3 +1422,26 @@ function removeDuplicates(arr) {
 // console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // Output: [1, 2, 3, 4, 5]
 // console.log(removeDuplicates(['a', 'b', 'a', 'c', 'b'])); // Output: ["a", "b", "c"]
 // console.log(removeDuplicates([])); // Output: []
+
+// Write a function areArraysEqual that takes two arrays and returns true if they are identical (have the same elements in the same order), otherwise false.
+function areArraysEqual(arr1, arr2) {
+  // Check if the lengths are the same
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
+
+  // Compare elements at each index
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] !== arr2[i]) {
+      return false;
+    }
+  }
+
+  return true; // Arrays are identical
+}
+
+// Example usage:
+console.log(areArraysEqual([1, 2, 3], [1, 2, 3])); // Output: true
+console.log(areArraysEqual([1, 2, 3], [3, 2, 1])); // Output: false
+console.log(areArraysEqual([1, 2, 3], [1, 2])); // Output: false
+console.log(areArraysEqual([], [])); // Output: true
