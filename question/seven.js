@@ -1391,3 +1391,25 @@ function sumOfDigits(num) {
 // console.log(sumOfDigits(123)); // Output: 6 (1 + 2 + 3)
 // console.log(sumOfDigits(-456)); // Output: 15 (4 + 5 + 6)
 // console.log(sumOfDigits(0)); // Output: 0
+
+// Write a function longestWord that takes a string as input and returns the longest word in the sentence.
+function longestWorD(sentence) {
+  if (!sentence || typeof sentence !== 'string') {
+    return null; // Handle invalid input
+  }
+
+  const words = sentence.split(/\s+/); // Split sentence into words using spaces
+  let longest = '';
+
+  for (const word of words) {
+    if (word.length > longest.length) {
+      longest = word;
+    }
+  }
+
+  return longest;
+}
+
+console.log(longestWorD('JavaScript is amazing')); // Output: "JavaScript"
+console.log(longestWorD('I love coding challenges')); // Output: "challenges"
+console.log(longestWorD('')); // Output: null
