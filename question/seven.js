@@ -1377,3 +1377,17 @@ const memoizedFactorial = memoize(factorial);
 // console.log(memoizedFactorial(5)); // Output: 120 (cached)
 // console.log(memoizedFactorial(6)); // Output: 720 (calculated, uses result from 5!)
 // console.log(memoizedFactorial(6)); // Output: 720 (cached)
+
+// Write a function sumOfDigits that takes a number as input and returns the sum of its digits.
+function sumOfDigits(num) {
+  if (num < 0) num = -num; // Handle negative numbers
+  return num
+    .toString() // Convert the number to a string
+    .split('') // Split the string into individual digits
+    .map(Number) // Convert each digit back to a number
+    .reduce((sum, digit) => sum + digit, 0); // Sum up the digits
+}
+
+console.log(sumOfDigits(123)); // Output: 6 (1 + 2 + 3)
+console.log(sumOfDigits(-456)); // Output: 15 (4 + 5 + 6)
+console.log(sumOfDigits(0)); // Output: 0
