@@ -1509,3 +1509,28 @@ function countVowels(str) {
 // console.log(countVowels('JavaScript')); // Output: 3
 // console.log(countVowels('AEIOU')); // Output: 5
 // console.log(countVowels('xyz')); // Output: 0
+
+// Write a function firstNonRepeatingChar that takes a string and returns the first character that doesn’t repeat.
+
+function firstNonRepeatingChar(str) {
+  const charCount = {};
+
+  // Count occurrences of each character
+  for (const char of str) {
+    charCount[char] = (charCount[char] || 0) + 1;
+  }
+
+  // Find the first non-repeating character
+  for (const char of str) {
+    if (charCount[char] === 1) {
+      return char;
+    }
+  }
+
+  return null; // Return null if no non-repeating character is found
+}
+
+console.log(firstNonRepeatingChar('swiss')); // Output: "w"
+console.log(firstNonRepeatingChar('repetition')); // Output: "r"
+console.log(firstNonRepeatingChar('aabbcc')); // Output: null
+console.log(firstNonRepeatingChar('abcdef')); // Output: "a"
