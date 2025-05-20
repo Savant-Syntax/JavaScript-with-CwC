@@ -1505,7 +1505,7 @@ function countVowels(str) {
   return count;
 }
 
-console.log(countVowels('Hello World')); // Output: 3
-console.log(countVowels('JavaScript')); // Output: 3
-console.log(countVowels('AEIOU')); // Output: 5
-console.log(countVowels('xyz')); // Output: 0
+// console.log(countVowels('Hello World')); // Output: 3
+// console.log(countVowels('JavaScript')); // Output: 3
+// console.log(countVowels('AEIOU')); // Output: 5
+// console.log(countVowels('xyz')); // Output: 0
