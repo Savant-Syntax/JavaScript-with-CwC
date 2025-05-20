@@ -1530,7 +1530,7 @@ function firstNonRepeatingChar(str) {
   return null; // Return null if no non-repeating character is found
 }
 
-console.log(firstNonRepeatingChar('swiss')); // Output: "w"
-console.log(firstNonRepeatingChar('repetition')); // Output: "r"
-console.log(firstNonRepeatingChar('aabbcc')); // Output: null
-console.log(firstNonRepeatingChar('abcdef')); // Output: "a"
+// console.log(firstNonRepeatingChar('swiss')); // Output: "w"
+// console.log(firstNonRepeatingChar('repetition')); // Output: "r"
+// console.log(firstNonRepeatingChar('aabbcc')); // Output: null
+// console.log(firstNonRepeatingChar('abcdef')); // Output: "a"
