@@ -1556,8 +1556,8 @@ const product = [
   { name: 'Tablet', price: 600 },
 ];
 
-console.log(sortByKey(products, 'price'));
+// console.log(sortByKey(products, 'price'));
 // Output: [{ name: "Tablet", price: 600 }, { name: "Phone", price: 800 }, { name: "Laptop", price: 1200 }]
 
-console.log(sortByKey(products, 'name'));
+// console.log(sortByKey(products, 'name'));
 // Output: [{ name: "Laptop", price: 1200 }, { name: "Phone", price: 800 }, { name: "Tablet", price: 600 }]
