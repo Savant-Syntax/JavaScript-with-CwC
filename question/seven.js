@@ -1534,3 +1534,30 @@ function firstNonRepeatingChar(str) {
 // console.log(firstNonRepeatingChar('repetition')); // Output: "r"
 // console.log(firstNonRepeatingChar('aabbcc')); // Output: null
 // console.log(firstNonRepeatingChar('abcdef')); // Output: "a"
+
+// Write a function sortByKey that takes an array of objects and a key, then returns the array sorted by that key.
+
+function sortByKey(arr, key) {
+  return arr.slice().sort((a, b) => {
+    if (a[key] < b[key]) {
+      return -1;
+    }
+    if (a[key] > b[key]) {
+      return 1;
+    }
+    return 0; // If equal
+  });
+}
+
+// Example usage:
+const product = [
+  { name: 'Laptop', price: 1200 },
+  { name: 'Phone', price: 800 },
+  { name: 'Tablet', price: 600 },
+];
+
+console.log(sortByKey(products, 'price'));
+// Output: [{ name: "Tablet", price: 600 }, { name: "Phone", price: 800 }, { name: "Laptop", price: 1200 }]
+
+console.log(sortByKey(products, 'name'));
+// Output: [{ name: "Laptop", price: 1200 }, { name: "Phone", price: 800 }, { name: "Tablet", price: 600 }]
