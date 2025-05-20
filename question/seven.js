@@ -1488,3 +1488,24 @@ function flattenArray(nestedArray) {
 // console.log(flattenArray([1, [2, [3, [4, [5]]]]])); // Output: [1, 2, 3, 4, 5]
 // console.log(flattenArray([])); // Output: []
 // console.log(flattenArray([1, 2, 3])); // Output: [1, 2, 3]
+
+// Write a function countVowels that takes a string and returns the number of vowels (a, e, i, o, u) in it.
+
+function countVowels(str) {
+  // Convert the string to lowercase for case-insensitive comparison
+  const vowels = 'aeiou';
+  let count = 0;
+
+  for (const char of str.toLowerCase()) {
+    if (vowels.includes(char)) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+console.log(countVowels('Hello World')); // Output: 3
+console.log(countVowels('JavaScript')); // Output: 3
+console.log(countVowels('AEIOU')); // Output: 5
+console.log(countVowels('xyz')); // Output: 0
