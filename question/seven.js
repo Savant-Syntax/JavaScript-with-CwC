@@ -1469,3 +1469,22 @@ function isPalindrome(str) {
 // console.log(isPalindrome('racecar')); // Output: true
 // console.log(isPalindrome('hello')); // Output: false
 // console.log(isPalindrome('')); // Output: true (empty string is a palindrome)
+
+// Write a function flattenArray that takes a nested array and returns a single flattened array.
+
+function flattenArray(nestedArray) {
+  // Use recursion to handle arrays of arbitrary depth
+  return nestedArray.reduce((acc, item) => {
+    if (Array.isArray(item)) {
+      acc = acc.concat(flattenArray(item)); // Recursively flatten
+    } else {
+      acc.push(item); // Add non-array items directly
+    }
+    return acc;
+  }, []);
+}
+
+console.log(flattenArray([[1, 2], [3, [4, 5]], 6])); // Output: [1, 2, 3, 4, 5, 6]
+console.log(flattenArray([1, [2, [3, [4, [5]]]]])); // Output: [1, 2, 3, 4, 5]
+console.log(flattenArray([])); // Output: []
+console.log(flattenArray([1, 2, 3])); // Output: [1, 2, 3]
