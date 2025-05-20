@@ -1465,7 +1465,7 @@ function isPalindrome(str) {
   return cleanStr === cleanStr.split('').reverse().join('');
 }
 
-console.log(isPalindrome('A man, a plan, a canal: Panama')); // Output: true
-console.log(isPalindrome('racecar')); // Output: true
-console.log(isPalindrome('hello')); // Output: false
-console.log(isPalindrome('')); // Output: true (empty string is a palindrome)
+// console.log(isPalindrome('A man, a plan, a canal: Panama')); // Output: true
+// console.log(isPalindrome('racecar')); // Output: true
+// console.log(isPalindrome('hello')); // Output: false
+// console.log(isPalindrome('')); // Output: true (empty string is a palindrome)
