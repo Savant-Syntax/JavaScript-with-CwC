@@ -1455,3 +1455,17 @@ function reverseWords(sentence) {
 // console.log(reverseWords('JavaScript is fun')); // Output: "fun is JavaScript"
 // console.log(reverseWords('')); // Output: ""
 // console.log(reverseWords('SingleWord')); // Output: "SingleWord"
+
+// Write a function isPalindrome that takes a string and checks if it is a palindrome (reads the same backward as forward).
+
+function isPalindrome(str) {
+  // Normalize the string by removing non-alphanumeric characters and converting to lowercase
+  const cleanStr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+  // Compare the string with its reverse
+  return cleanStr === cleanStr.split('').reverse().join('');
+}
+
+console.log(isPalindrome('A man, a plan, a canal: Panama')); // Output: true
+console.log(isPalindrome('racecar')); // Output: true
+console.log(isPalindrome('hello')); // Output: false
+console.log(isPalindrome('')); // Output: true (empty string is a palindrome)
