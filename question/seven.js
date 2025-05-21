@@ -1670,11 +1670,10 @@ function decodeString(encoded) {
     .join(''); // Join the characters to form the original string
 }
 
-// Example usage
 const originalOne = 'ABC';
 const encoded = encodeString(originalOne); // "65-66-67"
 const decoded = decodeString(encoded); // "ABC"
 
-console.log('Original:', originalOne);
-console.log('Encoded:', encoded);
-console.log('Decoded:', decoded);
+// console.log('Original:', originalOne);
+// console.log('Encoded:', encoded);
+// console.log('Decoded:', decoded);
