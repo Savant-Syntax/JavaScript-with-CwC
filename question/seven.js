@@ -1599,3 +1599,55 @@ function randomQuote(quotes) {
 
 const quotes = ['Quote 1', 'Quote 2', 'Quote 3'];
 // console.log(randomQuote(quotes)); // Output: A random quote (e.g., "Quote 2")
+
+// Write a function spiralMatrix that takes a 2D array (matrix) and returns the elements in spiral order.
+
+function spiralMatrix(matrix) {
+  if (!matrix || matrix.length === 0) return [];
+
+  const result = [];
+  let top = 0; // Top boundary
+  let bottom = matrix.length - 1; // Bottom boundary
+  let left = 0; // Left boundary
+  let right = matrix[0].length - 1; // Right boundary
+
+  while (top <= bottom && left <= right) {
+    // Traverse from left to right along the top row
+    for (let i = left; i <= right; i++) {
+      result.push(matrix[top][i]);
+    }
+    top++; // Move the top boundary down
+
+    // Traverse from top to bottom along the right column
+    for (let i = top; i <= bottom; i++) {
+      result.push(matrix[i][right]);
+    }
+    right--; // Move the right boundary left
+
+    // Traverse from right to left along the bottom row (if still within bounds)
+    if (top <= bottom) {
+      for (let i = right; i >= left; i--) {
+        result.push(matrix[bottom][i]);
+      }
+      bottom--; // Move the bottom boundary up
+    }
+
+    // Traverse from bottom to top along the left column (if still within bounds)
+    if (left <= right) {
+      for (let i = bottom; i >= top; i--) {
+        result.push(matrix[i][left]);
+      }
+      left++; // Move the left boundary right
+    }
+  }
+
+  return result;
+}
+
+const matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+
+console.log(spiralMatrix(matrix)); // Output: [1, 2, 3, 6, 9, 8, 7, 4, 5]
