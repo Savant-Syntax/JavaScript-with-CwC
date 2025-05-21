@@ -1561,3 +1561,24 @@ const product = [
 
 // console.log(sortByKey(products, 'name'));
 // Output: [{ name: "Laptop", price: 1200 }, { name: "Phone", price: 800 }, { name: "Tablet", price: 600 }]
+
+// Write a function wordFrequency that takes a string and returns an object where the keys are unique words and the values are the frequency of each word in the string.
+
+function wordFrequency(input) {
+  // Split the input string into words, normalize to lowercase, and remove extra spaces
+  const words = input.toLowerCase().split(/\s+/);
+
+  // Create an empty object to store the word counts
+  const frequency = {};
+
+  // Loop through the words and count their occurrences
+  for (const word of words) {
+    frequency[word] = (frequency[word] || 0) + 1;
+  }
+
+  return frequency;
+}
+
+const input = 'hello world hello';
+const resultThree = wordFrequency(input);
+console.log(resultThree); // Output: { hello: 2, world: 1 }
