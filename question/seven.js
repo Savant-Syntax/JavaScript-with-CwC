@@ -1650,4 +1650,4 @@ const matrix = [
   [7, 8, 9],
 ];
 
-console.log(spiralMatrix(matrix)); // Output: [1, 2, 3, 6, 9, 8, 7, 4, 5]
+// console.log(spiralMatrix(matrix)); // Output: [1, 2, 3, 6, 9, 8, 7, 4, 5]
