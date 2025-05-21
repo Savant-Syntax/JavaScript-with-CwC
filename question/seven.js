@@ -1677,3 +1677,46 @@ const decoded = decodeString(encoded); // "ABC"
 // console.log('Original:', originalOne);
 // console.log('Encoded:', encoded);
 // console.log('Decoded:', decoded);
+
+// Create a class EventEmitter that allows you to subscribe to events, emit events, and remove event listeners.
+
+class EventEmitterOne {
+  constructor() {
+    this.events = {}; // Object to store event names and their listeners
+  }
+
+  // Subscribe to an event
+  on(eventName, listener) {
+    if (!this.events[eventName]) {
+      this.events[eventName] = []; // Initialize an array for the event if it doesn't exist
+    }
+    this.events[eventName].push(listener); // Add the listener to the event's array
+  }
+
+  // Emit an event, calling all its listeners
+  emit(eventName, ...args) {
+    if (this.events[eventName]) {
+      this.events[eventName].forEach((listener) => listener(...args)); // Call each listener with the arguments
+    }
+  }
+
+  // Remove a specific listener or all listeners for an event
+  off(eventName, listenerToRemove) {
+    if (this.events[eventName]) {
+      this.events[eventName] = this.events[eventName].filter(
+        (listener) => listener !== listenerToRemove
+      );
+    }
+  }
+}
+
+// Example usage
+const emitterOne = new EventEmitterOne();
+
+const greetListener = () => console.log('Hello!');
+emitterOne.on('greet', greetListener);
+
+emitterOne.emit('greet'); // Output: Hello!
+
+emitterOne.off('greet', greetListener);
+emitterOne.emit('greet'); // No output
