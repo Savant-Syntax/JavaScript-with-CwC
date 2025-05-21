@@ -1716,7 +1716,7 @@ const emitterOne = new EventEmitterOne();
 const greetListener = () => console.log('Hello!');
 emitterOne.on('greet', greetListener);
 
-emitterOne.emit('greet'); // Output: Hello!
+// emitterOne.emit('greet'); // Output: Hello!
 
 emitterOne.off('greet', greetListener);
 emitterOne.emit('greet'); // No output
