@@ -1582,3 +1582,21 @@ function wordFrequency(input) {
 const input = 'hello world hello';
 const resultThree = wordFrequency(input);
 // console.log(resultThree); // Output: { hello: 2, world: 1 }
+
+// Create a function randomQuote that takes an array of quotes (strings) and returns a randomly selected quote each time it is called.
+
+function randomQuote(quotes) {
+  if (!quotes || quotes.length === 0) {
+    throw new Error('The quotes array must not be empty.');
+  }
+
+  // Generate a random index within the bounds of the quotes array
+  const randomIndex = Math.floor(Math.random() * quotes.length);
+
+  // Return the quote at the randomly generated index
+  return quotes[randomIndex];
+}
+
+// Example usage
+const quotes = ['Quote 1', 'Quote 2', 'Quote 3'];
+console.log(randomQuote(quotes)); // Output: A random quote (e.g., "Quote 2")
