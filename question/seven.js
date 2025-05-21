@@ -1651,3 +1651,30 @@ const matrix = [
 ];
 
 // console.log(spiralMatrix(matrix)); // Output: [1, 2, 3, 6, 9, 8, 7, 4, 5]
+
+// Write two functions, encodeString and decodeString. The encodeString function should take a string and replace each character with its ASCII code separated by -. The decodeString function should take the encoded string and return the original string.
+
+// Function to encode a string by converting each character to its ASCII code
+function encodeString(input) {
+  return input
+    .split('') // Split the string into characters
+    .map((char) => char.charCodeAt(0)) // Convert each character to its ASCII code
+    .join('-'); // Join the ASCII codes with '-'
+}
+
+// Function to decode an encoded string back to the original string
+function decodeString(encoded) {
+  return encoded
+    .split('-') // Split the encoded string into ASCII codes
+    .map((code) => String.fromCharCode(Number(code))) // Convert each ASCII code back to a character
+    .join(''); // Join the characters to form the original string
+}
+
+// Example usage
+const originalOne = 'ABC';
+const encoded = encodeString(originalOne); // "65-66-67"
+const decoded = decodeString(encoded); // "ABC"
+
+console.log('Original:', originalOne);
+console.log('Encoded:', encoded);
+console.log('Decoded:', decoded);
