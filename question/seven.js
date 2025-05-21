@@ -1581,4 +1581,4 @@ function wordFrequency(input) {
 
 const input = 'hello world hello';
 const resultThree = wordFrequency(input);
-console.log(resultThree); // Output: { hello: 2, world: 1 }
+// console.log(resultThree); // Output: { hello: 2, world: 1 }
