@@ -1597,6 +1597,5 @@ function randomQuote(quotes) {
   return quotes[randomIndex];
 }
 
-// Example usage
 const quotes = ['Quote 1', 'Quote 2', 'Quote 3'];
-console.log(randomQuote(quotes)); // Output: A random quote (e.g., "Quote 2")
+// console.log(randomQuote(quotes)); // Output: A random quote (e.g., "Quote 2")
