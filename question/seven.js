@@ -1769,3 +1769,18 @@ function isEven(number) {
 // console.log(isEven(0)); // Output: true
 // console.log(isEven(-2)); // Output: true
 // console.log(isEven(-3)); // Output: false
+
+// Write a function reverseArray that takes an array and returns a new array with the elements in reverse order.
+
+function reverseArray(arr) {
+  const reversed = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    reversed.push(arr[i]);
+  }
+  return reversed;
+}
+
+console.log(reverseArray([1, 2, 3, 4, 5])); // Output: [5, 4, 3, 2, 1]
+console.log(reverseArray(['a', 'b', 'c'])); // Output: ["c", "b", "a"]
+console.log(reverseArray([])); // Output: []
+console.log(reverseArray([42])); // Output: [42]
