@@ -1740,3 +1740,20 @@ function findMax(numbers) {
 // console.log(findMax([1, 2, 3, 4, 5])); // Output: 5
 // console.log(findMax([-10, -5, -1, -20])); // Output: -1
 // console.log(findMax([])); // Output: "Array is empty"
+
+// Write a function countWords that takes a string and returns the number of words in it. Words are separated by spaces.
+
+function countWords(str) {
+  if (str.trim() === '') {
+    return 0; // Handle cases with empty or whitespace-only strings
+  }
+
+  const words = str.trim().split(/\s+/); // Split by one or more spaces
+  return words.length;
+}
+
+console.log(countWords('Hello world!')); // Output: 2
+console.log(countWords('  This is a test.  ')); // Output: 4
+console.log(countWords('')); // Output: 0
+console.log(countWords('    ')); // Output: 0
+console.log(countWords('JavaScript is awesome')); // Output: 3
