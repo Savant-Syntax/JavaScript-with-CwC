@@ -1791,7 +1791,7 @@ function isPositive(number) {
   return number > 0;
 }
 
-console.log(isPositive(10)); // Output: true
-console.log(isPositive(-5)); // Output: false
-console.log(isPositive(0)); // Output: false
-console.log(isPositive(3.14)); // Output: true
+// console.log(isPositive(10)); // Output: true
+// console.log(isPositive(-5)); // Output: false
+// console.log(isPositive(0)); // Output: false
+// console.log(isPositive(3.14)); // Output: true
