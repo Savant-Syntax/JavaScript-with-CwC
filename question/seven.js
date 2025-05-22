@@ -1720,3 +1720,23 @@ emitterOne.on('greet', greetListener);
 
 emitterOne.off('greet', greetListener);
 emitterOne.emit('greet'); // No output
+
+// Write a function findMax that takes an array of numbers and returns the largest number.
+
+function findMax(numbers) {
+  if (numbers.length === 0) {
+    return 'Array is empty';
+  }
+
+  let max = numbers[0]; // Assume the first element is the largest
+  for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] > max) {
+      max = numbers[i];
+    }
+  }
+  return max;
+}
+
+console.log(findMax([1, 2, 3, 4, 5])); // Output: 5
+console.log(findMax([-10, -5, -1, -20])); // Output: -1
+console.log(findMax([])); // Output: "Array is empty"
