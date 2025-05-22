@@ -1784,3 +1784,14 @@ function reverseArray(arr) {
 //  console.log(reverseArray(['a', 'b', 'c'])); // Output: ["c", "b", "a"]
 //  console.log(reverseArray([])); // Output: []
 //  console.log(reverseArray([42])); // Output: [42]
+
+// Write a function isPositive that takes a number and returns true if it’s positive, otherwise false.
+
+function isPositive(number) {
+  return number > 0;
+}
+
+console.log(isPositive(10)); // Output: true
+console.log(isPositive(-5)); // Output: false
+console.log(isPositive(0)); // Output: false
+console.log(isPositive(3.14)); // Output: true
