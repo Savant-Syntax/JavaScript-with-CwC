@@ -1752,8 +1752,8 @@ function countWords(str) {
   return words.length;
 }
 
-console.log(countWords('Hello world!')); // Output: 2
-console.log(countWords('  This is a test.  ')); // Output: 4
-console.log(countWords('')); // Output: 0
-console.log(countWords('    ')); // Output: 0
-console.log(countWords('JavaScript is awesome')); // Output: 3
+// console.log(countWords('Hello world!')); // Output: 2
+// console.log(countWords('  This is a test.  ')); // Output: 4
+// console.log(countWords('')); // Output: 0
+// console.log(countWords('    ')); // Output: 0
+// console.log(countWords('JavaScript is awesome')); // Output: 3
