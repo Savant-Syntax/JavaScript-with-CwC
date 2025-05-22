@@ -1780,7 +1780,7 @@ function reverseArray(arr) {
   return reversed;
 }
 
-console.log(reverseArray([1, 2, 3, 4, 5])); // Output: [5, 4, 3, 2, 1]
-console.log(reverseArray(['a', 'b', 'c'])); // Output: ["c", "b", "a"]
-console.log(reverseArray([])); // Output: []
-console.log(reverseArray([42])); // Output: [42]
+//  console.log(reverseArray([1, 2, 3, 4, 5])); // Output: [5, 4, 3, 2, 1]
+//  console.log(reverseArray(['a', 'b', 'c'])); // Output: ["c", "b", "a"]
+//  console.log(reverseArray([])); // Output: []
+//  console.log(reverseArray([42])); // Output: [42]
