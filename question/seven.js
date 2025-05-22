@@ -1757,3 +1757,15 @@ function countWords(str) {
 // console.log(countWords('')); // Output: 0
 // console.log(countWords('    ')); // Output: 0
 // console.log(countWords('JavaScript is awesome')); // Output: 3
+
+// Write a function isEven that takes a number as input and returns true if the number is even, otherwise false.
+
+function isEven(number) {
+  return number % 2 === 0;
+}
+
+// console.log(isEven(4)); // Output: true
+// console.log(isEven(7)); // Output: false
+// console.log(isEven(0)); // Output: true
+// console.log(isEven(-2)); // Output: true
+// console.log(isEven(-3)); // Output: false
