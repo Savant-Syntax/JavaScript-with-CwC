@@ -1810,3 +1810,18 @@ function printPattern(n) {
 }
 
 // printPattern(5);
+
+// Write a program to print the following pattern for n = 5:
+// *****
+// ****
+// ***
+// **
+// *
+
+function printInvertedPattern(n) {
+  for (let i = n; i >= 1; i--) {
+    console.log('*'.repeat(i));
+  }
+}
+
+printInvertedPattern(5);
