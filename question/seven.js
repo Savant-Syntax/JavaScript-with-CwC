@@ -1824,4 +1824,4 @@ function printInvertedPattern(n) {
   }
 }
 
-printInvertedPattern(5);
+// printInvertedPattern(5);
