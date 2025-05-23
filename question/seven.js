@@ -1842,3 +1842,32 @@ function printPyramidPattern(n) {
 }
 
 // printPyramidPattern(5);
+
+// Write a program to print the following pattern for n = 5:
+//     *
+//    ***
+//   *****
+//  *******
+// *********
+//  *******
+//   *****
+//    ***
+//     *
+
+function printDiamondPattern(n) {
+  // Upper part of the diamond
+  for (let i = 1; i <= n; i++) {
+    const spaces = ' '.repeat(n - i); // Add spaces for alignment
+    const stars = '*'.repeat(2 * i - 1); // Calculate the number of stars
+    console.log(spaces + stars); // Combine spaces and stars
+  }
+
+  // Lower part of the diamond
+  for (let i = n - 1; i >= 1; i--) {
+    const spaces = ' '.repeat(n - i); // Add spaces for alignment
+    const stars = '*'.repeat(2 * i - 1); // Calculate the number of stars
+    console.log(spaces + stars); // Combine spaces and stars
+  }
+}
+
+printDiamondPattern(5);
