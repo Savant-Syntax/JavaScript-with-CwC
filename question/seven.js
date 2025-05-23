@@ -1871,3 +1871,35 @@ function printDiamondPattern(n) {
 }
 
 // printDiamondPattern(5);
+
+// Write a program to print Pascal's Triangle for n = 5 (number of rows):
+//     1
+//    1 1
+//   1 2 1
+//  1 3 3 1
+// 1 4 6 4 1
+
+function printPascalsTriangle(n) {
+  const triangle = [];
+
+  for (let i = 0; i < n; i++) {
+    triangle[i] = [];
+    triangle[i][0] = 1; // First element of each row is 1
+
+    for (let j = 1; j < i; j++) {
+      // Calculate the value based on the sum of the two values above it
+      triangle[i][j] = triangle[i - 1][j - 1] + triangle[i - 1][j];
+    }
+
+    triangle[i][i] = 1; // Last element of each row is 1
+  }
+
+  // Print the triangle
+  for (let i = 0; i < n; i++) {
+    const spaces = ' '.repeat(n - i - 1); // Add spaces for alignment
+    const row = triangle[i].join(' '); // Join the elements with spaces
+    console.log(spaces + row);
+  }
+}
+
+printPascalsTriangle(5);
