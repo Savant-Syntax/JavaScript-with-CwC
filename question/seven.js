@@ -1841,4 +1841,4 @@ function printPyramidPattern(n) {
   }
 }
 
-printPyramidPattern(5);
+// printPyramidPattern(5);
