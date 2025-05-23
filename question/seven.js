@@ -1795,3 +1795,18 @@ function isPositive(number) {
 // console.log(isPositive(-5)); // Output: false
 // console.log(isPositive(0)); // Output: false
 // console.log(isPositive(3.14)); // Output: true
+
+// Write a program to print the following pattern for n = 5:
+// *
+// **
+// ***
+// ****
+// *****
+
+function printPattern(n) {
+  for (let i = 1; i <= n; i++) {
+    console.log('*'.repeat(i));
+  }
+}
+
+printPattern(5);
