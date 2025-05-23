@@ -1870,4 +1870,4 @@ function printDiamondPattern(n) {
   }
 }
 
-printDiamondPattern(5);
+// printDiamondPattern(5);
