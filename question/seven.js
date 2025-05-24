@@ -1977,3 +1977,40 @@ function printPascalsTriangle(n) {
 }
 
 // printPascalsTriangle(5);
+
+// Hollow Diamond with Stars
+// For n = 5, print a hollow diamond:
+//
+//     *
+//    * *
+//   *   *
+//  *     *
+// *       *
+//  *     *
+//   *   *
+//    * *
+//     *
+
+function printHollowDiamond(n) {
+  // Upper part of the diamond
+  for (let i = 1; i <= n; i++) {
+    let row = ' '.repeat(n - i); // Leading spaces
+    row += '*'; // First star
+    if (i > 1) {
+      row += ' '.repeat(2 * (i - 1) - 1) + '*'; // Hollow space and second star
+    }
+    console.log(row);
+  }
+
+  // Lower part of the diamond
+  for (let i = n - 1; i >= 1; i--) {
+    let row = ' '.repeat(n - i); // Leading spaces
+    row += '*'; // First star
+    if (i > 1) {
+      row += ' '.repeat(2 * (i - 1) - 1) + '*'; // Hollow space and second star
+    }
+    console.log(row);
+  }
+}
+
+printHollowDiamond(5);
