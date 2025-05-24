@@ -1944,4 +1944,4 @@ function printHourglassPattern(n) {
   }
 }
 
-printHourglassPattern(5);
+// printHourglassPattern(5);
