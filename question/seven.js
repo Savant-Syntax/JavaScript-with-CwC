@@ -2115,5 +2115,4 @@ function printNumberDiamond(n) {
   }
 }
 
-// Example usage
 printNumberDiamond(5);
