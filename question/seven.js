@@ -2014,3 +2014,45 @@ function printHollowDiamond(n) {
 }
 
 // printHollowDiamond(5);
+
+// Inverted Hourglass of Numbers
+// For n = 5, print:
+//
+// 1
+// 121
+// 12321
+// 1234321
+// 123454321
+// 1234321
+// 12321
+// 121
+// 1
+
+function printInvertedHourglass(n) {
+  // Upper part of the hourglass
+  for (let i = 1; i <= n; i++) {
+    let row = '';
+    for (let j = 1; j <= i; j++) {
+      row += j; // Increasing numbers
+    }
+    for (let j = i - 1; j >= 1; j--) {
+      row += j; // Decreasing numbers
+    }
+    console.log(row);
+  }
+
+  // Lower part of the hourglass
+  for (let i = n - 1; i >= 1; i--) {
+    let row = '';
+    for (let j = 1; j <= i; j++) {
+      row += j; // Increasing numbers
+    }
+    for (let j = i - 1; j >= 1; j--) {
+      row += j; // Decreasing numbers
+    }
+    console.log(row);
+  }
+}
+
+// Example Usage:
+printInvertedHourglass(5);
