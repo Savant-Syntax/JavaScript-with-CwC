@@ -1976,4 +1976,4 @@ function printPascalsTriangle(n) {
   }
 }
 
-printPascalsTriangle(5);
+// printPascalsTriangle(5);
