@@ -2013,4 +2013,4 @@ function printHollowDiamond(n) {
   }
 }
 
-printHollowDiamond(5);
+// printHollowDiamond(5);
