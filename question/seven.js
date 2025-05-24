@@ -1903,3 +1903,45 @@ function printPascalsTriangle(n) {
 }
 
 // printPascalsTriangle(5);
+
+// Hourglass of Numbers
+// For n = 5, print an hourglass pattern:
+// 543212345
+//  4321234
+//   32123
+//    212
+//     1
+//    212
+//   32123
+//  4321234
+// 543212345
+
+function printHourglassPattern(n) {
+  // Function to generate a single line of the pattern
+  function generateLine(start, spaces) {
+    const prefixSpaces = ' '.repeat(spaces);
+    let leftPart = '';
+    let rightPart = '';
+
+    for (let i = start; i >= 1; i--) {
+      leftPart += i;
+    }
+    for (let i = 2; i <= start; i++) {
+      rightPart += i;
+    }
+
+    return prefixSpaces + leftPart + rightPart;
+  }
+
+  // Upper half of the hourglass
+  for (let i = n; i >= 1; i--) {
+    console.log(generateLine(i, n - i));
+  }
+
+  // Lower half of the hourglass
+  for (let i = 2; i <= n; i++) {
+    console.log(generateLine(i, n - i));
+  }
+}
+
+printHourglassPattern(5);
