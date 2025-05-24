@@ -2055,3 +2055,65 @@ function printInvertedHourglass(n) {
 }
 
 // printInvertedHourglass(5);
+
+// Diamond of Numbers
+// Write a program to print a diamond-shaped number pattern for n = 5 (where n is the number of rows in the top half of the diamond):
+//
+//     1
+//    121
+//   12321
+//  1234321
+// 123454321
+//  1234321
+//   12321
+//    121
+//     1
+
+function printNumberDiamond(n) {
+  // Upper part of the diamond
+  for (let i = 1; i <= n; i++) {
+    let row = '';
+
+    // Print leading spaces
+    for (let j = 1; j <= n - i; j++) {
+      row += ' ';
+    }
+
+    // Print increasing numbers
+    for (let j = 1; j <= i; j++) {
+      row += j;
+    }
+
+    // Print decreasing numbers
+    for (let j = i - 1; j >= 1; j--) {
+      row += j;
+    }
+
+    console.log(row);
+  }
+
+  // Lower part of the diamond
+  for (let i = n - 1; i >= 1; i--) {
+    let row = '';
+
+    // Print leading spaces
+    for (let j = 1; j <= n - i; j++) {
+      row += ' ';
+    }
+
+    // Print increasing numbers
+    for (let j = 1; j <= i; j++) {
+      row += j;
+    }
+
+    // Print decreasing numbers
+    for (let j = i - 1; j >= 1; j--) {
+      row += j;
+    }
+
+    console.log(row);
+  }
+}
+
+// Example usage
+printNumberDiamond(5);
