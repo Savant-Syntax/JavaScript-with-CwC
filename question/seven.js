@@ -2054,5 +2054,4 @@ function printInvertedHourglass(n) {
   }
 }
 
-// Example Usage:
-printInvertedHourglass(5);
+// printInvertedHourglass(5);
