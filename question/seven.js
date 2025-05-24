@@ -2115,4 +2115,4 @@ function printNumberDiamond(n) {
   }
 }
 
-printNumberDiamond(5);
+// printNumberDiamond(5);
