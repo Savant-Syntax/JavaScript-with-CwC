@@ -1945,3 +1945,35 @@ function printHourglassPattern(n) {
 }
 
 // printHourglassPattern(5);
+
+// Pascal's Triangle
+// For n = 5, print Pascal's Triangle:
+//
+//     1
+//    1 1
+//   1 2 1
+//  1 3 3 1
+// 1 4 6 4 1
+
+function printPascalsTriangle(n) {
+  let triangle = [];
+
+  for (let i = 0; i < n; i++) {
+    triangle[i] = [];
+    for (let j = 0; j <= i; j++) {
+      if (j === 0 || j === i) {
+        triangle[i][j] = 1; // First and last elements are 1
+      } else {
+        triangle[i][j] = triangle[i - 1][j - 1] + triangle[i - 1][j]; // Sum of two elements above
+      }
+    }
+  }
+
+  for (let i = 0; i < n; i++) {
+    const spaces = ' '.repeat(n - i - 1); // Leading spaces for alignment
+    const row = triangle[i].join(' ');
+    console.log(spaces + row);
+  }
+}
+
+printPascalsTriangle(5);
