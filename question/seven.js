@@ -2143,3 +2143,15 @@ function moveZeroes(arr) {
 }
 
 // console.log(moveZeroes([0, 1, 0, 3, 12])); // Output: [1, 3, 12, 0, 0]
+
+// Find the Missing Number
+
+function findMissing(arr) {
+  let n = arr.length;
+  let totalSum = (n * (n + 1)) / 2; // Sum of first n natural numbers
+  let arraySum = arr.reduce((sum, num) => sum + num, 0);
+
+  return totalSum - arraySum;
+}
+
+console.log(findMissing([3, 0, 1])); // Output: 2
