@@ -2164,3 +2164,20 @@ function rotateArray(nums, k) {
 }
 
 // console.log(rotateArray([1, 2, 3, 4, 5, 6, 7], 3)); // Output: [5, 6, 7, 1, 2, 3, 4]
+
+// Find All Duplicates
+
+function moveZeroes(arr) {
+  let nonZeroIndex = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== 0) {
+      [arr[nonZeroIndex], arr[i]] = [arr[i], arr[nonZeroIndex]];
+      nonZeroIndex++;
+    }
+  }
+
+  return arr;
+}
+
+console.log(moveZeroes([0, 1, 0, 3, 12])); // Output: [1, 3, 12, 0, 0]
