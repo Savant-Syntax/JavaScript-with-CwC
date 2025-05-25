@@ -2116,3 +2116,13 @@ function printNumberDiamond(n) {
 }
 
 // printNumberDiamond(5);
+
+// Find the Maximum Product of Two Elements
+function maxProduct(arr) {
+  if (arr.length < 2) return null;
+
+  arr.sort((a, b) => b - a); // Sort in descending order
+  return arr[0] * arr[1];
+}
+
+console.log(maxProduct([1, 10, 2, 6])); // Output: 60
