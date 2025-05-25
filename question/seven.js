@@ -2155,3 +2155,12 @@ function findMissing(arr) {
 }
 
 // console.log(findMissing([3, 0, 1])); // Output: 2
+
+// Rotate Array
+
+function rotateArray(nums, k) {
+  k %= nums.length; // Handle cases where k > nums.length
+  return nums.slice(-k).concat(nums.slice(0, -k));
+}
+
+console.log(rotateArray([1, 2, 3, 4, 5, 6, 7], 3)); // Output: [5, 6, 7, 1, 2, 3, 4]
