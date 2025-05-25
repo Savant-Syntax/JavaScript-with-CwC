@@ -2163,4 +2163,4 @@ function rotateArray(nums, k) {
   return nums.slice(-k).concat(nums.slice(0, -k));
 }
 
-console.log(rotateArray([1, 2, 3, 4, 5, 6, 7], 3)); // Output: [5, 6, 7, 1, 2, 3, 4]
+// console.log(rotateArray([1, 2, 3, 4, 5, 6, 7], 3)); // Output: [5, 6, 7, 1, 2, 3, 4]
