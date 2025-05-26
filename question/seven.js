@@ -2231,3 +2231,21 @@ function longestConsecutiveSequence(arr) {
 }
 
 // console.log(longestConsecutiveSequence([100, 4, 200, 1, 3, 2])); // Output: 4
+
+// Find the Majority Element
+
+function majorityElement(arr) {
+  let count = {};
+  let n = arr.length;
+
+  for (let num of arr) {
+    count[num] = (count[num] || 0) + 1;
+    if (count[num] > n / 2) {
+      return num;
+    }
+  }
+
+  return null; // No majority element
+}
+
+console.log(majorityElement([3, 3, 4, 2, 3])); // Output: 3
