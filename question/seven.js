@@ -2190,4 +2190,4 @@ function findIntersection(arr1, arr2) {
   return intersection;
 }
 
-console.log(findIntersection([1, 2, 2, 1], [2, 2])); // Output: [2, 2]
+// console.log(findIntersection([1, 2, 2, 1], [2, 2])); // Output: [2, 2]
