@@ -2191,3 +2191,17 @@ function findIntersection(arr1, arr2) {
 }
 
 // console.log(findIntersection([1, 2, 2, 1], [2, 2])); // Output: [2, 2]
+
+// Check if Array is Sorted
+
+function isSorted(arr) {
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < arr[i - 1]) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(isSorted([1, 2, 3, 4])); // Output: true
+console.log(isSorted([1, 3, 2, 4])); // Output: false
