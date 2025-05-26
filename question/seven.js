@@ -2266,4 +2266,4 @@ function findPairWithSum(arr, target) {
   return null; // No pair found
 }
 
-console.log(findPairWithSum([2, 7, 11, 15], 9)); // Output: [2, 7]
+// console.log(findPairWithSum([2, 7, 11, 15], 9)); // Output: [2, 7]
