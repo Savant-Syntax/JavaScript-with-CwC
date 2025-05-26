@@ -2230,4 +2230,4 @@ function longestConsecutiveSequence(arr) {
   return longest;
 }
 
-console.log(longestConsecutiveSequence([100, 4, 200, 1, 3, 2])); // Output: 4
+// console.log(longestConsecutiveSequence([100, 4, 200, 1, 3, 2])); // Output: 4
