@@ -2181,3 +2181,13 @@ function moveZeroes(arr) {
 }
 
 // console.log(moveZeroes([0, 1, 0, 3, 12])); // Output: [1, 3, 12, 0, 0]
+
+//  Find the Intersection of Two Arrays
+
+function findIntersection(arr1, arr2) {
+  let set1 = new Set(arr1);
+  let intersection = arr2.filter((num) => set1.has(num));
+  return intersection;
+}
+
+console.log(findIntersection([1, 2, 2, 1], [2, 2])); // Output: [2, 2]
