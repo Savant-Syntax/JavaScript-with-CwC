@@ -2205,3 +2205,29 @@ function isSorted(arr) {
 
 // console.log(isSorted([1, 2, 3, 4])); // Output: true
 // console.log(isSorted([1, 3, 2, 4])); // Output: false
+
+// Find the Longest Consecutive Sequence
+
+function longestConsecutiveSequence(arr) {
+  let set = new Set(arr);
+  let longest = 0;
+
+  for (let num of arr) {
+    if (!set.has(num - 1)) {
+      // Start of a sequence
+      let currentNum = num;
+      let streak = 1;
+
+      while (set.has(currentNum + 1)) {
+        currentNum++;
+        streak++;
+      }
+
+      longest = Math.max(longest, streak);
+    }
+  }
+
+  return longest;
+}
+
+console.log(longestConsecutiveSequence([100, 4, 200, 1, 3, 2])); // Output: 4
