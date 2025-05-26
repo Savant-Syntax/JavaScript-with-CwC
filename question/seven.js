@@ -2249,3 +2249,21 @@ function majorityElement(arr) {
 }
 
 // console.log(majorityElement([3, 3, 4, 2, 3])); // Output: 3
+
+// Find the Pair with Given Sum
+
+function findPairWithSum(arr, target) {
+  let seen = new Set();
+
+  for (let num of arr) {
+    let complement = target - num;
+    if (seen.has(complement)) {
+      return [complement, num];
+    }
+    seen.add(num);
+  }
+
+  return null; // No pair found
+}
+
+console.log(findPairWithSum([2, 7, 11, 15], 9)); // Output: [2, 7]
