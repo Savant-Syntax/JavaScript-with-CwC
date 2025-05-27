@@ -2276,3 +2276,18 @@ function rotateArray(arr, k) {
 }
 
 // console.log(rotateArray([1, 2, 3, 4, 5], 2)); // Output: [4, 5, 1, 2, 3]
+
+// Find the Smallest Missing Positive Number
+
+function smallestMissingPositive(arr) {
+  let set = new Set(arr);
+  let i = 1;
+
+  while (set.has(i)) {
+    i++;
+  }
+
+  return i;
+}
+
+console.log(smallestMissingPositive([3, 4, -1, 1])); // Output: 2
