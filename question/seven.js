@@ -2310,3 +2310,20 @@ function groupAnagrams(words) {
 
 // console.log(groupAnagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat']));
 // Output: [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
+
+// Find the Duplicate Number
+
+function findDuplicate(arr) {
+  let set = new Set();
+
+  for (let num of arr) {
+    if (set.has(num)) {
+      return num;
+    }
+    set.add(num);
+  }
+
+  return null; // No duplicate found
+}
+
+console.log(findDuplicate([1, 3, 4, 2, 2])); // Output: 2
