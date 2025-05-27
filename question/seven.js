@@ -2326,4 +2326,4 @@ function findDuplicate(arr) {
   return null; // No duplicate found
 }
 
-console.log(findDuplicate([1, 3, 4, 2, 2])); // Output: 2
+// console.log(findDuplicate([1, 3, 4, 2, 2])); // Output: 2
