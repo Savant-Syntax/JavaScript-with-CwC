@@ -2327,3 +2327,18 @@ function findDuplicate(arr) {
 }
 
 // console.log(findDuplicate([1, 3, 4, 2, 2])); // Output: 2
+
+// Find the Maximum Product of Three Numbers
+
+function maxProductOfThree(arr) {
+  arr.sort((a, b) => a - b);
+  let n = arr.length;
+
+  // Maximum can be from the three largest numbers or two smallest (negative) and the largest
+  return Math.max(
+    arr[0] * arr[1] * arr[n - 1],
+    arr[n - 1] * arr[n - 2] * arr[n - 3]
+  );
+}
+
+console.log(maxProductOfThree([-10, -10, 5, 2])); // Output: 500
