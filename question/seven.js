@@ -2341,4 +2341,4 @@ function maxProductOfThree(arr) {
   );
 }
 
-console.log(maxProductOfThree([-10, -10, 5, 2])); // Output: 500
+// console.log(maxProductOfThree([-10, -10, 5, 2])); // Output: 500
