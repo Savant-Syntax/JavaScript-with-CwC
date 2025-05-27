@@ -2290,4 +2290,4 @@ function smallestMissingPositive(arr) {
   return i;
 }
 
-console.log(smallestMissingPositive([3, 4, -1, 1])); // Output: 2
+// console.log(smallestMissingPositive([3, 4, -1, 1])); // Output: 2
