@@ -2291,3 +2291,22 @@ function smallestMissingPositive(arr) {
 }
 
 // console.log(smallestMissingPositive([3, 4, -1, 1])); // Output: 2
+
+// Group Anagrams
+
+function groupAnagrams(words) {
+  let map = {};
+
+  for (let word of words) {
+    let sorted = word.split('').sort().join('');
+    if (!map[sorted]) {
+      map[sorted] = [];
+    }
+    map[sorted].push(word);
+  }
+
+  return Object.values(map);
+}
+
+console.log(groupAnagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat']));
+// Output: [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
