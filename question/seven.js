@@ -2375,3 +2375,22 @@ function findPairs(arr, target) {
 }
 
 // console.log(findPairs([1, 2, 3, 4, 5], 6)); // Output: [[2, 4], [1, 5]]
+
+// Find the Majority Element
+function majorityElement(arr) {
+  let count = 0;
+  let candidate = null;
+
+  for (let num of arr) {
+    if (count === 0) {
+      candidate = num;
+    }
+    count += num === candidate ? 1 : -1;
+  }
+
+  return arr.filter((num) => num === candidate).length > arr.length / 2
+    ? candidate
+    : null;
+}
+
+console.log(majorityElement([3, 2, 3])); // Output: 3
