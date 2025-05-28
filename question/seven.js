@@ -2403,4 +2403,4 @@ function findMissingNumbers(arr, n) {
   return [...fullSet].filter((num) => !arrSet.has(num));
 }
 
-console.log(findMissingNumbers([4, 3, 2, 7, 8, 2, 3, 1], 8)); // Output: [5, 6]
+// console.log(findMissingNumbers([4, 3, 2, 7, 8, 2, 3, 1], 8)); // Output: [5, 6]
