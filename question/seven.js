@@ -2394,3 +2394,13 @@ function majorityElement(arr) {
 }
 
 // console.log(majorityElement([3, 2, 3])); // Output: 3
+
+// Find Missing Numbers in an Array
+function findMissingNumbers(arr, n) {
+  let fullSet = new Set(Array.from({ length: n }, (_, i) => i + 1));
+  let arrSet = new Set(arr);
+
+  return [...fullSet].filter((num) => !arrSet.has(num));
+}
+
+console.log(findMissingNumbers([4, 3, 2, 7, 8, 2, 3, 1], 8)); // Output: [5, 6]
