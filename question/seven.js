@@ -2356,4 +2356,4 @@ function maxSubArraySum(arr) {
   return maxSum;
 }
 
-console.log(maxSubArraySum([-2, 1, -3, 4, -1, 2, 1, -5, 4])); // Output: 6
+// console.log(maxSubArraySum([-2, 1, -3, 4, -1, 2, 1, -5, 4])); // Output: 6
