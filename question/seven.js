@@ -2357,3 +2357,21 @@ function maxSubArraySum(arr) {
 }
 
 // console.log(maxSubArraySum([-2, 1, -3, 4, -1, 2, 1, -5, 4])); // Output: 6
+
+// Find All Pairs with a Given Sum
+function findPairs(arr, target) {
+  let seen = new Set();
+  let pairs = [];
+
+  for (let num of arr) {
+    let complement = target - num;
+    if (seen.has(complement)) {
+      pairs.push([complement, num]);
+    }
+    seen.add(num);
+  }
+
+  return pairs;
+}
+
+console.log(findPairs([1, 2, 3, 4, 5], 6)); // Output: [[2, 4], [1, 5]]
