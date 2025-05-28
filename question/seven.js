@@ -2393,4 +2393,4 @@ function majorityElement(arr) {
     : null;
 }
 
-console.log(majorityElement([3, 2, 3])); // Output: 3
+// console.log(majorityElement([3, 2, 3])); // Output: 3
