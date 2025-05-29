@@ -2452,3 +2452,11 @@ function mergeSortedArrays(arr1, arr2) {
 }
 
 // console.log(mergeSortedArrays([1, 3, 5], [2, 4, 6])); // Output: [1, 2, 3, 4, 5, 6]
+
+// Check if array is a subarray
+function isSubarray(arr, subarr) {
+  return subarr.every((elem) => arr.includes(elem));
+}
+
+console.log(isSubarray([1, 2, 3, 4, 5], [2, 4])); // Output: true
+console.log(isSubarray([1, 2, 3, 4, 5], [2, 6])); // Output: false
