@@ -2429,3 +2429,18 @@ function rotateArray(arr, k) {
 }
 
 // console.log(rotateArray([1, 2, 3, 4, 5, 6, 7], 3)); // Output: [5, 6, 7, 1, 2, 3, 4]
+
+// Find duplicates in array
+function findDuplicates(arr) {
+  let seen = new Set();
+  let duplicates = new Set();
+
+  for (let num of arr) {
+    if (seen.has(num)) duplicates.add(num);
+    else seen.add(num);
+  }
+
+  return [...duplicates];
+}
+
+console.log(findDuplicates([4, 3, 2, 7, 8, 2, 3, 1])); // Output: [2, 3]
