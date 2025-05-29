@@ -2460,3 +2460,23 @@ function isSubarray(arr, subarr) {
 
 // console.log(isSubarray([1, 2, 3, 4, 5], [2, 4])); // Output: true
 // console.log(isSubarray([1, 2, 3, 4, 5], [2, 6])); // Output: false
+
+// Find continous subarray with given sum
+function subarrayWithSum(arr, target) {
+  let sum = 0;
+  let map = new Map();
+
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+
+    if (sum === target) return arr.slice(0, i + 1);
+    if (map.has(sum - target))
+      return arr.slice(map.get(sum - target) + 1, i + 1);
+
+    map.set(sum, i);
+  }
+
+  return [];
+}
+
+console.log(subarrayWithSum([1, 2, 3, 7, 5], 12)); // Output: [2, 3, 7]
