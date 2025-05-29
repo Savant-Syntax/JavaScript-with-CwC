@@ -2458,5 +2458,5 @@ function isSubarray(arr, subarr) {
   return subarr.every((elem) => arr.includes(elem));
 }
 
-console.log(isSubarray([1, 2, 3, 4, 5], [2, 4])); // Output: true
-console.log(isSubarray([1, 2, 3, 4, 5], [2, 6])); // Output: false
+// console.log(isSubarray([1, 2, 3, 4, 5], [2, 4])); // Output: true
+// console.log(isSubarray([1, 2, 3, 4, 5], [2, 6])); // Output: false
