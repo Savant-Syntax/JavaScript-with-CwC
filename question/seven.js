@@ -2421,3 +2421,11 @@ function findPairs(arr, target) {
   return pairs;
 }
 // console.log(findPairs([1, 2, 3, 4, 5], 6)); // Output: [[2, 4], [1, 5]]
+
+// Rotate array by k step
+function rotateArray(arr, k) {
+  k = k % arr.length;
+  return arr.slice(-k).concat(arr.slice(0, -k));
+}
+
+console.log(rotateArray([1, 2, 3, 4, 5, 6, 7], 3)); // Output: [5, 6, 7, 1, 2, 3, 4]
