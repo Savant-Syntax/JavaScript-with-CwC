@@ -2444,3 +2444,11 @@ function findDuplicates(arr) {
 }
 
 // console.log(findDuplicates([4, 3, 2, 7, 8, 2, 3, 1])); // Output: [2, 3]
+
+// Merge two sorted array
+function mergeSortedArrays(arr1, arr2) {
+  let merged = [...arr1, ...arr2];
+  return [...new Set(merged)].sort((a, b) => a - b);
+}
+
+console.log(mergeSortedArrays([1, 3, 5], [2, 4, 6])); // Output: [1, 2, 3, 4, 5, 6]
