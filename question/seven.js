@@ -2479,4 +2479,4 @@ function subarrayWithSum(arr, target) {
   return [];
 }
 
-console.log(subarrayWithSum([1, 2, 3, 7, 5], 12)); // Output: [2, 3, 7]
+// console.log(subarrayWithSum([1, 2, 3, 7, 5], 12)); // Output: [2, 3, 7]
