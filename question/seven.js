@@ -2530,3 +2530,15 @@ function findMissingNumber(arr, n) {
 }
 
 // console.log(findMissingNumber([1, 2, 4, 6, 3, 7, 8], 8)); // Output: 5
+
+// Check if Two Arrays are Disjoint
+function areDisjoint(arr1, arr2) {
+  let set = new Set(arr1);
+  for (let num of arr2) {
+    if (set.has(num)) return false;
+  }
+  return true;
+}
+
+console.log(areDisjoint([1, 2, 3], [4, 5, 6])); // Output: true
+console.log(areDisjoint([1, 2, 3], [3, 4, 5])); // Output: false
