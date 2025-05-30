@@ -2487,4 +2487,4 @@ function maxProduct(arr) {
   return arr[0] * arr[1];
 }
 
-console.log(maxProduct([3, 5, 1, 7, 9])); // Output: 63
+// console.log(maxProduct([3, 5, 1, 7, 9])); // Output: 63
