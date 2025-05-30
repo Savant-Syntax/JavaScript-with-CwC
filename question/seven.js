@@ -2488,3 +2488,12 @@ function maxProduct(arr) {
 }
 
 // console.log(maxProduct([3, 5, 1, 7, 9])); // Output: 63
+
+// Move All Zeroes to the End
+function moveZeroes(arr) {
+  let nonZeroes = arr.filter((num) => num !== 0);
+  let zeroes = arr.filter((num) => num === 0);
+  return [...nonZeroes, ...zeroes];
+}
+
+console.log(moveZeroes([0, 1, 2, 0, 3, 0, 4])); // Output: [1, 2, 3, 4, 0, 0, 0]
