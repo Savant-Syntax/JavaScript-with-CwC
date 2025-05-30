@@ -2529,4 +2529,4 @@ function findMissingNumber(arr, n) {
   return total - sum;
 }
 
-console.log(findMissingNumber([1, 2, 4, 6, 3, 7, 8], 8)); // Output: 5
+// console.log(findMissingNumber([1, 2, 4, 6, 3, 7, 8], 8)); // Output: 5
