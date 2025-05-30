@@ -2480,3 +2480,11 @@ function subarrayWithSum(arr, target) {
 }
 
 // console.log(subarrayWithSum([1, 2, 3, 7, 5], 12)); // Output: [2, 3, 7]
+
+// Find the Maximum Product of Two Numbers
+function maxProduct(arr) {
+  arr.sort((a, b) => b - a);
+  return arr[0] * arr[1];
+}
+
+console.log(maxProduct([3, 5, 1, 7, 9])); // Output: 63
