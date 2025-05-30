@@ -2496,4 +2496,4 @@ function moveZeroes(arr) {
   return [...nonZeroes, ...zeroes];
 }
 
-console.log(moveZeroes([0, 1, 2, 0, 3, 0, 4])); // Output: [1, 2, 3, 4, 0, 0, 0]
+// console.log(moveZeroes([0, 1, 2, 0, 3, 0, 4])); // Output: [1, 2, 3, 4, 0, 0, 0]
