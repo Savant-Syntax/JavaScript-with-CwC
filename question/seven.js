@@ -2521,3 +2521,12 @@ function longestConsecutive(arr) {
 }
 
 // console.log(longestConsecutive([100, 4, 200, 1, 3, 2])); // Output: 4
+
+// Find the Missing Number in an Array
+function findMissingNumber(arr, n) {
+  let total = (n * (n + 1)) / 2;
+  let sum = arr.reduce((acc, num) => acc + num, 0);
+  return total - sum;
+}
+
+console.log(findMissingNumber([1, 2, 4, 6, 3, 7, 8], 8)); // Output: 5
