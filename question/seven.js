@@ -2497,3 +2497,27 @@ function moveZeroes(arr) {
 }
 
 // console.log(moveZeroes([0, 1, 2, 0, 3, 0, 4])); // Output: [1, 2, 3, 4, 0, 0, 0]
+
+// Find the Longest Consecutive Sequence
+function longestConsecutive(arr) {
+  let set = new Set(arr);
+  let maxStreak = 0;
+
+  for (let num of set) {
+    if (!set.has(num - 1)) {
+      let currentNum = num;
+      let currentStreak = 1;
+
+      while (set.has(currentNum + 1)) {
+        currentNum++;
+        currentStreak++;
+      }
+
+      maxStreak = Math.max(maxStreak, currentStreak);
+    }
+  }
+
+  return maxStreak;
+}
+
+console.log(longestConsecutive([100, 4, 200, 1, 3, 2])); // Output: 4
