@@ -2540,5 +2540,5 @@ function areDisjoint(arr1, arr2) {
   return true;
 }
 
-console.log(areDisjoint([1, 2, 3], [4, 5, 6])); // Output: true
-console.log(areDisjoint([1, 2, 3], [3, 4, 5])); // Output: false
+// console.log(areDisjoint([1, 2, 3], [4, 5, 6])); // Output: true
+// console.log(areDisjoint([1, 2, 3], [3, 4, 5])); // Output: false
