@@ -40,3 +40,18 @@ function arrayIntersection(arr1, arr2) {
 }
 
 // console.log(arrayIntersection([1, 2, 2, 1], [2, 2])); // Output: [2]
+
+// Find the Subarray with the Maximum Sum
+function maxSubArraySum(arr) {
+  let maxSoFar = arr[0];
+  let maxEndingHere = arr[0];
+
+  for (let i = 1; i < arr.length; i++) {
+    maxEndingHere = Math.max(arr[i], maxEndingHere + arr[i]);
+    maxSoFar = Math.max(maxSoFar, maxEndingHere);
+  }
+
+  return maxSoFar;
+}
+
+console.log(maxSubArraySum([-2, 1, -3, 4, -1, 2, 1, -5, 4])); // Output: 6
