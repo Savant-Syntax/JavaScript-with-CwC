@@ -31,3 +31,12 @@ function rotateArray(arr, k) {
 }
 
 // console.log(rotateArray([1, 2, 3, 4, 5, 6], 2)); // Output: [5, 6, 1, 2, 3, 4]
+
+// Find the Intersection of Two Arrays
+function arrayIntersection(arr1, arr2) {
+  let set1 = new Set(arr1);
+  let set2 = new Set(arr2);
+  return Array.from(set1).filter((num) => set2.has(num));
+}
+
+console.log(arrayIntersection([1, 2, 2, 1], [2, 2])); // Output: [2]
