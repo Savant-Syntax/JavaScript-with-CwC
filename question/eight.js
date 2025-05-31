@@ -23,3 +23,11 @@ function findDuplicates(arr) {
 }
 
 // console.log(findDuplicates([4, 3, 2, 7, 8, 2, 3, 1])); // Output: [2, 3]
+
+// Rotate an Array
+function rotateArray(arr, k) {
+  k = k % arr.length;
+  return [...arr.slice(-k), ...arr.slice(0, -k)];
+}
+
+console.log(rotateArray([1, 2, 3, 4, 5, 6], 2)); // Output: [5, 6, 1, 2, 3, 4]
