@@ -30,4 +30,4 @@ function rotateArray(arr, k) {
   return [...arr.slice(-k), ...arr.slice(0, -k)];
 }
 
-console.log(rotateArray([1, 2, 3, 4, 5, 6], 2)); // Output: [5, 6, 1, 2, 3, 4]
+// console.log(rotateArray([1, 2, 3, 4, 5, 6], 2)); // Output: [5, 6, 1, 2, 3, 4]
