@@ -39,4 +39,4 @@ function arrayIntersection(arr1, arr2) {
   return Array.from(set1).filter((num) => set2.has(num));
 }
 
-console.log(arrayIntersection([1, 2, 2, 1], [2, 2])); // Output: [2]
+// console.log(arrayIntersection([1, 2, 2, 1], [2, 2])); // Output: [2]
