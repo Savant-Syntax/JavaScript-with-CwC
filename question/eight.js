@@ -77,3 +77,13 @@ function isSorted(arr) {
 
 // console.log(isSorted([1, 2, 3, 4, 5])); // Output: true
 // console.log(isSorted([5, 3, 2, 1])); // Output: false
+
+// Find First and Last Position of Element
+function findFirstAndLast(arr, target) {
+  let first = arr.indexOf(target);
+  let last = arr.lastIndexOf(target);
+  return first !== -1 ? [first, last] : [-1, -1];
+}
+
+console.log(findFirstAndLast([5, 7, 7, 8, 8, 10], 8)); // Output: [3, 4]
+console.log(findFirstAndLast([5, 7, 7, 8, 8, 10], 6)); // Output: [-1, -1]
