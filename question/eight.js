@@ -75,5 +75,5 @@ function isSorted(arr) {
   return true;
 }
 
-console.log(isSorted([1, 2, 3, 4, 5])); // Output: true
-console.log(isSorted([5, 3, 2, 1])); // Output: false
+// console.log(isSorted([1, 2, 3, 4, 5])); // Output: true
+// console.log(isSorted([5, 3, 2, 1])); // Output: false
