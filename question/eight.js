@@ -123,4 +123,4 @@ function findSubarraysWithSum(arr, target) {
   return result;
 }
 
-console.log(findSubarraysWithSum([1, 2, 3, 4, 5], 5)); // Output: [[2, 3], [5]]
+// console.log(findSubarraysWithSum([1, 2, 3, 4, 5], 5)); // Output: [[2, 3], [5]]
