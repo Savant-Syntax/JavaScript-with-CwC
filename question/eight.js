@@ -87,3 +87,23 @@ function findFirstAndLast(arr, target) {
 
 // console.log(findFirstAndLast([5, 7, 7, 8, 8, 10], 8)); // Output: [3, 4]
 // console.log(findFirstAndLast([5, 7, 7, 8, 8, 10], 6)); // Output: [-1, -1]
+
+// Find Majority Element
+function findMajorityElement(arr) {
+  let count = 0,
+    candidate = null;
+
+  for (let num of arr) {
+    if (count === 0) {
+      candidate = num;
+    }
+    count += num === candidate ? 1 : -1;
+  }
+
+  // Verify candidate
+  let occurrence = arr.filter((num) => num === candidate).length;
+  return occurrence > arr.length / 2 ? candidate : null;
+}
+
+console.log(findMajorityElement([3, 3, 4, 2, 4, 4, 2, 4, 4])); // Output: 4
+console.log(findMajorityElement([3, 3, 4, 2, 4, 4])); // Output: null
