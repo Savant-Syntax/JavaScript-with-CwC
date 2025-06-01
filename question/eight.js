@@ -107,3 +107,20 @@ function findMajorityElement(arr) {
 
 // console.log(findMajorityElement([3, 3, 4, 2, 4, 4, 2, 4, 4])); // Output: 4
 // console.log(findMajorityElement([3, 3, 4, 2, 4, 4])); // Output: null
+
+// Find All Subarrays with a Given Sum
+function findSubarraysWithSum(arr, target) {
+  let result = [];
+  for (let start = 0; start < arr.length; start++) {
+    let sum = 0;
+    for (let end = start; end < arr.length; end++) {
+      sum += arr[end];
+      if (sum === target) {
+        result.push(arr.slice(start, end + 1));
+      }
+    }
+  }
+  return result;
+}
+
+console.log(findSubarraysWithSum([1, 2, 3, 4, 5], 5)); // Output: [[2, 3], [5]]
