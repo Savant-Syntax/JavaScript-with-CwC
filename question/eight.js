@@ -64,3 +64,16 @@ function findMissingNumber(arr, n) {
 }
 
 // console.log(findMissingNumber([1, 2, 4, 6, 5], 6)); // Output: 3
+
+// Check if Array is Sorted
+function isSorted(arr) {
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i] > arr[i + 1]) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(isSorted([1, 2, 3, 4, 5])); // Output: true
+console.log(isSorted([5, 3, 2, 1])); // Output: false
