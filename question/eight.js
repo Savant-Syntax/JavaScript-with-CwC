@@ -142,3 +142,11 @@ function moveZerosToEnd(arr) {
 }
 
 // console.log(moveZerosToEnd([0, 1, 2, 0, 3, 0, 5])); // Output: [1, 2, 3, 5, 0, 0, 0]
+
+// Rotate Array
+function rotateArray(arr, k) {
+  k = k % arr.length;
+  return [...arr.slice(-k), ...arr.slice(0, -k)];
+}
+
+console.log(rotateArray([1, 2, 3, 4, 5], 2)); // Output: [4, 5, 1, 2, 3]
