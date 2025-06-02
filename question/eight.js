@@ -124,3 +124,12 @@ function findSubarraysWithSum(arr, target) {
 }
 
 // console.log(findSubarraysWithSum([1, 2, 3, 4, 5], 5)); // Output: [[2, 3], [5]]
+
+// Find the Maximum Product of Two Numbers
+function maxProduct(arr) {
+  arr.sort((a, b) => b - a);
+  return arr[0] * arr[1];
+}
+
+console.log(maxProduct([1, 10, 2, 6, 5, 3])); // Output: 60
+console.log(maxProduct([-10, -20, 5, 3, 2])); // Output: 200
