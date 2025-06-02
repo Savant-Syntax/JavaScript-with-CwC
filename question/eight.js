@@ -149,3 +149,12 @@ function rotateArray(arr, k) {
   return [...arr.slice(-k), ...arr.slice(0, -k)];
 }
 // console.log(rotateArray([1, 2, 3, 4, 5], 2)); // Output: [4, 5, 1, 2, 3]
+
+// Find the Second Smallest Element
+function secondSmallest(arr) {
+  let uniqueSorted = [...new Set(arr)].sort((a, b) => a - b);
+  return uniqueSorted.length > 1 ? uniqueSorted[1] : null;
+}
+
+console.log(secondSmallest([4, 1, 2, 5, 3])); // Output: 2
+console.log(secondSmallest([7, 7, 7])); // Output: null
