@@ -133,3 +133,12 @@ function maxProduct(arr) {
 
 // console.log(maxProduct([1, 10, 2, 6, 5, 3])); // Output: 60
 // console.log(maxProduct([-10, -20, 5, 3, 2])); // Output: 200
+
+// Move All Zeros to End
+function moveZerosToEnd(arr) {
+  let result = arr.filter((num) => num !== 0);
+  let zeroCount = arr.length - result.length;
+  return result.concat(Array(zeroCount).fill(0));
+}
+
+console.log(moveZerosToEnd([0, 1, 2, 0, 3, 0, 5])); // Output: [1, 2, 3, 5, 0, 0, 0]
