@@ -156,5 +156,5 @@ function secondSmallest(arr) {
   return uniqueSorted.length > 1 ? uniqueSorted[1] : null;
 }
 
-console.log(secondSmallest([4, 1, 2, 5, 3])); // Output: 2
-console.log(secondSmallest([7, 7, 7])); // Output: null
+// console.log(secondSmallest([4, 1, 2, 5, 3])); // Output: 2
+// console.log(secondSmallest([7, 7, 7])); // Output: null
