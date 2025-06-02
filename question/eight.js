@@ -158,3 +158,21 @@ function secondSmallest(arr) {
 
 // console.log(secondSmallest([4, 1, 2, 5, 3])); // Output: 2
 // console.log(secondSmallest([7, 7, 7])); // Output: null
+
+// Find All Pairs with a Given Sum
+function findPairsWithSum(arr, target) {
+  let seen = new Set();
+  let pairs = [];
+
+  for (let num of arr) {
+    let complement = target - num;
+    if (seen.has(complement)) {
+      pairs.push([complement, num]);
+    }
+    seen.add(num);
+  }
+
+  return pairs;
+}
+
+console.log(findPairsWithSum([1, 2, 3, 4, 5], 6)); // Output: [[2, 4], [1, 5]]
