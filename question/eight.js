@@ -141,4 +141,4 @@ function moveZerosToEnd(arr) {
   return result.concat(Array(zeroCount).fill(0));
 }
 
-console.log(moveZerosToEnd([0, 1, 2, 0, 3, 0, 5])); // Output: [1, 2, 3, 5, 0, 0, 0]
+// console.log(moveZerosToEnd([0, 1, 2, 0, 3, 0, 5])); // Output: [1, 2, 3, 5, 0, 0, 0]
