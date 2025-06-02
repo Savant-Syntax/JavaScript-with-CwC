@@ -131,5 +131,5 @@ function maxProduct(arr) {
   return arr[0] * arr[1];
 }
 
-console.log(maxProduct([1, 10, 2, 6, 5, 3])); // Output: 60
-console.log(maxProduct([-10, -20, 5, 3, 2])); // Output: 200
+// console.log(maxProduct([1, 10, 2, 6, 5, 3])); // Output: 60
+// console.log(maxProduct([-10, -20, 5, 3, 2])); // Output: 200
