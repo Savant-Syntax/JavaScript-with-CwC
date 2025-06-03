@@ -222,3 +222,20 @@ function findMissingNumber(arr) {
 
 // console.log(findMissingNumber([3, 0, 1])); // Output: 2
 // console.log(findMissingNumber([0, 1, 2, 4, 5])); // Output: 3
+
+// Find the Majority Element
+function findMajorityElement(arr) {
+  let count = 0,
+    candidate = null;
+
+  for (let num of arr) {
+    if (count === 0) candidate = num;
+    count += num === candidate ? 1 : -1;
+  }
+
+  count = arr.filter((num) => num === candidate).length;
+  return count > arr.length / 2 ? candidate : null;
+}
+
+console.log(findMajorityElement([3, 3, 4, 2, 3, 3, 3])); // Output: 3
+console.log(findMajorityElement([1, 2, 3, 4])); // Output: null
