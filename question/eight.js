@@ -182,5 +182,5 @@ function findIndex(arr, target) {
   return arr.indexOf(target);
 }
 
-console.log(findIndex([10, 20, 30, 40, 50], 30)); // Output: 2
-console.log(findIndex([10, 20, 30, 40, 50], 60)); // Output: -1
+// console.log(findIndex([10, 20, 30, 40, 50], 30)); // Output: 2
+// console.log(findIndex([10, 20, 30, 40, 50], 60)); // Output: -1
