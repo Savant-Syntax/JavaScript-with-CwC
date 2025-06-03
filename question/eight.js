@@ -209,5 +209,5 @@ function containsDuplicates(arr) {
   return false;
 }
 
-console.log(containsDuplicates([1, 2, 3, 4, 5])); // Output: false
-console.log(containsDuplicates([1, 2, 3, 2, 4])); // Output: true
+// console.log(containsDuplicates([1, 2, 3, 4, 5])); // Output: false
+// console.log(containsDuplicates([1, 2, 3, 2, 4])); // Output: true
