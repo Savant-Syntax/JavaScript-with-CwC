@@ -176,3 +176,11 @@ function findPairsWithSum(arr, target) {
 }
 
 // console.log(findPairsWithSum([1, 2, 3, 4, 5], 6)); // Output: [[2, 4], [1, 5]]
+
+// Find the Index of a Target Element
+function findIndex(arr, target) {
+  return arr.indexOf(target);
+}
+
+console.log(findIndex([10, 20, 30, 40, 50], 30)); // Output: 2
+console.log(findIndex([10, 20, 30, 40, 50], 60)); // Output: -1
