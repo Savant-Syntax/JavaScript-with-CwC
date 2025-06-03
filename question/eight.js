@@ -237,5 +237,5 @@ function findMajorityElement(arr) {
   return count > arr.length / 2 ? candidate : null;
 }
 
-console.log(findMajorityElement([3, 3, 4, 2, 3, 3, 3])); // Output: 3
-console.log(findMajorityElement([1, 2, 3, 4])); // Output: null
+// console.log(findMajorityElement([3, 3, 4, 2, 3, 3, 3])); // Output: 3
+// console.log(findMajorityElement([1, 2, 3, 4])); // Output: null
