@@ -211,3 +211,14 @@ function containsDuplicates(arr) {
 
 // console.log(containsDuplicates([1, 2, 3, 4, 5])); // Output: false
 // console.log(containsDuplicates([1, 2, 3, 2, 4])); // Output: true
+
+// Find the Missing Number
+function findMissingNumber(arr) {
+  let n = arr.length;
+  let totalSum = (n * (n + 1)) / 2;
+  let arrSum = arr.reduce((sum, num) => sum + num, 0);
+  return totalSum - arrSum;
+}
+
+console.log(findMissingNumber([3, 0, 1])); // Output: 2
+console.log(findMissingNumber([0, 1, 2, 4, 5])); // Output: 3
