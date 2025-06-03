@@ -198,3 +198,16 @@ function reverseArray(arr) {
 }
 
 // console.log(reverseArray([1, 2, 3, 4, 5])); // Output: [5, 4, 3, 2, 1]
+
+// Check for Duplicates
+function containsDuplicates(arr) {
+  let seen = new Set();
+  for (let num of arr) {
+    if (seen.has(num)) return true;
+    seen.add(num);
+  }
+  return false;
+}
+
+console.log(containsDuplicates([1, 2, 3, 4, 5])); // Output: false
+console.log(containsDuplicates([1, 2, 3, 2, 4])); // Output: true
