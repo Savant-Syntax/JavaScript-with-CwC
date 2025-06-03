@@ -184,3 +184,17 @@ function findIndex(arr, target) {
 
 // console.log(findIndex([10, 20, 30, 40, 50], 30)); // Output: 2
 // console.log(findIndex([10, 20, 30, 40, 50], 60)); // Output: -1
+
+// Reverse an Array
+function reverseArray(arr) {
+  let left = 0,
+    right = arr.length - 1;
+  while (left < right) {
+    [arr[left], arr[right]] = [arr[right], arr[left]];
+    left++;
+    right--;
+  }
+  return arr;
+}
+
+console.log(reverseArray([1, 2, 3, 4, 5])); // Output: [5, 4, 3, 2, 1]
