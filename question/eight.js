@@ -220,5 +220,5 @@ function findMissingNumber(arr) {
   return totalSum - arrSum;
 }
 
-console.log(findMissingNumber([3, 0, 1])); // Output: 2
-console.log(findMissingNumber([0, 1, 2, 4, 5])); // Output: 3
+// console.log(findMissingNumber([3, 0, 1])); // Output: 2
+// console.log(findMissingNumber([0, 1, 2, 4, 5])); // Output: 3
