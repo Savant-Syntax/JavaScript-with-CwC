@@ -299,5 +299,5 @@ function findPairsWithSum(arr, target) {
   return pairs;
 }
 
-console.log(findPairsWithSum([2, 7, 11, 15, -2, 3], 9));
+// console.log(findPairsWithSum([2, 7, 11, 15, -2, 3], 9));
 // Output: [[2, 7], [-2, 11]]
