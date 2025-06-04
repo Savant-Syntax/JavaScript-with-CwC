@@ -249,3 +249,16 @@ function partitionArray(arr) {
 
 // console.log(partitionArray([1, 2, 3, 4, 5, 6]));
 // Output: { even: [2, 4, 6], odd: [1, 3, 5] }
+
+// Find the Majority Element
+function findMajorityElement(arr) {
+  let countMap = {};
+  for (let num of arr) {
+    countMap[num] = (countMap[num] || 0) + 1;
+    if (countMap[num] > arr.length / 2) return num;
+  }
+  return null;
+}
+
+console.log(findMajorityElement([3, 3, 4, 2, 4, 4, 2, 4, 4])); // Output: 4
+console.log(findMajorityElement([1, 2, 3])); // Output: null
