@@ -282,3 +282,22 @@ function findMissingNumber(arr, n) {
 
 // console.log(findMissingNumber([1, 2, 4, 5, 6], 6)); // Output: 3
 // console.log(findMissingNumber([1, 3], 3)); // Output: 2
+
+// Find Pairs with a Given Sum
+function findPairsWithSum(arr, target) {
+  let seen = new Set();
+  let pairs = [];
+
+  for (let num of arr) {
+    let complement = target - num;
+    if (seen.has(complement)) {
+      pairs.push([complement, num]);
+    }
+    seen.add(num);
+  }
+
+  return pairs;
+}
+
+console.log(findPairsWithSum([2, 7, 11, 15, -2, 3], 9));
+// Output: [[2, 7], [-2, 11]]
