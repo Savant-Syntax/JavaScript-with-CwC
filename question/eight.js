@@ -272,3 +272,13 @@ function moveZeroesToEnd(arr) {
 
 // console.log(moveZeroesToEnd([0, 1, 0, 3, 12])); // Output: [1, 3, 12, 0, 0]
 // console.log(moveZeroesToEnd([0, 0, 1])); // Output: [1, 0, 0]
+
+// Find Missing Number in a Range
+function findMissingNumber(arr, n) {
+  let totalSum = (n * (n + 1)) / 2;
+  let arraySum = arr.reduce((sum, num) => sum + num, 0);
+  return totalSum - arraySum;
+}
+
+console.log(findMissingNumber([1, 2, 4, 5, 6], 6)); // Output: 3
+console.log(findMissingNumber([1, 3], 3)); // Output: 2
