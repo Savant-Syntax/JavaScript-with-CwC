@@ -262,3 +262,13 @@ function findMajorityElement(arr) {
 
 // console.log(findMajorityElement([3, 3, 4, 2, 4, 4, 2, 4, 4])); // Output: 4
 // console.log(findMajorityElement([1, 2, 3])); // Output: null
+
+// Move All Zeroes to the End
+function moveZeroesToEnd(arr) {
+  let result = arr.filter((num) => num !== 0);
+  let zeroCount = arr.length - result.length;
+  return result.concat(new Array(zeroCount).fill(0));
+}
+
+console.log(moveZeroesToEnd([0, 1, 0, 3, 12])); // Output: [1, 3, 12, 0, 0]
+console.log(moveZeroesToEnd([0, 0, 1])); // Output: [1, 0, 0]
