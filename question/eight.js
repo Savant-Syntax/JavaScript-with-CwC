@@ -270,5 +270,5 @@ function moveZeroesToEnd(arr) {
   return result.concat(new Array(zeroCount).fill(0));
 }
 
-console.log(moveZeroesToEnd([0, 1, 0, 3, 12])); // Output: [1, 3, 12, 0, 0]
-console.log(moveZeroesToEnd([0, 0, 1])); // Output: [1, 0, 0]
+// console.log(moveZeroesToEnd([0, 1, 0, 3, 12])); // Output: [1, 3, 12, 0, 0]
+// console.log(moveZeroesToEnd([0, 0, 1])); // Output: [1, 0, 0]
