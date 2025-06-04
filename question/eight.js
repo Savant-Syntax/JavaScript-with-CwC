@@ -239,3 +239,13 @@ function findMajorityElement(arr) {
 
 // console.log(findMajorityElement([3, 3, 4, 2, 3, 3, 3])); // Output: 3
 // console.log(findMajorityElement([1, 2, 3, 4])); // Output: null
+
+// Partition Array into Even and Odd
+function partitionArray(arr) {
+  let even = arr.filter((num) => num % 2 === 0);
+  let odd = arr.filter((num) => num % 2 !== 0);
+  return { even, odd };
+}
+
+console.log(partitionArray([1, 2, 3, 4, 5, 6]));
+// Output: { even: [2, 4, 6], odd: [1, 3, 5] }
