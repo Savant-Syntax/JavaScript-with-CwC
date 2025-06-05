@@ -354,3 +354,20 @@ function firstMissingPositive(arr) {
 
 // console.log(firstMissingPositive([3, 4, -1, 1])); // Output: 2
 // console.log(firstMissingPositive([1, 2, 0])); // Output: 3
+
+// Check for Duplicate within a Range
+function containsNearbyDuplicate(arr, k) {
+  let map = new Map();
+
+  for (let i = 0; i < arr.length; i++) {
+    if (map.has(arr[i]) && i - map.get(arr[i]) <= k) {
+      return true;
+    }
+    map.set(arr[i], i);
+  }
+
+  return false;
+}
+
+console.log(containsNearbyDuplicate([1, 2, 3, 1], 3)); // Output: true
+console.log(containsNearbyDuplicate([1, 0, 1, 1], 1)); // Output: true
