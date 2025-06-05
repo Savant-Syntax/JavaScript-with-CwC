@@ -371,3 +371,12 @@ function containsNearbyDuplicate(arr, k) {
 
 // console.log(containsNearbyDuplicate([1, 2, 3, 1], 3)); // Output: true
 // console.log(containsNearbyDuplicate([1, 0, 1, 1], 1)); // Output: true
+
+// Find Kth Largest Element
+function kthLargestElement(arr, k) {
+  arr.sort((a, b) => b - a);
+  return arr[k - 1];
+}
+
+console.log(kthLargestElement([3, 2, 1, 5, 6, 4], 2)); // Output: 5
+console.log(kthLargestElement([3, 2, 3, 1, 2, 4, 5, 5, 6], 4)); // Output: 4
