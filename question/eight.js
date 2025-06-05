@@ -352,5 +352,5 @@ function firstMissingPositive(arr) {
   return i;
 }
 
-console.log(firstMissingPositive([3, 4, -1, 1])); // Output: 2
-console.log(firstMissingPositive([1, 2, 0])); // Output: 3
+// console.log(firstMissingPositive([3, 4, -1, 1])); // Output: 2
+// console.log(firstMissingPositive([1, 2, 0])); // Output: 3
