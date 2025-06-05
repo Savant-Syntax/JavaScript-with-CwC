@@ -339,3 +339,18 @@ function groupAnagrams(words) {
 
 // console.log(groupAnagrams(['listen', 'silent', 'enlist', 'google', 'gogole']));
 // Output: [["listen", "silent", "enlist"], ["google", "gogole"]]
+
+// Find the First Missing Positive Integer
+function firstMissingPositive(arr) {
+  let set = new Set(arr);
+  let i = 1;
+
+  while (set.has(i)) {
+    i++;
+  }
+
+  return i;
+}
+
+console.log(firstMissingPositive([3, 4, -1, 1])); // Output: 2
+console.log(firstMissingPositive([1, 2, 0])); // Output: 3
