@@ -321,3 +321,21 @@ function longestIncreasingSubarray(arr) {
 
 // console.log(longestIncreasingSubarray([1, 2, 3, 2, 5, 6, 7])); // Output: 4
 // console.log(longestIncreasingSubarray([5, 4, 3, 2, 1])); // Output: 1
+
+// Group Anagrams
+function groupAnagrams(words) {
+  let map = new Map();
+
+  for (let word of words) {
+    let sortedWord = word.split('').sort().join('');
+    if (!map.has(sortedWord)) {
+      map.set(sortedWord, []);
+    }
+    map.get(sortedWord).push(word);
+  }
+
+  return Array.from(map.values());
+}
+
+console.log(groupAnagrams(['listen', 'silent', 'enlist', 'google', 'gogole']));
+// Output: [["listen", "silent", "enlist"], ["google", "gogole"]]
