@@ -301,3 +301,23 @@ function findPairsWithSum(arr, target) {
 
 // console.log(findPairsWithSum([2, 7, 11, 15, -2, 3], 9));
 // Output: [[2, 7], [-2, 11]]
+
+// Find the Longest Increasing Subarray
+function longestIncreasingSubarray(arr) {
+  let maxLength = 1,
+    currentLength = 1;
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > arr[i - 1]) {
+      currentLength++;
+      maxLength = Math.max(maxLength, currentLength);
+    } else {
+      currentLength = 1;
+    }
+  }
+
+  return maxLength;
+}
+
+console.log(longestIncreasingSubarray([1, 2, 3, 2, 5, 6, 7])); // Output: 4
+console.log(longestIncreasingSubarray([5, 4, 3, 2, 1])); // Output: 1
