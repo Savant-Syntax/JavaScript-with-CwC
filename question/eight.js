@@ -337,5 +337,5 @@ function groupAnagrams(words) {
   return Array.from(map.values());
 }
 
-console.log(groupAnagrams(['listen', 'silent', 'enlist', 'google', 'gogole']));
+// console.log(groupAnagrams(['listen', 'silent', 'enlist', 'google', 'gogole']));
 // Output: [["listen", "silent", "enlist"], ["google", "gogole"]]
