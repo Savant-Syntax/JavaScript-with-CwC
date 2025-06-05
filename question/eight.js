@@ -319,5 +319,5 @@ function longestIncreasingSubarray(arr) {
   return maxLength;
 }
 
-console.log(longestIncreasingSubarray([1, 2, 3, 2, 5, 6, 7])); // Output: 4
-console.log(longestIncreasingSubarray([5, 4, 3, 2, 1])); // Output: 1
+// console.log(longestIncreasingSubarray([1, 2, 3, 2, 5, 6, 7])); // Output: 4
+// console.log(longestIncreasingSubarray([5, 4, 3, 2, 1])); // Output: 1
